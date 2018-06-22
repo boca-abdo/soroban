@@ -36,9 +36,13 @@
 		<div class="col-12 align-self-top">
       <div class="container text-center">
         <h1 class="h1">المبادلة بخمسة في الجمع</h1>
-        <img src="../../images/mob5_add.gif" alt="mob5 add" class="img-fluid center-block">
 				<hr>
-				<h2 class="h2 text-center">احصل على شهادة التدريب</h2>
+				<p class="lead text-indent">لإجراء عملية جمع بسيطة نمثل العدد اﻷول ثم نضيف له عدد خرزات العدد الثاني</p>
+				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
+				<i class="fas fa-angle-double-down d-block animated fadeInDown infinite"></i>
+        <img src="../../images/mob5_add.gif" alt="mob5 add" class="img-fluid center-block border border-dark mt-3">
+				<hr>
+				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
 				<p class="lead animated flash infinite text-danger font-weight-bold"></p>
 				<div class="row border border-dark mx-3">
@@ -165,6 +169,7 @@
     $(document).ready(function() {
 			var r,l,v,val,level;
 			$('#exercices').on('click', 'a', function () {
+				$("h2.animated").removeClass('animated');
 				$btn = $(this);
 				$btn.closest(".row").prev().text("");
 				ex = $btn.data("ex");
@@ -205,29 +210,7 @@
 						createAbacus(5);
 						break;
 				}
-				$.ajax({
-					url: "../../includes/checkLevel.php",
-			    type: "GET",
-					dataType: "text",
-			    error: function(stt, xhr,err) {
-			      console.log(err);
-			    },
-			    success: function(res) {
-						if (Number(res) > lvl) {
-							correct = 0;
-							$p.html("");
-							toggleTab();
-						} else if (Number(res) === lvl) {
-							correct = 5;
-							$p.html("يمكنك المرور الى التمرين الموالي بعد "+correct+" اجابات صحيحة");
-							toggleTab();
-						} else {
-							$(".tab-pane.show").removeClass("show active");
-							$("#exercices").find("a.active").removeClass("active");
-							$btn.closest(".row").prev().text("لا يمكنك انجاز هذا التمرين الا بعد انجاز التمارين السابقة");
-						}
-			    }
-			  });
+				checkLevel(lvl,15);
 				rset();
 			});
 			$(".tab-pane").on("click", "button:last", function(){
