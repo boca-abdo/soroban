@@ -338,29 +338,7 @@
 						createAbacus(3);
 						break;
 				}
-				$.ajax({
-					url: "../../includes/checkLevel.php",
-			    type: "GET",
-					dataType: "text",
-			    error: function(stt, xhr,err) {
-			      console.log(err);
-			    },
-			    success: function(res) {
-						if (Number(res) > lvl) {
-							correct = 0;
-							$p.html("");
-							toggleTab();
-						} else if (Number(res) === lvl) {
-							correct = 5;
-							$p.html("يمكنك المرور الى التمرين الموالي بعد "+correct+" اجابات صحيحة");
-							toggleTab();
-						} else {
-							$(".tab-pane.show").removeClass("show active");
-							$("#exercices").find("a.active").removeClass("active");
-							$btn.closest(".row").prev().text("لا يمكنك انجاز هذا التمرين الا بعد انجاز التمارين السابقة");
-						}
-			    }
-			  });
+				checkLevel(lvl,0);
 				rset();
 			});
 			$(".tab-pane").on("click", "button:last", function(){
