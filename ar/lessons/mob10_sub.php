@@ -1,0 +1,248 @@
+<?php
+	include '../../includes/user_check.php';
+	if ($log_id == "" && $log_e == "" && $log_p == "") {
+		header("../location: auth.php");
+	}
+?>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<title>موقع سوروبان</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../images/fav.ico">
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../css/animate.css">
+	<link rel="stylesheet" href="../../css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="../../css/style.css">
+  <style media="screen">
+    .dropdown-item {
+      color: #ffc107; !important
+    }
+    .dropdown-item:focus,
+    .dropdown-item:hover {
+      background-color: #ffc107; !important
+        color: #343a40;
+    }
+  </style>
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/popper.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/abacus.js"></script>
+</head>
+<body class="bg-warning text-dark">
+  <?php include 'assets/menu.php' ?>
+	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
+		<div class="col-12 align-self-top">
+      <div class="container text-center">
+        <h1 class="h1">المبادلة بعشرة في الطرح</h1>
+        <img src="../../images/mob10_sub.gif" alt="mob10 sub" class="img-fluid center-block">
+				<hr>
+				<h2 class="h2 text-center">احصل على شهادة التدريب</h2>
+				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
+				<p class="lead animated flash infinite text-danger font-weight-bold"></p>
+				<div class="row border border-dark mx-3">
+					<ul class="nav nav-fill nav-tabs border-bottom-0 w-100 p-0" id="exercices" role="tablist">
+					  <li class="nav-item">
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="0" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>1</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="1" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>2</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="2" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>3</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="3" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>4</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="4" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>5</a>
+					  </li>
+					</ul>
+					<div class="tab-content w-100 text-center" id="exercices_content">
+						<div class="tab-pane fade" role="tabpanel">
+							<h5 class="h3 my-3">التمرين 1</h5>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم اطرح منه العدد الثاني</p>
+							<div class="py-3">
+								<div class="row no-gutters justify-content-center h1 font-weight-bold">
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span>
+									</div>
+									<div class="nbr2 col-auto">
+										<i class="fas fa-minus mr-2 d-inline" style="font-size: 20px"></i><span></span>
+									</div>
+								</div>
+								<div id="abacus" class="my-3" style="height: 143px"></div>
+								<div id="status"></div>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+							</div>
+							<p></p>
+						</div>
+					  <div class="tab-pane fade" role="tabpanel">
+							<h5 class="h3 my-3">التمرين 2</h5>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم اطرح منه العدد الثاني</p>
+							<div class="py-3">
+								<div class="row no-gutters justify-content-center h1 font-weight-bold">
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span>
+									</div>
+									<div class="nbr2 col-auto">
+										<i class="fas fa-minus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
+									</div>
+								</div>
+								<div id="abacus" class="my-3" style="height: 143px"></div>
+								<div id="status"></div>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+							</div>
+							<p></p>
+					  </div>
+					  <div class="tab-pane fade" role="tabpanel">
+							<h5 class="h3 my-3">التمرين 3</h5>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم اطرح منه العدد الثاني</p>
+							<div class="py-3">
+								<div class="row no-gutters justify-content-center h1 font-weight-bold">
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span><span></span>
+									</div>
+									<div class="nbr2 col-auto">
+										<i class="fas fa-minus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span>
+									</div>
+								</div>
+								<div id="abacus" class="my-3" style="height: 143px"></div>
+								<div id="status"></div>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+							</div>
+							<p></p>
+					  </div>
+					  <div class="tab-pane fade" role="tabpanel">
+							<h5 class="h3 my-3">التمرين 4</h5>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم اطرح منه العدد الثاني</p>
+							<div class="py-3">
+								<div class="row no-gutters justify-content-center h1 font-weight-bold">
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span><span></span><span></span>
+									</div>
+									<div class="nbr2 col-auto">
+										<i class="fas fa-minus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span><span></span>
+									</div>
+								</div>
+								<div id="abacus" class="my-3" style="height: 143px"></div>
+								<div id="status"></div>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+							</div>
+							<p></p>
+					  </div>
+					  <div class="tab-pane fade" role="tabpanel">
+							<h5 class="h3 my-3">التمرين 5</h5>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم اطرح منه العدد الثاني</p>
+							<div class="py-3">
+								<div class="row no-gutters justify-content-center h1 font-weight-bold">
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span><span></span><span></span><span></span>
+									</div>
+									<div class="nbr2 col-auto">
+										<i class="fas fa-minus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span><span></span><span></span>
+									</div>
+								</div>
+								<div id="abacus" class="my-3" style="height: 143px"></div>
+								<div id="status"></div>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+							</div>
+							<p></p>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php include '../assets/footer.php' ?>
+	</div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+			var r,l,v,val,level;
+			$('#exercices').on('click', 'a', function () {
+				$btn = $(this);
+				$btn.closest(".row").prev().text("");
+				ex = $btn.data("ex");
+				$tab = $(".tab-pane:eq("+ex+")");
+				$input = $tab.find("input");
+				$check = $tab.find("button:first");
+				$refill = $tab.find("button:last");
+				$p = $tab.find("p:last");
+				switch (ex) {
+					case 0:
+						func = getNumber1;
+						lvl = 30;
+						rule = "mob10_sub",
+						createAbacus(2);
+						break;
+					case 1:
+						func = getNumber1;
+						lvl = 31;
+						rule = "mob10_sub",
+						createAbacus(3);
+						break;
+					case 2:
+						func = getNumber1;
+						lvl = 32;
+						rule = "mob10_sub",
+						createAbacus(4);
+						break;
+					case 3:
+						func = getNumber1;
+						lvl = 33;
+						rule = "mob10_sub",
+						createAbacus(5);
+						break;
+					case 4:
+						func = getNumber1;
+						lvl = 34;
+						rule = "mob10_sub",
+						createAbacus(6);
+						break;
+				}
+				$.ajax({
+					url: "../../includes/checkLevel.php",
+			    type: "GET",
+					dataType: "text",
+			    error: function(stt, xhr,err) {
+			      console.log(err);
+			    },
+			    success: function(res) {
+						if (Number(res) > lvl) {
+							correct = 0;
+							$p.html("");
+							toggleTab();
+						} else if (Number(res) === lvl) {
+							correct = 5;
+							$p.html("يمكنك المرور الى التمرين الموالي بعد "+correct+" اجابات صحيحة");
+							toggleTab();
+						} else {
+							$(".tab-pane.show").removeClass("show active");
+							$("#exercices").find("a.active").removeClass("active");
+							$btn.closest(".row").prev().text("لا يمكنك انجاز هذا التمرين الا بعد انجاز التمارين السابقة");
+						}
+			    }
+			  });
+				rset();
+			});
+			$(".tab-pane").on("click", "button:last", function(){
+				rset();
+			});
+			$(".tab-pane").on("click", "button:first", function(){
+				check();
+			});
+			$("body").on("keypress", function(event){
+				keyCode = (event.keyCode ? event.keyCode : event.which);
+				if (keyCode == 13) {
+					check();
+				}
+			});
+		});
+  </script>
+</body>
+</html>

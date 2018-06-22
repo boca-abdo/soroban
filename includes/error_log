@@ -1,0 +1,15 @@
+[28-Apr-2018 18:40:22 Europe/Helsinki] PHP Parse error:  syntax error, unexpected '/' in /home/skwila/soroban2/includes/fblogin.php on line 5
+[28-Apr-2018 16:40:29 Etc/GMT-1] PHP Warning:  Division by zero in /home/skwila/soroban2/includes/fblogin.php on line 5
+[29-Apr-2018 09:45:04 Etc/GMT-1] PHP Strict Standards:  Only variables should be passed by reference in /home/skwila/soroban2/includes/fblogin.php on line 27
+[29-Apr-2018 09:45:04 Etc/GMT-1] PHP Strict Standards:  Only variables should be passed by reference in /home/skwila/soroban2/includes/fblogin.php on line 28
+[29-Apr-2018 10:03:25 Etc/GMT-1] PHP Fatal error:  Call to undefined function hashpass() in /home/skwila/soroban2/includes/fblogin.php on line 25
+[29-Apr-2018 10:04:36 Etc/GMT-1] PHP Strict Standards:  Only variables should be passed by reference in /home/skwila/soroban2/includes/fblogin.php on line 31
+[29-Apr-2018 10:04:36 Etc/GMT-1] PHP Strict Standards:  Only variables should be passed by reference in /home/skwila/soroban2/includes/fblogin.php on line 32
+[29-Apr-2018 10:04:36 Etc/GMT-1] PHP Warning:  mkdir(): File exists in /home/skwila/soroban2/includes/fblogin.php on line 35
+[29-Apr-2018 10:05:41 Etc/GMT-1] PHP Strict Standards:  Only variables should be passed by reference in /home/skwila/soroban2/includes/fblogin.php on line 31
+[29-Apr-2018 10:05:41 Etc/GMT-1] PHP Strict Standards:  Only variables should be passed by reference in /home/skwila/soroban2/includes/fblogin.php on line 32
+[29-Apr-2018 10:05:41 Etc/GMT-1] PHP Warning:  mkdir(): File exists in /home/skwila/soroban2/includes/fblogin.php on line 35
+[29-Apr-2018 10:35:20 Etc/GMT-1] PHP Warning:  mkdir(): File exists in /home/skwila/soroban2/includes/fblogin.php on line 37
+[29-Apr-2018 12:13:31 Etc/GMT-1] PHP Warning:  mkdir(): File exists in /home/skwila/soroban2/includes/fblogin.php on line 49
+[29-Apr-2018 12:15:01 Etc/GMT-1] PHP Warning:  mkdir(): File exists in /home/skwila/soroban2/includes/fblogin.php on line 49
+[29-Apr-2018 12:17:36 Etc/GMT-1] PHP Warning:  mkdir(): File exists in /home/skwila/soroban2/includes/fblogin.php on line 49

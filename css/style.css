@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Changa|Crafty+Girls|Aref+Ruqaa|Mada|Reem+Kufi|Cairo|El+Messiri');
+body,html {
+	font-family: Cairo, times, sans-serif;
+	height: 100vh;
+}
+.hand {
+	font-family: 'Crafty Girls', Changa, sans-serif;
+}
+.text-indent {
+	text-indent: 1rem
+}
+.myfile {
+	width:150px;
+	height:150px;
+	overflow:hidden;
+	z-index:3;
+	right:0;
+	opacity:0;
+	cursor:pointer
+}
+.inset-shadow {
+	background-color: #ededed;
+	color:transparent;
+	text-shadow: 2px 2px 3px rgba(73, 125, 147, 0.5);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+.no-shadow {
+	box-shadow: none
+}
+.card-shadow {
+	box-shadow: 15px 15px 50px #4b4b4b
+}
+.background-transparent {
+	background: transparent
+}
+@media screen and (min-width: 400px) {
+
+}
+@media screen and (min-width: 544px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1000px) {
+
+}
