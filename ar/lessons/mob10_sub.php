@@ -36,8 +36,9 @@
 		<div class="col-12 align-self-top">
       <div class="container text-center">
         <h1 class="h1">المبادلة بعشرة في الطرح</h1>
+				<hr>
 				<p class="lead">تقول القاعدة : إذا أردنا طرح عدد فوجدنا عدد الخرزات <span class="font-weight-bold">في عمود ما </span>غير كاف، نعطل خرزة في العمود الموالي ثم ننشط خرزة أو خرزات في العمود الحالي </p>
-				<p class="lead">العدد الذي نعطله يسمى <span class="font-weight-bold">المساعد الكبير</span> وهو مكمل العدد 10</p>
+				<p class="lead">العدد الذي ننشطه يسمى <span class="font-weight-bold">المساعد الكبير</span> وهو مكمل العدد 10</p>
 				<div class="row justify-content-center">
 					<div class="col-auto bg-dark text-warning py-3 m-2">
 						<span class="h1 font-weight-bold">10</span><br>=<br><span class="h1 font-weight-bold">1 + 9</span><br>المساعد الكبير ل 1 هو 9<br>المساعد الكبير ل 9 هو 1
