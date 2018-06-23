@@ -37,7 +37,7 @@
       <div class="container text-center">
         <h1 class="h1">المبادلة بخمسة في الطرح</h1>
 				<hr>
-				<p class="lead">تقول القاعدة : إذا أردنا إضافة عدد فوجدنا عدد الخرزات <span class="font-weight-bold">السفلية </span> غير كاف، نعطل الخرزة العلوية ثم ننشط خرزة أو خرزات سفلية.</p>
+				<p class="lead">تقول القاعدة : إذا أردنا طرح عدد فوجدنا عدد الخرزات  <span class="font-weight-bold">السفلية </span> غير كاف، نعطل الخرزة العلوية ثم ننشط خرزة أو خرزات سفلية.</p>
 				<p class="lead">العدد الذي ننشطه يسمى <span class="font-weight-bold">المساعد الصغير</span> وهو مكمل العدد 5</p>
 				<div class="row justify-content-center">
 					<div class="col-auto bg-dark text-warning py-3 m-2">
@@ -47,7 +47,7 @@
 						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">1 + 4</span><br>المساعد الصغير ل 4 هو 1<br>المساعد الصغير ل 1 هو 4
 					</div>
 				</div>
-				<h3 class="h3 my-3 d-none d-sm-block">جدول حالات المبادلة بخمسة في الجمع</h3>
+				<h3 class="h3 my-3 d-none d-sm-block">جدول حالات المبادلة بخمسة في الطرح</h3>
 				<div class="table-responsive d-none d-sm-block">
 				  <table class="table table-striped table-sm">
 						<thead>
