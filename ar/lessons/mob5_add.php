@@ -38,9 +38,6 @@
         <h1 class="h1">المبادلة بخمسة في الجمع</h1>
 				<hr>
 				<p class="lead">تقول القاعدة : إذا أردنا إضافة عدد فوجدنا عدد الخرزات <span class="font-weight-bold">السفلية </span>غير كاف، ننشط الخرزة العلوية ثم نعطل خرزة أو خرزات سفلية.</p>
-				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
-				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-        <img src="../../images/mob5_add.gif" alt="mob5 add" class="img-fluid center-block border border-dark mt-3">
 				<p class="lead">العدد الذي نعطله يسمى <span class="font-weight-bold">المساعد الصغير</span> وهو مكمل العدد 5</p>
 				<div class="row justify-content-center">
 					<div class="col-auto bg-dark text-warning py-3 m-2">
@@ -50,7 +47,7 @@
 						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">1 + 4</span><br>المساعد الصغير ل 4 هو 1<br>المساعد الصغير ل 1 هو 4
 					</div>
 				</div>
-				<h3 class="h3 my-3">جدول حالات المبادلة بخمسة في الجمع</h3>
+				<h3 class="h3 my-3 d-none d-sm-block">جدول حالات المبادلة بخمسة في الجمع</h3>
 				<div class="table-responsive d-none d-sm-block">
 				  <table class="table table-striped table-sm">
 						<thead>
@@ -84,6 +81,9 @@
 						</tbody>
 				  </table>
 				</div>
+				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
+				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
+        <img src="../../images/mob5_add.gif" alt="mob5 add" class="img-fluid center-block border border-dark mt-3">
 				<hr>
 				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>

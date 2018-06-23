@@ -38,9 +38,6 @@
         <h1 class="h1">المبادلة بخمسة في الطرح</h1>
 				<hr>
 				<p class="lead">تقول القاعدة : إذا أردنا إضافة عدد فوجدنا عدد الخرزات <span class="font-weight-bold">السفلية </span> غير كاف، نعطل الخرزة العلوية ثم ننشط خرزة أو خرزات سفلية.</p>
-				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
-				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-				<img src="../../images/mob5_sub.gif" alt="mob5 sub" class="img-fluid center-block">
 				<p class="lead">العدد الذي ننشطه يسمى <span class="font-weight-bold">المساعد الصغير</span> وهو مكمل العدد 5</p>
 				<div class="row justify-content-center">
 					<div class="col-auto bg-dark text-warning py-3 m-2">
@@ -50,7 +47,7 @@
 						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">1 + 4</span><br>المساعد الصغير ل 4 هو 1<br>المساعد الصغير ل 1 هو 4
 					</div>
 				</div>
-				<h3 class="h3 my-3">جدول حالات المبادلة بخمسة في الجمع</h3>
+				<h3 class="h3 my-3 d-none d-sm-block">جدول حالات المبادلة بخمسة في الجمع</h3>
 				<div class="table-responsive d-none d-sm-block">
 				  <table class="table table-striped table-sm">
 						<thead>
@@ -84,8 +81,11 @@
 						</tbody>
 				  </table>
 				</div>
+				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
+				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
+				<img src="../../images/mob5_sub.gif" alt="mob5 sub" class="img-fluid center-block border border-dark mt-3">
 				<hr>
-				<h2 class="h2 text-center">احصل على شهادة التدريب</h2>
+				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
 				<p class="lead animated flash infinite text-danger font-weight-bold"></p>
 				<div class="row border border-dark mx-3">
@@ -212,6 +212,7 @@
     $(document).ready(function() {
 			var r,l,v,val,level;
 			$('#exercices').on('click', 'a', function () {
+				$("h2.animated").removeClass('animated');
 				$btn = $(this);
 				$btn.closest(".row").prev().text("");
 				ex = $btn.data("ex");
@@ -252,29 +253,7 @@
 						createAbacus(5);
 						break;
 				}
-				$.ajax({
-					url: "../../includes/checkLevel.php",
-			    type: "GET",
-					dataType: "text",
-			    error: function(stt, xhr,err) {
-			      console.log(err);
-			    },
-			    success: function(res) {
-						if (Number(res) > lvl) {
-							correct = 0;
-							$p.html("");
-							toggleTab();
-						} else if (Number(res) === lvl) {
-							correct = 5;
-							$p.html("يمكنك المرور الى التمرين الموالي بعد "+correct+" اجابات صحيحة");
-							toggleTab();
-						} else {
-							$(".tab-pane.show").removeClass("show active");
-							$("#exercices").find("a.active").removeClass("active");
-							$btn.closest(".row").prev().text("لا يمكنك انجاز هذا التمرين الا بعد انجاز التمارين السابقة");
-						}
-			    }
-			  });
+				checkLevel(lvl,10);
 				rset();
 			});
 			$(".tab-pane").on("click", "button:last", function(){
