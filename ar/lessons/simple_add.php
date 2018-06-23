@@ -37,9 +37,9 @@
       <div class="container text-center">
         <h1 class="h1">الجمع البسيط</h1>
 				<hr>
-				<p class="lead text-indent">لإجراء عملية جمع بسيطة نمثل العدد اﻷول ثم نضيف له عدد خرزات العدد الثاني</p>
+				<p class="lead">لإجراء عملية جمع بسيطة نمثل العدد اﻷول ثم نضيف له عدد خرزات العدد الثاني</p>
 				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
-				<i class="fas fa-angle-double-down d-block animated fadeInDown infinite"></i>
+				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 				<img src="../../images/simple_add.gif" alt="simple add" class="img-fluid center-block border border-dark mt-3">
 				<hr>
 				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>

@@ -37,9 +37,9 @@
       <div class="container text-center">
         <h1 class="h1">الطرح البسيط</h1>
 				<hr>
-				<p class="lead text-indent">نستخدم نفس طريقة الجمع : نمثل العدد اﻷول ثم نطرح منه عدد خرزات العدد الثاني</p>
+				<p class="lead">نستخدم نفس طريقة الجمع : نمثل العدد اﻷول ثم نطرح منه عدد خرزات العدد الثاني</p>
 				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
-				<i class="fas fa-angle-double-down d-block animated fadeInDown infinite"></i>
+				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
         <img src="../../images/simple_sub.gif" alt="simple sub" class="img-fluid center-block border border-dark mt-3">
 				<hr>
 				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
