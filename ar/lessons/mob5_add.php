@@ -37,10 +37,53 @@
       <div class="container text-center">
         <h1 class="h1">المبادلة بخمسة في الجمع</h1>
 				<hr>
-				<p class="lead text-indent">لإجراء عملية جمع بسيطة نمثل العدد اﻷول ثم نضيف له عدد خرزات العدد الثاني</p>
+				<p class="lead">تقول القاعدة : إذا أردنا إضافة عدد فوجدنا عدد الخرزات <span class="font-weight-bold">السفلية </span>غير كاف، ننشط الخرزة العلوية ثم نعطل خرزة أو خرزات سفلية.</p>
 				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
-				<i class="fas fa-angle-double-down d-block animated fadeInDown infinite"></i>
+				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
         <img src="../../images/mob5_add.gif" alt="mob5 add" class="img-fluid center-block border border-dark mt-3">
+				<p class="lead">العدد الذي نعطله يسمى <span class="font-weight-bold">المساعد الصغير</span> وهو مكمل العدد 5</p>
+				<div class="row justify-content-center">
+					<div class="col-auto bg-dark text-warning py-3 m-2">
+						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">2 + 3</span><br>المساعد الصغير ل 2 هو 3<br>المساعد الصغير ل 3 هو 2
+					</div>
+					<div class="col-auto bg-dark text-warning py-3 m-2">
+						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">1 + 4</span><br>المساعد الصغير ل 4 هو 1<br>المساعد الصغير ل 1 هو 4
+					</div>
+				</div>
+				<h3 class="h3 my-3">جدول حالات المبادلة بخمسة في الجمع</h3>
+				<div class="table-responsive d-none d-sm-block">
+				  <table class="table table-striped table-sm">
+						<thead>
+							<tr class="border border-dark">
+								<th class="border-top-0 border-bottom-0">الحالة</th>
+								<th class="border-top-0 border-bottom-0">القاعدة</th>
+								<th class="border-top-0 border-bottom-0">التعليل</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="border border-dark">
+								<td class="border-top-0">+1</td>
+								<td class="border-top-0">ننشط الخرزة العلوية ونعطل 4 خرزات سفلية</td>
+								<td class="border-top-0" dir="ltr">+1 = +5 - 4</td>
+							</tr>
+							<tr class="border border-dark">
+								<td class="border-top-0">+2</td>
+								<td class="border-top-0">ننشط الخرزة العلوية ونعطل 3 خرزات سفلية</td>
+								<td class="border-top-0" dir="ltr">+2 = +5 - 3</td>
+							</tr>
+							<tr class="border border-dark">
+								<td class="border-top-0">+3</td>
+								<td class="border-top-0">ننشط الخرزة العلوية ونعطل 2 خرزات سفلية</td>
+								<td class="border-top-0" dir="ltr">+3 = +5 - 2</td>
+							</tr>
+							<tr class="border border-dark">
+								<td class="border-top-0">+4</td>
+								<td class="border-top-0">ننشط الخرزة العلوية ونعطل 1 خرزة سفلية</td>
+								<td class="border-top-0" dir="ltr">+4 = +5 - 1</td>
+							</tr>
+						</tbody>
+				  </table>
+				</div>
 				<hr>
 				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
