@@ -1,4 +1,4 @@
-var i,r,rs,res,rand,intvl,n1,n2,pw,func,lvl,level,rule,$btn,$tab,$input,$check,$refill,$lines = [],
+var i,r,rs,res,num,rand,intvl,n1,n2,pw,func,lvl,level,rule,$btn,$tab,$input,$check,$refill,$lines = [],
 rules = {
   "simple_add": {
     1:[1,2,3,5,6,7,8],
@@ -105,6 +105,22 @@ function countAbacus() {
 function resetAbacus() {
   $tab.find(".five .bg-primary").css("top","-=15px").removeClass("bg-primary").addClass("bg-dark");
   $tab.find(".ones .bg-primary").css("top","+=15px").removeClass("bg-primary").addClass("bg-dark");
+}
+function readAbacus() {
+  resetAbacus();
+  $input.focus().val("");
+  $tab.find(".w-100:last").html("");
+  i = 0;
+  setTimeout(function(){
+    while (i < num) {
+      var gen = Math.floor(rndm(0) * 10);
+      if (gen % 2 == 0) {
+        $(".line:eq("+i+")").find(".five div").css("top","+=15px").removeClass("bg-dark").addClass("bg-primary");
+      }
+      $(".line:eq("+i+")").find(".ones div:eq("+gen+")").css("top","-=15px").removeClass("bg-dark").addClass("bg-primary").prevAll(".bg-dark").css("top","-=15px").removeClass("bg-dark").addClass("bg-primary");
+      i++;
+    }
+  },350);
 }
 function moveBeads() {
   $tab.find(".five").on("click", ".bg-dark", function() {
@@ -303,4 +319,18 @@ function getNumber1() {
       });
     }
   },50);
+}
+function representNumber(){
+  resetAbacus();
+  $tab.find(".w-100:last").html("");
+  rs = 0;
+  i = 0;
+  pw = 1;
+  while (i < num) {
+    var gen = Math.floor(rndm(0) * 10);
+    rs += gen * pw;
+    i++;
+    pw *= 10;
+  }
+  $input.val(rs);
 }
