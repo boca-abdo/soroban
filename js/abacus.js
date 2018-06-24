@@ -64,6 +64,18 @@ rules = {
     3:[6,7,8],
     4:[6,7,8,9],
   },
+  "all": {
+    0:[0,1,2,3,4,5,6,7,8,9],
+    1:[0,1,2,3,4,5,6,7,8,9],
+    2:[0,1,2,3,4,5,6,7,8,9],
+    3:[0,1,2,3,4,5,6,7,8,9],
+    4:[0,1,2,3,4,5,6,7,8,9],
+    5:[0,1,2,3,4,5,6,7,8,9],
+    6:[0,1,2,3,4,5,6,7,8,9],
+    7:[0,1,2,3,4,5,6,7,8,9],
+    8:[0,1,2,3,4,5,6,7,8,9],
+    9:[0,1,2,3,4,5,6,7,8,9],
+  }
 };
 function pickRandomProperty(obj) {
   var result;
@@ -311,8 +323,19 @@ function getNumber1() {
         if (countAbacus() == res1) {
           $tab.find(".nbr1").removeClass("d-block").addClass("d-none");
           $tab.find(".nbr2").removeClass("d-none").addClass("d-block animated flash infinite");
-          res = res1 + res2;
-          if (rule == "simple_sub" || rule == "mob5_sub" || rule == "mob10_sub" || rule == "mob105_sub") {
+          if (rule == "simple_add" || rule == "mob5_add" || rule == "mob10_add" || rule == "mob105_add") {
+            $(".nbr2").find("i").removeClass("fa-minus").addClass("fa-plus");
+            res = res1 + res2;
+          } else if (rule == "all") {
+            if (Math.floor(rndm(0) * 10) % 2 == 0) {
+              $(".nbr2").find("i").removeClass("fa-minus").addClass("fa-plus");
+              res = res1 + res2;
+            } else {
+              $(".nbr2").find("i").removeClass("fa-plus").addClass("fa-minus");
+              res = res1 - res2;
+            }
+          } else {
+            $(".nbr2").find("i").removeClass("fa-plus").addClass("fa-minus");
             res = res1 - res2;
           }
         }
