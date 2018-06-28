@@ -1,0 +1,12 @@
+.dropdown-item {
+  color: #ffc107; !important
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #ffc107; !important
+    color: #343a40;
+}
+#exercices a:hover {
+  color: #ffc107;
+  cursor: pointer
+}
