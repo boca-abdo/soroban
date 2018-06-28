@@ -15,21 +15,7 @@
 	<link rel="stylesheet" href="../../css/animate.css">
 	<link rel="stylesheet" href="../../css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="../../css/style.css">
-  <style media="screen">
-    .dropdown-item {
-      color: #ffc107; !important
-    }
-    .dropdown-item:focus,
-    .dropdown-item:hover {
-      background-color: #ffc107; !important
-        color: #343a40;
-    }
-    .form-control:focus {
-      background: transparent;
-      border: none;
-      box-shadow: none
-    }
-  </style>
+	<link rel="stylesheet" href="../../css/lessons.css">
 	<script src="../../js/jquery.min.js"></script>
 	<script src="../../js/popper.js"></script>
 	<script src="../../js/bootstrap.min.js"></script>
