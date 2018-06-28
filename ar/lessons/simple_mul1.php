@@ -78,10 +78,31 @@
           </li>
 					<hr>
 					<li><h2 class="text-right">الضرب في 6</h2>
-            <p class="lead">لضرب عدد في 3 نضيف اليه نفسه ثم نضيف للناتج العدد اﻷصلي ، ثم نضيف للناتج نفسه </p>
+            <p class="lead">لضرب عدد في 6 نضيف اليه نفسه ثم نضيف للناتج العدد اﻷصلي ، ثم نضيف للناتج نفسه  </p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 						<img src="../../images/mul1_6.gif" alt="mul1_6" class="img-fluid center-block border border-dark mt-3">
+          </li>
+					<hr>
+					<li><h2 class="text-right">الضرب في 7</h2>
+            <p class="lead">لضرب عدد في 7 نتبع طريقة الضرب في 6 ثم نضيف للناتج العدد اﻷصلي  </p>
+						<p class="text-danger font-weight-bold">لاحظ المثال</p>
+						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
+						<img src="../../images/mul1_7.gif" alt="mul1_7" class="img-fluid center-block border border-dark mt-3">
+          </li>
+					<hr>
+					<li><h2 class="text-right">الضرب في 10، 100 ...</h2>
+            <p class="lead">لضرب عدد في 10، 100، 1000 … نترك اﻷعمدة الأولى فارغة بحسب عدد اﻷصفار، نترك عمود واحد في حالة الضرب في 10، وعمودين في حالة الضرب في 100 وهكذا. ثم نمثل العدد اﻷول بداية من العمود الموالي للأعمدة الفارغة. </p>
+						<p class="text-danger font-weight-bold">لاحظ المثال</p>
+						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
+						<img src="../../images/mul1_10.gif" alt="mul1_10" class="img-fluid center-block border border-dark mt-3">
+          </li>
+					<hr>
+					<li><h2 class="text-right">الضرب في 9</h2>
+            <p class="lead">قد تلاحظون أننا بدأنا بالضرب في 10 قبل الضرب في 9، هذا صحيح لأن قاعدة الضرب في 9 تعتمد على الطرح وليس على الجمع، أي أنه اذا اردنا ضرب عدد في 9 نقوم بضربه في 10 ثم نطرح من الناتج العدد اﻷصلي. </p>
+						<p class="text-danger font-weight-bold">لاحظ المثال</p>
+						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
+						<img src="../../images/mul1_9.gif" alt="mul1_9" class="img-fluid center-block border border-dark mt-3">
           </li>
 				</ul>
 				<hr>
@@ -109,14 +130,15 @@
 					<div class="tab-content w-100 text-center" id="exercices_content">
 						<div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 1</h5>
-							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
+							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto animated flash infinite">
+									<div class="nbr1 col-auto">
 										<span></span>
 									</div>
+									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -128,14 +150,15 @@
 						</div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 2</h5>
-							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
+							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto animated flash infinite">
+									<div class="nbr1 col-auto">
 										<span></span><span></span>
 									</div>
+									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -147,14 +170,15 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 3</h5>
-							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
+							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto animated flash infinite">
+									<div class="nbr1 col-auto">
 										<span></span><span></span><span></span>
 									</div>
+									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -166,14 +190,15 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 4</h5>
-							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
+							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto animated flash infinite">
+									<div class="nbr1 col-auto">
 										<span></span><span></span><span></span><span></span>
 									</div>
+									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -185,14 +210,15 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 5</h5>
-							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
+							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto animated flash infinite">
+									<div class="nbr1 col-auto">
 										<span></span><span></span><span></span><span></span><span></span>
 									</div>
+									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span><span></span><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -223,37 +249,32 @@
 				$p = $tab.find("p:last");
 				switch (ex) {
 					case 0:
-						func = getNumber1;
-						lvl = 5;
-						rule = "simple_add",
-						createAbacus(1);
-						break;
-					case 1:
-						func = getNumber1;
-						lvl = 6;
-						rule = "simple_add",
+						func = getNumber2;
+						lvl = 45;
 						createAbacus(2);
 						break;
-					case 2:
-						func = getNumber1;
-						lvl = 7;
-						rule = "simple_add",
+					case 1:
+						func = getNumber2;
+						lvl = 46;
 						createAbacus(3);
 						break;
-					case 3:
-						func = getNumber1;
-						lvl = 8;
-						rule = "simple_add",
+					case 2:
+						func = getNumber2;
+						lvl = 47;
 						createAbacus(4);
 						break;
-					case 4:
-						func = getNumber1;
-						lvl = 9;
-						rule = "simple_add",
+					case 3:
+						func = getNumber2;
+						lvl = 48;
 						createAbacus(5);
 						break;
+					case 4:
+						func = getNumber2;
+						lvl = 49;
+						createAbacus(6);
+						break;
 				}
-				checkLevel(lvl,5);
+				checkLevel(lvl,45);
 				rset();
 			});
 			$(".tab-pane").on("click", "button:last", function(){

@@ -343,6 +343,22 @@ function getNumber1() {
     }
   },50);
 }
+function getNumber2() {
+  clearInterval(intvl);
+  i = 0;
+  intvl = setInterval(function(){
+    $tab.find(".nbr1,.nbr2").find("span").each(function() {
+      $(this).text(Math.floor(rndm(0.2)*10));
+    });
+    i++;
+    if (i > 15) {
+      clearInterval(intvl);
+      res1 = Number($tab.find(".nbr1").text());
+      res2 = Number($tab.find(".nbr2").text());
+      res = res1 * res2;
+    }
+  },50);
+}
 function representNumber(){
   resetAbacus();
   $tab.find(".w-100:last").html("");
