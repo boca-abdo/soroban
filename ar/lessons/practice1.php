@@ -50,7 +50,7 @@
           </div>
           <div class="w-100"></div>
           <div class="col-lg-4 pt-5">
-            <input class="form-control form-control-lg rounded-0 background-transparent border border-dark border-top-0 border-right-0 border-left-0 text-center" type="text" placeholder="أكتب اجابتك هنا">
+            <input class="form-control form-control-lg font-weight-bold rounded-0 background-transparent border border-dark border-top-0 border-right-0 border-left-0 text-center" type="text" placeholder="أكتب اجابتك هنا">
           </div>
           <div class="w-100"></div>
           <div class="col-lg-6 pt-5" style="">
