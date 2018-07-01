@@ -68,7 +68,7 @@
 				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
         <img src="../../images/mob105_sub.gif" alt="mob105 sub" class="img-fluid center-block border border-dark mt-3">
 				<hr>
-				<h2 class="h2 text-center">احصل على شهادة التدريب</h2>
+				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
 				<p class="lead animated flash infinite text-danger font-weight-bold"></p>
 				<div class="row border border-dark mx-3">
