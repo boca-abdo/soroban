@@ -29,6 +29,10 @@
         <h1 class="h1">الضرب البسيط بالطريقة الثانية</h1>
 				<hr>
 				<p class="lead">في هذه الطريقة يتم الاعتماد على جداول الضرب. </p>
+				<p class="lead">نقوم بتفكيك العددين حسب الفصول ونضرب كل جزء من أجزاء العدد الثاني في أجزاء العدد الأول وفي كل مرة نضيف الثمثيل المحصل عليه الى المعداد. </p>
+				<p class="text-danger font-weight-bold">لاحظ المثال</p>
+				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
+				<img src="../../images/mul2.gif" alt="mul2" class="img-fluid center-block border border-dark mt-3">
 				<hr>
 				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
