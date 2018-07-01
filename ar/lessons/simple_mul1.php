@@ -82,8 +82,8 @@
 						<img src="../../images/mul1_7.gif" alt="mul1_7" class="img-fluid center-block border border-dark mt-3">
           </li>
 					<hr>
-					<li><h2 class="text-right">الضرب في 10، 100 ...</h2>
-            <p class="lead">لضرب عدد في 10، 100، 1000 … نترك اﻷعمدة الأولى فارغة بحسب عدد اﻷصفار، نترك عمود واحد في حالة الضرب في 10، وعمودين في حالة الضرب في 100 وهكذا. ثم نمثل العدد اﻷول بداية من العمود الموالي للأعمدة الفارغة. </p>
+					<li><h2 class="text-right">الضرب في مضاعفات 10،100،...</h2>
+            <p class="lead">لضرب عدد في مضاعفات  10، 100، 1000 … نترك اﻷعمدة الأولى فارغة بحسب عدد اﻷصفار، نترك عمود واحد في حالة الضرب في 10، وعمودين في حالة الضرب في 100 وهكذا. ثم نقوم بضرب العدد في الرقم اﻷخير بعد اﻷصفار بطريقة الجمع المتكرر التي تعلمناها في الأمثلة أعلاه. </p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 						<img src="../../images/mul1_10.gif" alt="mul1_10" class="img-fluid center-block border border-dark mt-3">
