@@ -10,7 +10,7 @@
   $ln = protect(strtolower($_POST['ln']));
   $url = $_POST['pic'];
   try {
-    $gg_stmt = $srbn_con->prepare("SELECT `srbn_id`,`ggl_id`,`password` FROM `users` WHERE `email`=? LIMIT 1");
+    $gg_stmt = $srbn_con->prepare("SELECT `srbn_id`,`gg_id`,`password` FROM `users` WHERE `email`=? LIMIT 1");
     $gg_stmt->bindParam(1, $gg_email, PDO::PARAM_STR);
     $gg_stmt->execute();
     if ($gg_stmt->rowCount() > 0) {
