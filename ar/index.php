@@ -1,5 +1,8 @@
 <?php
-
+	include '../includes/user_check.php';
+	if ($log_id == "" && $log_e == "" && $log_p == "") {
+		header("location: auth.php");
+	}
 ?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
