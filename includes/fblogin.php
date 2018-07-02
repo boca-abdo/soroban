@@ -13,7 +13,7 @@
   $bd = date("Y-m-d", strtotime($_POST['birthday']));
   $url = $_POST['picture']['data']['url'];
   try {
-    $fb_stmt = $srbn_con->prepare("SELECT `srbn_id`,`fb_id`,`password` FROM `users` WHERE `email`=? LIMIT 1");
+    $fb_stmt = $srbn_con->prepare("SELECT `id`,`fb_id`,`password` FROM `users` WHERE `email`=? LIMIT 1");
     $fb_stmt->bindParam(1, $fb_email, PDO::PARAM_STR);
     $fb_stmt->execute();
     if ($fb_stmt->rowCount() > 0) {
@@ -39,7 +39,7 @@
         }
       }
       session_start();
-      $_SESSION['srbn_id'] = $fb_row['srbn_id'];
+      $_SESSION['srbn_id'] = $fb_row['id'];
       $_SESSION['email'] = $fb_email;
       $_SESSION['password'] = $fb_row['password'];
       setcookie("srbn_id", $fb_row['srbn_id'], strtotime( '+30 days' ), "/", "", "", TRUE);
