@@ -1,6 +1,6 @@
 <?php
 	include '../includes/user_check.php';
-	if ($log_id != "" && $log_e != "" && $log_p != "") {
+	if ($log_id != "" && $log_e != "") {
 		header("location: dashboard.php");
 	}
 ?>
