@@ -218,7 +218,6 @@
 		  function attachSignin(element) {
 		    auth2.attachClickHandler(element, {},
 	        function(googleUser) {
-	          console.log(googleUser.getBasicProfile().getEmail());
 						$.ajax({
 							url: "../includes/gglogin.php",
 							type: "POST",
@@ -233,7 +232,7 @@
 								if (res === "done") {
 									location.reload();
 								} else {
-									alertShow("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.");
+									alertShow("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.",$(".alert:last"));
 									console.log(res);
 								}
 							},
@@ -241,12 +240,6 @@
 								console.log(err);
 							}
 						});
-				    // BasicProfile.getId()
-				    // BasicProfile.getName()
-				    // BasicProfile.getGivenName()
-				    // BasicProfile.getFamilyName()
-				    // BasicProfile.getImageUrl()
-				    // BasicProfile.getEmail()
 	        }, function(error) {
 	          console.log(JSON.stringify(error, undefined, 2));
 	        });
@@ -402,9 +395,11 @@
 				setTimeout(function(){alertHide($(".alert"))},1000);
 			});
 			$("#fb").on('click', function(){
+				$btn = $(this);
 				checkLoginState();
 			});
 			$("#ggl").on('click', function(){
+				$btn = $(this);
 				startApp();
 			});
     });
