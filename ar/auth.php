@@ -178,6 +178,7 @@
 							<div class="col-sm-6 col-md-4 my-2">
 								<button type="button" class="btn btn-outline-warning btn-block rounded-0" id="ggl">غوغل<i class="fab fa-google mr-2"></i></button>
 							</div>
+							<div class="col-12 text-center" id="scl"></div>
 						</div>
           </div>
           <div class="card-footer border-warning text-sm-right">
@@ -232,7 +233,7 @@
 								if (res === "done") {
 									location.reload();
 								} else {
-									alertShow("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.",$(".alert:last"));
+									$("#scl").text("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.");
 									console.log(res);
 								}
 							},
@@ -245,7 +246,7 @@
 	        });
 		  }
 			function fbAPI() {
-				FB.api('/me?fields=id,email,first_name,last_name,gender,picture,location,hometown,birthday', function (response) {
+				FB.api('/me?fields=id,email,first_name,last_name,picture', function (response) {
 					$.ajax({
 						url: "../includes/fblogin.php",
 						type: "POST",
@@ -254,7 +255,7 @@
 							if (res === "done") {
 								location.reload();
 							} else {
-								alertShow("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.");
+								$("#scl").text("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.");
 								console.log(res);
 							}
 						},
@@ -395,11 +396,11 @@
 				setTimeout(function(){alertHide($(".alert"))},1000);
 			});
 			$("#fb").on('click', function(){
-				$btn = $(this);
+				$("#scl").text("");
 				checkLoginState();
 			});
 			$("#ggl").on('click', function(){
-				$btn = $(this);
+				$("#scl").text("");
 				startApp();
 			});
     });
