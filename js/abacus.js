@@ -157,6 +157,7 @@ function checkLevel(l,st) {
       console.log(err);
     },
     success: function(res) {
+      console.log(res);
       if (Number(res) > l) {
         correct = 0;
         $p.html("");
