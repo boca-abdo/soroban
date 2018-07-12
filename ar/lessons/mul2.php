@@ -26,7 +26,7 @@
 	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
 		<div class="col-12 align-self-top">
       <div class="container text-center">
-        <h1 class="h1">الضرب البسيط بالطريقة الثانية</h1>
+        <h1 class="h1">الضرب بالطريقة الثانية</h1>
 				<hr>
 				<p class="lead">في هذه الطريقة يتم الاعتماد على جداول الضرب. </p>
 				<p class="lead">نقوم بتفكيك العددين حسب الفصول ونضرب كل جزء من أجزاء العدد الثاني في أجزاء العدد الأول وفي كل مرة نضيف الثمثيل المحصل عليه الى المعداد. </p>
@@ -62,11 +62,11 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span>
+										<span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -82,11 +82,11 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span><span></span>
+										<span></span><span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -102,11 +102,11 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span>
+										<span></span><span></span><span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -122,11 +122,11 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span><span></span>
+										<span></span><span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -142,11 +142,11 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span><span></span><span></span>
+										<span></span><span></span><span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -179,27 +179,27 @@
 					case 0:
 						func = getNumber2;
 						lvl = 55;
-						createAbacus(2);
+						createAbacus(4);
 						break;
 					case 1:
 						func = getNumber2;
 						lvl = 56;
-						createAbacus(3);
+						createAbacus(5);
 						break;
 					case 2:
 						func = getNumber2;
 						lvl = 57;
-						createAbacus(4);
+						createAbacus(6);
 						break;
 					case 3:
 						func = getNumber2;
 						lvl = 58;
-						createAbacus(5);
+						createAbacus(6);
 						break;
 					case 4:
 						func = getNumber2;
 						lvl = 59;
-						createAbacus(6);
+						createAbacus(7);
 						break;
 				}
 				checkLevel(lvl,55);

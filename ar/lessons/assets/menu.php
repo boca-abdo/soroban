@@ -21,9 +21,11 @@
       <div class="dropdown-divider m-0"></div>
       <a class="dropdown-item" href="simple_mul1.php">الضرب البسيط - الطريقة 1 -</a>
       <a class="dropdown-item" href="comp_mul1.php">الضرب المركب - الطريقة 1 -</a>
-      <a class="dropdown-item" href="simple_mul2.php">الضرب البسيط - الطريقة 2 -</a>
-      <a class="dropdown-item" href="comp_mul2.php">الضرب المركب - الطريقة 2 -</a>
+      <a class="dropdown-item" href="mul2.php">الضرب - الطريقة 2 -</a>
       <a class="dropdown-item" href="division.php">القسمة</a>
+      <div class="dropdown-divider m-0"></div>
+      <a class="dropdown-item" href="practice3.php">تدريب السرعة</a>
+      <div class="dropdown-divider m-0"></div>
     </div>
   </div>
   <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="../dashboard.php" style="box-shadow:none"><i class="fas fa-power-off"></i></a>
