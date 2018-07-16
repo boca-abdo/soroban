@@ -21,6 +21,11 @@
 	<script src="../../js/bootstrap.min.js"></script>
 </head>
 <body class="bg-warning text-dark">
+  <audio id="beep">
+    <source src="../../beep.mp3" type="audio/mpeg">
+    <source src="../../beep.ogg" type="audio/mpeg">
+    <source src="../../beep.wav" type="audio/mpeg">
+  </audio>
   <?php include 'assets/menu.php' ?>
 	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
 		<div class="col-12 align-self-top">
@@ -89,6 +94,7 @@
         intvl = setInterval(function(){
           gen = Math.floor(rndm(0.1) * dig);
           $("#bd").html(gen);
+          $("#beep").get(0).play();
           if (gen % 2 == 0 && res >= gen) {
             res -= gen;
             $("#bd").append("&minus;");
