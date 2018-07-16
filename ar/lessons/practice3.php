@@ -19,7 +19,6 @@
 	<script src="../../js/jquery.min.js"></script>
 	<script src="../../js/popper.js"></script>
 	<script src="../../js/bootstrap.min.js"></script>
-	<script src="../../js/abacus.js"></script>
 </head>
 <body class="bg-warning text-dark">
   <?php include 'assets/menu.php' ?>
@@ -42,11 +41,11 @@
           <div class="col-sm-3">
             <label for="dig">عدد اﻷرقام</label>
             <select id="dig" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>8</option>
+              <option value="10">1</option>
+              <option value="100">2</option>
+              <option value="1000">3</option>
+              <option value="10000">4</option>
+              <option value="100000000">8</option>
             </select>
           </div>
           <div class="col-sm-3">
@@ -61,16 +60,55 @@
           </div>
           <div class="col-sm-3">
             <label for="">عدد الثواني</label>
-            <input id="spd" class="form-control text-center rounded-0 background-transparent border-dark" type="number" min="0.3" max="20" step="0.1" style="box-shadow: none">
+            <input id="spd" class="form-control text-center rounded-0 background-transparent border-dark" type="number" min="0.3" max="20" step="0.1" value="1" style="box-shadow: none">
+          </div>
+          <div id="bd" class="w-100 text-center font-weight-bold display-1" style="padding-top: 15rem">
+            <button id="start" type="button" class="btn btn-lg btn-outline-dark rounded-0 px-5">ابدأ<i class="fas fa-stopwatch mr-2"></i></button>
           </div>
         </div>
+      </div>
 		</div>
 		<?php include '../assets/footer.php' ?>
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
-      var num = $("#num").val(),spd = $("#spd").val(),dig = $("#dig").val();
-      function
+      var tp = $("#tp").val(),
+      num = $("#num").val(),
+      spd = $("#spd").val(),
+      dig = $("#dig").val();
+      function rndm(max) {
+        rand = Math.random();
+        while (rand < max) {
+          rand = Math.random();
+        }
+        return rand;
+      }
+      function playSerie() {
+        i = 0;
+        res = 0;
+        intvl = setInterval(function(){
+          gen = Math.floor(rndm(0.1) * dig);
+          $("#bd").html(gen);
+          if (gen % 2 == 0 && res >= gen) {
+            res -= gen;
+            $("#bd").append("&minus;");
+          } else {
+            res += gen
+          }
+          i++;
+          if (i == num) {
+            clearInterval(intvl);
+            console.log(res);
+          }
+        },spd * 1000);
+      }
+      $("#start").on("click", function(){
+        tp = $("#tp").val();
+        num = Number($("#num").val());
+        spd = Number($("#spd").val());
+        dig = Number($("#dig").val());
+        playSerie();
+      })
 		});
   </script>
 </body>
