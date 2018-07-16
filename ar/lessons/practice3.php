@@ -28,6 +28,32 @@
       <div class="container text-center">
         <h1 class="h1">تدريب السرعة</h1>
 				<hr>
+        <div class="row justify-content-center">
+          <div class="col-sm-4">
+            <label for="">عدد اﻷرقام</label>
+            <select class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>8</option>
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <label for="">عدد اﻷعداد</label>
+            <select class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
+              <option>4</option>
+              <option>5</option>
+              <option>8</option>
+              <option>10</option>
+              <option>20</option>
+            </select>
+          </div>
+          <div class="col-sm-4">
+            <label for="">عدد الثواني</label>
+            <input class="form-control text-center rounded-0 background-transparent border-dark" type="number" min="0.3" max="20" step="0.1" style="box-shadow: none">
+          </div>
+        </div>
 		</div>
 		<?php include '../assets/footer.php' ?>
 	</div>
