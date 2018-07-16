@@ -93,18 +93,21 @@
         res = 0;
         intvl = setInterval(function(){
           gen = Math.floor(rndm(0.1) * dig);
-          $("#bd").html(gen);
           $("#beep").get(0).play();
           if (gen % 2 == 0 && res >= gen) {
             res -= gen;
-            $("#bd").append("&minus;");
+            $("#bd").html(gen+"<i class='fas fa-minus mr-2' style='font-size: 2rem'></i>");
           } else {
+            $("#bd").html(gen+"<i class='fas fa-plus mr-2' style='font-size: 2rem'></i>");
             res += gen
           }
           i++;
           if (i == num) {
             clearInterval(intvl);
-            console.log(res);
+            setTimeout(function(){
+                $("#bd").html("<input type='number' class='col-2 form-control form-control-lg text-center rounded-0 border-dark background-transparent mx-auto'>");
+                $("#bd").find("input").focus();
+              },spd * 1000);
           }
         },spd * 1000);
       }
