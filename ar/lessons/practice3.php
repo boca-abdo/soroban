@@ -16,6 +16,21 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="../../css/style.css">
 	<link rel="stylesheet" href="../../css/lessons.css">
+  <style media="screen">
+		#bd {
+			font-size: 3rem;
+		}
+		@media screen and (min-width: 768px) {
+			.gen {
+				font-size: 8rem;
+			}
+		}
+		@media screen and (min-width: 1200px) {
+			.gen {
+				font-size: 12rem;
+			}
+		}
+	</style>
 	<script src="../../js/jquery.min.js"></script>
 	<script src="../../js/popper.js"></script>
 	<script src="../../js/bootstrap.min.js"></script>
@@ -33,16 +48,6 @@
         <h1 class="h1">تدريب السرعة</h1>
 				<hr>
         <div class="row justify-content-center">
-          <div class="col-sm-3">
-            <label for="tp">نوع التدريب</label>
-            <select id="tp" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
-              <option value="add">جمع</option>
-              <option value="sub">طرح</option>
-              <option value="mix">جمع وطرح</option>
-              <option value="mul">ضرب</option>
-              <option value="div">قسمة</option>
-            </select>
-          </div>
           <div class="col-sm-3">
             <label for="dig">عدد اﻷرقام</label>
             <select id="dig" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
@@ -67,9 +72,8 @@
             <label for="">عدد الثواني</label>
             <input id="spd" class="form-control text-center rounded-0 background-transparent border-dark" type="number" min="0.3" max="20" step="0.1" value="1" style="box-shadow: none">
           </div>
-          <div id="bd" class="w-100 text-center font-weight-bold display-1" style="padding-top: 15rem">
-            <button id="start" type="button" class="btn btn-lg btn-outline-dark rounded-0 px-5">ابدأ<i class="fas fa-stopwatch mr-2"></i></button>
-          </div>
+          <div id="bd" class="w-100 text-center font-weight-bold pt-5 mt-5"></div>
+          <button id="start" type="button" class="btn btn-lg btn-outline-dark rounded-0 px-5">ابدأ<i class="fas fa-stopwatch mr-2"></i></button>
         </div>
       </div>
 		</div>
@@ -77,10 +81,7 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
-      var tp = $("#tp").val(),
-      num = $("#num").val(),
-      spd = $("#spd").val(),
-      dig = $("#dig").val();
+      var num,spd,dig,gen,rand,i,res,answer,intvl,keyCode;
       function rndm(max) {
         rand = Math.random();
         while (rand < max) {
@@ -96,23 +97,37 @@
           $("#beep").get(0).play();
           if (gen % 2 == 0 && res >= gen) {
             res -= gen;
-            $("#bd").html(gen+"<i class='fas fa-minus mr-2' style='font-size: 2rem'></i>");
+            $("#bd").html(gen+"<i class='fas fa-minus mr-2' style='font-size: 1rem'></i>");
           } else {
-            $("#bd").html(gen+"<i class='fas fa-plus mr-2' style='font-size: 2rem'></i>");
+            $("#bd").html(gen+"<i class='fas fa-plus mr-2' style='font-size: 1rem'></i>");
             res += gen
           }
           i++;
           if (i == num) {
             clearInterval(intvl);
             setTimeout(function(){
-                $("#bd").html("<input type='number' class='col-2 form-control form-control-lg text-center rounded-0 border-dark background-transparent mx-auto'>");
-                $("#bd").find("input").focus();
-              },spd * 1000);
+              $("#bd").html("<input type='number' class='col-8 col-md-2 form-control form-control-lg text-center rounded-0 border-dark background-transparent mx-auto'>");
+              $("#bd").find("input").focus().on("keyup", function(event){
+                answer = $(this).val();
+                keyCode = (event.keyCode ? event.keyCode : event.which);
+    						if (keyCode == 13) {
+    							if (res == answer) {
+                    $("#bd").html("<i class='far fa-smile animated zoomIn d-block'></i>");
+                  } else {
+                    $("#bd").html("<i class='far fa-frown animated zoomIn d-block'></i>");
+                  }
+    						}
+                setTimeout(function(){
+                  $("#start").removeClass("d-none").addClass("d-block");
+                  $("#bd").html("");
+                },2000);
+              });
+            },spd * 1000);
           }
         },spd * 1000);
       }
       $("#start").on("click", function(){
-        tp = $("#tp").val();
+        $(this).removeClass("d-block").addClass("d-none");
         num = Number($("#num").val());
         spd = Number($("#spd").val());
         dig = Number($("#dig").val());
