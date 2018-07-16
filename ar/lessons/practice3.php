@@ -29,9 +29,19 @@
         <h1 class="h1">تدريب السرعة</h1>
 				<hr>
         <div class="row justify-content-center">
-          <div class="col-sm-4">
-            <label for="">عدد اﻷرقام</label>
-            <select class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
+          <div class="col-sm-3">
+            <label for="tp">نوع التدريب</label>
+            <select id="tp" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
+              <option value="add">جمع</option>
+              <option value="sub">طرح</option>
+              <option value="mix">جمع وطرح</option>
+              <option value="mul">ضرب</option>
+              <option value="div">قسمة</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <label for="dig">عدد اﻷرقام</label>
+            <select id="dig" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -39,9 +49,9 @@
               <option>8</option>
             </select>
           </div>
-          <div class="col-sm-4">
-            <label for="">عدد اﻷعداد</label>
-            <select class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
+          <div class="col-sm-3">
+            <label for="num">عدد اﻷعداد</label>
+            <select id="num" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
               <option>4</option>
               <option>5</option>
               <option>8</option>
@@ -49,9 +59,9 @@
               <option>20</option>
             </select>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3">
             <label for="">عدد الثواني</label>
-            <input class="form-control text-center rounded-0 background-transparent border-dark" type="number" min="0.3" max="20" step="0.1" style="box-shadow: none">
+            <input id="spd" class="form-control text-center rounded-0 background-transparent border-dark" type="number" min="0.3" max="20" step="0.1" style="box-shadow: none">
           </div>
         </div>
 		</div>
@@ -59,7 +69,8 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
-
+      var num = $("#num").val(),spd = $("#spd").val(),dig = $("#dig").val();
+      function
 		});
   </script>
 </body>
