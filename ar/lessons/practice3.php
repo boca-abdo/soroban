@@ -21,12 +21,12 @@
 			font-size: 3rem;
 		}
 		@media screen and (min-width: 768px) {
-			.gen {
+			#bd {
 				font-size: 8rem;
 			}
 		}
 		@media screen and (min-width: 1200px) {
-			.gen {
+			#bd {
 				font-size: 12rem;
 			}
 		}
