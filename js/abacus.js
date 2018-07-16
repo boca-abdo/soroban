@@ -1,4 +1,4 @@
-var i,r,rs,res,num,rand,intvl,n1,n2,pw,func,lvl,level,rule,$btn,$tab,$input,$check,$refill,$lines = [],
+var i,r,rs,res,num,rand,intvl,cnt,mdl,flr,res_flr,res_mdl,n1,n2,pw,func,lvl,level,rule,$btn,$tab,$input,$check,$refill,$lines = [],
 rules = {
   "simple_add": {
     1:[1,2,3,5,6,7,8],
@@ -105,14 +105,17 @@ function createAbacus(lines) {
   moveBeads();
 }
 function countAbacus() {
-  rs = 0;
   pw = 1;
+  rs_str = "";
+  i = 0;
   $tab.find(".line").each(function() {
-    rs += $(this).find(".five .bg-primary").length * 5 * pw;
-    rs += $(this).find(".ones .bg-primary").length * pw;
-    pw *= 10;
+    i++;
+    rs = 0;
+    rs += $(this).find(".five .bg-primary").length * 5;
+    rs += $(this).find(".ones .bg-primary").length;
+    rs_str += rs;
   });
-  return rs;
+  return rs_str.split("").reverse().join("");
 }
 function resetAbacus() {
   $tab.find(".five .bg-primary").css("top","-=15px").removeClass("bg-primary").addClass("bg-dark");
@@ -157,7 +160,6 @@ function checkLevel(l,st) {
       console.log(err);
     },
     success: function(res) {
-      console.log(res);
       if (Number(res) > l) {
         correct = 0;
         $p.html("");
@@ -217,13 +219,21 @@ function rset() {
   func();
 }
 function check() {
-  if ($tab.find('input').length == 0) {
-    answer = countAbacus();
+  answer = false;
+  if (func == getNumber3) {
+    cnt = countAbacus();
+    mdl = Number(cnt.substring(0,cnt.length/2));
+    flr = Number(cnt.substring(cnt.length/2,cnt.length));
+    answer = flr == res_flr && mdl == res_mdl;
+  } else {
+    if ($tab.find('input').length == 0) {
+      answer = Number(countAbacus()) == Number(res);
+    }
+    if ($tab.find('input').length == 1) {
+      answer = Number($input.val()) == Number(res);
+    }
   }
-  if ($tab.find('input').length == 1) {
-    answer = Number($input.val());
-  }
-  if (answer == Number(res)) {
+  if (answer) {
     $tab.find("#status").html("<i class='far fa-4x fa-smile animated zoomIn'></i>");
     correct--;
   } else {
@@ -321,7 +331,7 @@ function getNumber1() {
       res2 = Number($tab.find(".nbr2").text());
       $tab.find("#abacus").on("click",".rounded-circle", function(){
         $tab.find(".animated").removeClass("animated flash infinite");
-        if (countAbacus() == res1) {
+        if (Number(countAbacus()) == res1) {
           $tab.find(".nbr1").removeClass("d-block").addClass("d-none");
           $tab.find(".nbr2").removeClass("d-none").addClass("d-block animated flash infinite");
           if (rule == "simple_add" || rule == "mob5_add" || rule == "mob10_add" || rule == "mob105_add") {
@@ -357,6 +367,23 @@ function getNumber2() {
       res1 = Number($tab.find(".nbr1").text());
       res2 = Number($tab.find(".nbr2").text());
       res = res1 * res2;
+    }
+  },50);
+}
+function getNumber3() {
+  clearInterval(intvl);
+  i = 0;
+  intvl = setInterval(function(){
+    $tab.find(".nbr1,.nbr2").find("span").each(function() {
+      $(this).text(Math.floor(rndm(0.2)*10));
+    });
+    i++;
+    if (i > 15) {
+      clearInterval(intvl);
+      res1 = Number($tab.find(".nbr1").text());
+      res2 = Number($tab.find(".nbr2").text());
+      res_flr = Math.floor(res1 / res2);
+      res_mdl = res1 % res2;
     }
   },50);
 }

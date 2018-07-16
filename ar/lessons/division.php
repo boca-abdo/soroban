@@ -13,7 +13,7 @@
 	<link rel="icon" href="../../images/fav.ico">
 	<link rel="stylesheet" href="../../css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../css/animate.css">
-	<link rel="stylesheet" href="../../css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link rel="stylesheet" href="../../css/style.css">
 	<link rel="stylesheet" href="../../css/lessons.css">
 	<script src="../../js/jquery.min.js"></script>
@@ -65,7 +65,7 @@
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<span></span> &divide;
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -85,7 +85,7 @@
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<span></span> &divide;
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -105,7 +105,7 @@
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<span></span> &divide;
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -125,7 +125,7 @@
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<span></span><span></span> &divide;
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -145,7 +145,7 @@
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<span></span><span></span> &divide;
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -176,27 +176,27 @@
 				$p = $tab.find("p:last");
 				switch (ex) {
 					case 0:
-						func = getNumber2;
+						func = getNumber3;
 						lvl = 60;
 						createAbacus(4);
 						break;
 					case 1:
-						func = getNumber2;
+						func = getNumber3;
 						lvl = 61;
 						createAbacus(6);
 						break;
 					case 2:
-						func = getNumber2;
+						func = getNumber3;
 						lvl = 62;
 						createAbacus(8);
 						break;
 					case 3:
-						func = getNumber2;
+						func = getNumber3;
 						lvl = 63;
 						createAbacus(6);
 						break;
 					case 4:
-						func = getNumber2;
+						func = getNumber3;
 						lvl = 64;
 						createAbacus(8);
 						break;
