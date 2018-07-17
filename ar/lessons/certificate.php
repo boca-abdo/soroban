@@ -52,13 +52,12 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
-			var name = $("#full-name").val();
-
       $("#download").on("click", function(){
+        var name = $("#full-name").val();
         if (name == "") {
           alert("المرجو كتابة اسمك كاملا في الخانة");
         } else {
-          window.open("../../tcpdf/certificate.php", "_blank");
+          window.open("../../includes/certificate.php?name="+name+"&lang=ar", "_blank");
         }
       });
 		});
