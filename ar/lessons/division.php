@@ -31,7 +31,7 @@
 				<p class="lead">لقسمة عددين باستعمال المعداد نقوم بتقسيم المعداد الى جزئين: جزء نضع عليه المقسوم ونطرح منه المقسوم عليه بشكل متكرر، والجزء الآخر خاص بالخارج نضيف اليه خرزة واحدة كلما قمنا بعملية الطرح. </p>
 				<p class="text-danger font-weight-bold">لاحظ المثال</p>
 				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-				<img src="../../images/div.gif" alt="division" class="img-fluid center-block border border-dark mt-3">
+				<img src="../../images/division.gif" alt="division" class="img-fluid center-block border border-dark mt-3">
 				<hr>
 				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
