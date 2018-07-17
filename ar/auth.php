@@ -162,7 +162,7 @@
 		            </form>
 						  </div>
 						</div>
-						<div class="row justify-content-center align-items-center">
+						<div class="row justify-content-center align-items-center px-3">
 							<div class="col-3 col-sm-4 col-xl-5">
 								<hr class="bg-warning">
 							</div>

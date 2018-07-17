@@ -40,7 +40,7 @@
 					<a href="../en/index.php" class="btn btn-outline-warning rounded-0">English version</a>
 				</div>
         <div class="w-25 mx-auto my-3">
-          <a href="auth.php" class="btn btn-lg btn-block btn-outline-warning rounded-0 font-weight-bold">دخول<i class="fas fa-sign-in-alt mr-2"></i></a>
+          <a href="auth.php" class="btn btn-lg btn-block btn-outline-warning rounded-0 font-weight-bold">دخول<i class="fas fa-sign-in-alt mr-2 d-none d-sm-inline-block"></i></a>
         </div>
         <a href="#about" class="btn btn-outline-warning animated bounce infinite mt-3" style="border-radius: 20px"><i class="fas fa-angle-double-down fa-3x" style="cursor:pointer"></i></a>
       </div>

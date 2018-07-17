@@ -158,7 +158,7 @@
 										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
-								<div id="abacus" class="my-3" style="height: 143px"></div>
+								<div id="abacus" class="my-3" style="height: 143px;overflow:hidden"></div>
 								<div id="status"></div>
 								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
 								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>

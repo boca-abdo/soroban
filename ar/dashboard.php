@@ -46,11 +46,11 @@
     </div>
     <div class="row justify-content-center h-100">
 			<div class="col-auto align-self-top pt-5 text-center">
-				<h1 class="h1">سينتهي هذا اﻷسبوع بعد</h1>
+				<h2 class="h2">سينتهي هذا اﻷسبوع بعد</h2>
 				<h5 class="h3 text-danger animated pulse infinite font-weight-bold" id="nextweek"></h3>
 			</div>
 			<div class="w-100"></div>
-      <div class="col-md-6 align-self-center text-center">
+      <div class="col-md-6 align-self-center text-center pt-3">
         <div class="card bg-dark text-warning rounded-0">
           <div class="card-header">
 						<h4 class="card-title">قسم المبتدئين</h4>
@@ -96,7 +96,7 @@
           </div>
         </div>
       </div>
-			<div class="col-md-6 align-self-center text-center">
+			<div class="col-md-6 align-self-center text-center pt-3">
         <div class="card bg-dark text-warning rounded-0">
           <div class="card-header">
 						<h4 class="card-title">قسم المتفوقين</h4>
