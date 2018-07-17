@@ -88,7 +88,7 @@
 									</div>
 		              <div class="alert bg-warning text-dark rounded-0 font-weight-bold animated d-none"></div>
 		              <fieldset class="form-group row justify-content-center">
-		                <div class="col-sm-4">
+		                <div class="col-sm-4 mx-auto">
 		                  <button type="button" id="s_s" class="btn btn-outline-warning btn-block rounded-0" name="button">دخول<i class="fas fa-sign-in-alt mr-2"></i></button>
 		                </div>
 		              </fieldset>
@@ -154,7 +154,7 @@
 		              </div>
 		              <div class="alert bg-warning text-dark rounded-0 font-weight-bold animated d-none"></div>
 		              <fieldset class="form-group row justify-content-center">
-		                <div class="col-sm-4">
+		                <div class="col-sm-4 mx-auto">
 		                  <button type="button" id="r_s" class="btn btn-outline-warning btn-block rounded-0" name="button">دخول<i class="fas fa-sign-in-alt mr-2"></i></button>
 		                </div>
 		              </fieldset>
