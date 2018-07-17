@@ -39,6 +39,7 @@
 	</script>
 </head>
 <body class="bg-warning text-dark">
+	<?php include '../assets/spinner.php' ?>
   <div class="container" style="height: 100vh">
     <div class="row justify-content-center h-100">
       <div class="col-lg-8 align-self-top text-center pt-3">
@@ -195,6 +196,7 @@
   </div>
   <script type="text/javascript">
     $(document).ready(function() {
+			$("#spinner").addClass("d-none");
       var $btn,$alert,
 			$s_e = $("#s_e"),
 			$s_p = $("#s_p"),

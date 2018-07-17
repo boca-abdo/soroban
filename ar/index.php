@@ -28,9 +28,7 @@
 </head>
 <body class="bg-warning text-dark">
 	<!-- spinner before page loading -->
-	<div id="spinner" class="row no-gutters justify-content-center align-items-center position-fixed w-100 bg-warning" style="height: 100vh;z-index:5005">
-		<i class="fas fa-circle-notch fa-spin fa-4x"></i>
-	</div>
+	<?php include '../assets/spinner.php' ?>
 	<!-- here starts jumbo block -->
   <div id="" class="container-fluid" style="height: 100vh;background-image: url('../images/home.jpg'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
     <div class="row justify-content-center align-items-end h-100 pb-5">
