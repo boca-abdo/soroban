@@ -106,17 +106,14 @@
           if (i == num) {
             clearInterval(intvl);
             setTimeout(function(){
-              $("#bd").html("<input type='number' class='col-8 col-md-2 form-control form-control-lg text-center rounded-0 border-dark background-transparent mx-auto'>");
-              $("#bd").find("input").focus().on("keyup", function(event){
-                answer = $(this).val();
-                keyCode = (event.keyCode ? event.keyCode : event.which);
-    						if (keyCode == 13) {
-    							if (res == answer) {
-                    $("#bd").html("<i class='far fa-smile animated zoomIn d-block'></i>");
-                  } else {
-                    $("#bd").html("<i class='far fa-frown animated zoomIn d-block'></i>");
-                  }
-    						}
+              $("#bd").html("<div class='input-group w-50 mx-auto'><span class='input-group-btn'><button class='btn btn-outline-dark rounded-0 background-transparent border-left-0'><i class='fas fa-check'></i></button></span><input type='number' class='form-control form-control-lg text-center rounded-0 border-dark background-transparent' style='box-shadow:none'></div>");
+              $("#bd").find("input").focus().prev().on("click", "button", function(event){
+                answer = $("#bd").find("input").val();
+  							if (res == answer) {
+                  $("#bd").html("<i class='far fa-smile animated zoomIn d-block'></i>");
+                } else {
+                  $("#bd").html("<i class='far fa-frown animated zoomIn d-block'></i>");
+                }
                 setTimeout(function(){
                   $("#start").removeClass("d-none").addClass("d-block");
                   $("#bd").html("");
