@@ -4,7 +4,7 @@
       <div class="container text-center">
         <h1 class="h1">تحميل الشهادة</h1>
 				<hr>
-        <?php if ($log_row['level'] >= 65): ?>
+        <?php if ($log_row['level'] >= 60): ?>
           <h2 class="h2">يمكنك تغيير الاسم ولغة الشهادة أسفله</h2>
           <input id="full-name" class="col-md-4 form-control text-center background-transparent border-dark text-uppercase rounded-0 mx-auto my-5" type="text" name="" value="<?php echo $log_row['fname']." ".$log_row['lname']; ?>" style="box-shadow:none">
           <div class="row justify-content-center my-5">

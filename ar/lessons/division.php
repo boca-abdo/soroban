@@ -163,31 +163,31 @@
 				switch (ex) {
 					case 0:
 						func = getNumber3;
-						lvl = 60;
+						lvl = 55;
 						createAbacus(4);
 						break;
 					case 1:
 						func = getNumber3;
-						lvl = 61;
+						lvl = 56;
 						createAbacus(6);
 						break;
 					case 2:
 						func = getNumber3;
-						lvl = 62;
+						lvl = 57;
 						createAbacus(8);
 						break;
 					case 3:
 						func = getNumber3;
-						lvl = 63;
+						lvl = 58;
 						createAbacus(6);
 						break;
 					case 4:
 						func = getNumber3;
-						lvl = 64;
+						lvl = 59;
 						createAbacus(8);
 						break;
 				}
-				checkLevel(lvl,60);
+				checkLevel(lvl,55);
 				rset();
 			});
 			$(".tab-pane").on("click", "button:last", function(){

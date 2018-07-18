@@ -43,8 +43,7 @@
         <div class="dropdown-divider m-0"></div>
         <a class="dropdown-item" href="practice2.php">تدريب المبادلات</a>
         <div class="dropdown-divider m-0"></div>
-        <a class="dropdown-item" href="simple_mul1.php">الضرب البسيط - الطريقة 1 -</a>
-        <a class="dropdown-item" href="comp_mul1.php">الضرب المركب - الطريقة 1 -</a>
+        <a class="dropdown-item" href="mul1.php">الضرب - الطريقة 1 -</a>
         <a class="dropdown-item" href="mul2.php">الضرب - الطريقة 2 -</a>
         <a class="dropdown-item" href="division.php">القسمة</a>
         <div class="dropdown-divider m-0"></div>
