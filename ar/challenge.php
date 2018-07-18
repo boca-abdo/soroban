@@ -46,6 +46,11 @@
 	<script src="../js/series.js"></script>
 </head>
 <body class="bg-warning text-dark" style="height: 100vh">
+	<audio id="beep">
+    <source src="../beep.mp3" type="audio/mpeg">
+    <source src="../beep.ogg" type="audio/mpeg">
+    <source src="../beep.wav" type="audio/mpeg">
+  </audio>
 	<div id="spinner" class="position-fixed d-none bg-primary text-light h-100 w-100 justify-content-center align-items-center" style="z-index:5001">
 		<div class="container" style="overflow: auto">
 			<div class="row justify-content-center">
@@ -205,6 +210,7 @@
 				$("#tv").find("input").focus();
 				sr_num++;
 				if (sr_num >= cl.length) {
+					console.log(sr_num+"--------"+cl.length);
 					$("#tv").find("input").on("keypress", function(event){
 						keyCode = (event.keyCode ? event.keyCode : event.which);
 						if (keyCode == 13) {
@@ -214,7 +220,7 @@
 							showResult();
 						}
 					});
-					showProg(cl[sr_num].prog,showResult);
+					showProg(cl[sr_num-1].prog,showResult);
 				} else {
 					$("#tv").find("input").on("keypress", function(event){
 						keyCode = (event.keyCode ? event.keyCode : event.which);
@@ -225,7 +231,7 @@
 							showInfo();
 						}
 					});
-					showProg(cl[sr_num].prog,showInfo);
+					showProg(cl[sr_num-1].prog,showInfo);
 				}
 			}
 			function getRandom(min) {
@@ -249,6 +255,7 @@
 						} else {
 							gen = Math.floor(getRandom(0.1) * 10 * cl[sr_num].rank1);
 							res += gen;
+							$("#beep").get(0).play();
 							if ((i % 2) == 0) {
 								$("#tv").html("<p class='gen text-warning'>"+gen+"</p>");
 							} else {
