@@ -60,22 +60,22 @@
           $("#beep").get(0).play();
           if (gen % 2 == 0 && res >= gen) {
             res -= gen;
-            $("#bd").html(gen+"<i class='fas fa-minus mr-2' style='font-size: 1rem'></i>");
+            $("#bd").html("<div id='gen'>"+gen+"<i class='fas fa-minus mr-2' style='font-size: 1.5rem'></i></div>");
           } else {
-            $("#bd").html(gen+"<i class='fas fa-plus mr-2' style='font-size: 1rem'></i>");
+            $("#bd").html("<div id='gen'>"+gen+"<i class='fas fa-plus mr-2' style='font-size: 1.5rem'></i></div>");
             res += gen
           }
           i++;
           if (i == num) {
             clearInterval(intvl);
             setTimeout(function(){
-              $("#bd").html("<div class='input-group w-50 mx-auto'><span class='input-group-btn'><button class='btn btn-outline-dark rounded-0 background-transparent border-left-0'><i class='fas fa-check'></i></button></span><input type='number' class='form-control form-control-lg text-center rounded-0 border-dark background-transparent' style='box-shadow:none'></div>");
+              $("#bd").html("<div class='input-group w-50 mx-auto'><span class='input-group-btn'><button class='btn btn-lg btn-outline-dark rounded-0 background-transparent border-left-0'><i class='fas fa-arrow-right'></i></button></span><input type='number' class='form-control form-control-lg text-center rounded-0 border-dark background-transparent' style='box-shadow:none'></div>");
               $("#bd").find("input").focus().prev().on("click", "button", function(event){
                 answer = $("#bd").find("input").val();
   							if (res == answer) {
-                  $("#bd").html("<i class='far fa-smile animated zoomIn d-block'></i>");
+                  $("#bd").html("<i class='far fa-7x fa-smile animated zoomIn d-block'></i>");
                 } else {
-                  $("#bd").html("<i class='far fa-frown animated zoomIn d-block'></i>");
+                  $("#bd").html("<i class='far fa-7x fa-frown animated zoomIn d-block'></i>");
                 }
                 setTimeout(function(){
                   $("#start").removeClass("d-none").addClass("d-block");
