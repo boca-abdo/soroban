@@ -21,6 +21,7 @@
   	} else {
       $cert_code = $log_row['cert_code'];
       $level = $log_row['level'];
+      $dt = "20-12-2018";
     }
     if (isset($_GET['name']) && isset($_GET['lang'])) {
       $name = strtoupper($_GET['name']);
@@ -35,7 +36,7 @@
         $bMargin = $this->getBreakMargin();
         $auto_page_break = $this->AutoPageBreak;
         $this->SetAutoPageBreak(false, 0);
-        $img_file = K_PATH_IMAGES.'cert.jpg';
+        $img_file = K_PATH_IMAGES.'cert-bg.jpg';
         $this->Image($img_file, 0, 0, 297, 210, '', '', '', false, 300, '', false, false, 0);
         $this->SetAutoPageBreak($auto_page_break, $bMargin);
         $this->setPageMark();
@@ -61,55 +62,58 @@
     }
     $pdf->AddPage();
     $logo = '<img src="../images/logo.png" />';
-    $pdf->writeHTMLCell(90, 0, '', '', $logo, '', 0, 0, true, 'R', true,0);
-    $pdf->writeHTMLCell(160, 0, '', '', '', '', 0, 0, true, 'C', true,0);
+    $pdf->Ln(20);
+    $pdf->writeHTMLCell(83, 0, '', '', '', '', 0, 0, true, 'L', true,0);
+    $pdf->writeHTMLCell(90, 0, '', '', $logo, '', 0, 0, true, 'C', true,0);
+    $pdf->writeHTMLCell(80, 0, '', '', '', '', 0, 0, true, 'R', true,0);
     $pdf->Ln(20);
     if ($lang == "ar") {
       $txt = '<span style="color: #0000FE">شهادة تدريب</span>';
-      $pdf->SetFont('yousefbkwcirclemhairy', 'BI', 50);
+      $pdf->SetFont('yousefbkwcirclemhairy', 'BI', 40);
     }
     if ($lang == "fr") {
       $txt = '<span style="color: #0000FE">certificat</span>';
-      $pdf->SetFont('cid0cs', 'BI', 50);
+      $pdf->SetFont('cid0cs', 'BI', 30);
     }
     if ($lang == "en") {
       $txt = '<span style="color: #0000FE">certificate</span>';
-      $pdf->SetFont('dejavusans', 'BI', 50);
+      $pdf->SetFont('dejavusans', 'BI', 30);
     }
     $pdf->writeHTMLCell(0, 0, '', '', strtoupper($txt), 0, 1, 0, true, 'C', true);
+    $pdf->Ln(10);
     if ($lang == "ar") {
-      $txt = 'بمناسبة اتمامه (ها) للدورة التدريبية التي يقدمها موقع سوروبان أونلاين، تتشرف ادارة الموقع بتسليم هذه الشهادة ل';
+      $txt = 'تتشرف ادارة موقع سوروبان اونلاين بمنح هذه الشهادة لـ';
       $pdf->SetFont('hacensamralt', 'BI', 30);
     }
     if ($lang == "fr") {
-      $txt = 'soroban online certifie que :';
-      $pdf->SetFont('dejavusans', 'BI', 30);
+      $txt = 'soroban online certifie que';
+      $pdf->SetFont('dejavusans', 'BI', 25);
     }
     if ($lang == "en") {
-      $txt = 'soroban online certifies that :';
+      $txt = 'soroban online certifies that';
       $pdf->SetFont('dejavusans', 'BI', 30);
     }
     $pdf->Write(0, $txt, '', 0, 'C', true, 0, false, false, 0);
-    $pdf->Ln(5);
+    $pdf->Ln(10);
     if (preg_match('/[أ-ي]/', $name)) {
-      $pdf->SetFont('arabswell_1', 'BI', 40);
+      $pdf->SetFont('arabswell_1', 'BI', 30);
     } else {
-      $pdf->SetFont('times', 'BI', 40);
+      $pdf->SetFont('times', 'BI', 30);
     }
     $pdf->writeHTMLCell(0, 0, '', '', '<span style="color: #E4007B">'.$name.'</span>', 0, 1, 0, true, 'C', true);
     $pdf->Ln(5);
     if ($lang == "ar") {
-      $txt = 'اعترافا منها بتمكنه (ها) من جميع قواعد برنامج سوروبان للحساب الذهني وتنمية الذكاء';
-      $pdf->SetFont('hacensamralt', 'BI', 30);
+      $txt = 'نظير انهاءه(ها) للدورة التدريبية لبرنامج سوروبان للحساب الذهني وتنمية الذكاء';
+      $pdf->SetFont('hacensamralt', 'BI', 25);
     }
     if ($lang == "fr") {
       $txt = 'a completé le cours : calcul mental et développement de l\'intelligence avec succès';
-      $pdf->SetFont('pdfacourier', 'BI', 30);
+      $pdf->SetFont('pdfacourier', 'BI', 20);
       $pdf->Ln(5);
     }
     if ($lang == "en") {
       $txt = 'has successefully completed the course of soroban program for mental calculation';
-      $pdf->SetFont('dejavusans', 'BI', 30);
+      $pdf->SetFont('dejavusans', 'BI', 20);
     }
     $pdf->Write(0, $txt, '', 0, 'C', true, 0, false, false, 0);
     if ($cert_code == "") {
@@ -119,24 +123,25 @@
       $html = "<span>امضاء : صالح أفهيم</span>";
       $txt = "رمز شهادتكم هو: ".$cert_code;
       $pdf->SetFont('aealarabiya', 'BI', 10);
-      $pdf->Ln(10);
+      $pdf->Ln(25);
     }
     if ($lang == 'fr') {
       $html = "<span>SALAH AFHIM</span>";
       $txt = "Votre code de certificat est: ".$cert_code;
       $pdf->SetFont('times', 'I', 10);
-      $pdf->Ln(5);
+      $pdf->Ln(20);
     }
     if ($lang == 'en') {
       $html = "<span>SALAH AFHIM</span>";
       $txt = "Your certificate code is: ".$cert_code;
       $pdf->SetFont('times', 'I', 10);
-      $pdf->Ln(25);
+      $pdf->Ln(23);
     }
-    $pdf->setCellPaddings(0, 20, 0, 0);
-    $pdf->writeHTMLCell(60, 0, '', '', $txt, '', 0, 0, true, 'L', true,0);
+    $pdf->writeHTMLCell(100, 0, '', '', $dt, '', 0, 0, true, 'C', true,0);
+    $pdf->setCellPaddings(0, 10, 0, 0);
+    $pdf->writeHTMLCell(60, 0, '', '', $txt, '', 0, 0, true, 'C', true,0);
     $pdf->setCellPaddings(0, 0, 0, 0);
-    $pdf->writeHTMLCell(170, 0, '', '', $html, '', 0, 0, true, 'R', true,0);
+    $pdf->writeHTMLCell(100, 0, '', '', $html, '', 0, 0, true, 'C', true,0);
     $pdf->output('name.pdf', 'I');
   } catch (\Exception $e) {
     echo $e->getMessage();
