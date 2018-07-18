@@ -1,7 +1,4 @@
 	<?php include 'assets/header.php' ?>
-	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
-		<div class="col-12 align-self-top">
-      <div class="container text-center">
         <h1 class="h1">نبذة تاريخية</h1>
     		<p class="lead text-justify text-indent">منذ أكثر من 26 قرنا استخدم اليونانيون علب مصنوعة من الرخام لحساب صفقات السلع. وفي وقت لاحق، انشرت هذه العلب بين المناطق الشرقية والوسطى للإمبراطورية الرومانية .</p>
 				<p class="lead text-justify text-indent">ثم تم استخدام صندوق به رمال أو غبار رقيق فيما بعد لرسم خطوط عليها بالعصي او بالاصابع للقيام بالعمليات الحسابية. ويبدو أن الشعب الصيني تمكن في وقت لاحق من تشكيل نوع مختلف من المعداد الخاص بهم (سوان بان SUAN - PAN) ، عبارة عن علبة بها قضبان تحمل 5 خرزات سفلية و خرزتين علويتين.</p>

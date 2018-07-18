@@ -1,7 +1,4 @@
   <?php include 'assets/header.php' ?>
-	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
-		<div class="col-12 align-self-top">
-      <div class="container text-center">
         <h1 class="h1">المبادلة بخمسة في الطرح</h1>
 				<hr>
 				<p class="lead">تقول القاعدة : إذا أردنا طرح عدد فوجدنا عدد الخرزات  <span class="font-weight-bold">السفلية </span> غير كاف، نعطل الخرزة العلوية ثم ننشط خرزة أو خرزات سفلية.</p>

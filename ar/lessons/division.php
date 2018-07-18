@@ -1,7 +1,4 @@
   <?php include 'assets/header.php' ?>
-	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
-		<div class="col-12 align-self-top">
-      <div class="container text-center">
         <h1 class="h1">القسمة</h1>
 				<hr>
 				<p class="lead">لقسمة عددين باستعمال المعداد نقوم بتقسيم المعداد الى جزئين: جزء نضع عليه المقسوم ونطرح منه المقسوم عليه بشكل متكرر، والجزء الآخر خاص بالخارج نضيف اليه خرزة واحدة كلما قمنا بعملية الطرح. </p>

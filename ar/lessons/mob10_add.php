@@ -1,7 +1,4 @@
   <?php include 'assets/header.php' ?>
-	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
-		<div class="col-12 align-self-top">
-      <div class="container text-center">
         <h1 class="h1">المبادلة بعشرة في الجمع</h1>
 				<hr>
 				<p class="lead">تقول القاعدة : إذا أردنا إضافة عدد فوجدنا عدد الخرزات <span class="font-weight-bold">في عمود ما </span>غير كاف، ننشط خرزة في العمود الموالي ثم نعطل خرزة أو خرزات في العمود الحالي</p>

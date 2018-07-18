@@ -45,7 +45,9 @@
       <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 float-left" href="../includes/logout.php?q=ar" style="box-shadow:none"><i class="fas fa-power-off"></i></a>
     </div>
     <div class="row justify-content-center h-100">
+
 			<div class="col-auto align-self-top pt-5 text-center">
+				<a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a><br>
 				<h2 class="h2">سينتهي هذا اﻷسبوع بعد</h2>
 				<h5 class="h3 text-danger animated pulse infinite font-weight-bold" id="nextweek"></h3>
 			</div>

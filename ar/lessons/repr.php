@@ -1,7 +1,4 @@
 	<?php include 'assets/header.php' ?>
-	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
-		<div class="col-12 align-self-top">
-      <div class="container text-center">
         <h1 class="h1">تمثيل اﻷعداد</h1>
         <ol class="text-right h3 p-0">
           <li>مكونات المعداد

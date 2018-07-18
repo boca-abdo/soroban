@@ -55,3 +55,7 @@
     </div>
     <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="../../includes/logout.php?q=ar" style="box-shadow:none"><i class="fas fa-power-off"></i></a>
   </div>
+	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
+		<div class="col-12 align-self-top">
+      <div class="container text-center">
+				<a href="../index.php"><img src="../../images/logo.png" class="img-fluid" alt="Soroban logo"></a>

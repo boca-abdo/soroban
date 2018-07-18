@@ -1,7 +1,4 @@
   <?php include 'assets/header.php' ?>
-	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
-		<div class="col-12 align-self-top">
-      <div class="container text-center">
         <h1 class="h1">الضرب بالطريقة اﻷولى</h1>
 				<hr>
 				<p class="lead">نعتمد في هذه الطريقة على الجمع المتكرر<span class="font-weight-bold">لا حاجة لحفظ جدول الضرب بهذه الطريقة.</span></p>

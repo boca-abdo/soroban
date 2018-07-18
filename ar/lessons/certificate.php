@@ -1,7 +1,4 @@
   <?php include 'assets/header.php' ?>
-	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
-		<div class="col-12 align-self-top">
-      <div class="container text-center">
         <h1 class="h1">تحميل الشهادة</h1>
 				<hr>
         <?php if ($log_row['level'] >= 60): ?>
