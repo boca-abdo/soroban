@@ -48,6 +48,7 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
+      $("#spinner").addClass("d-none");
       var val,ex_type,func;
       $tab = $(".container");
       $input = $("input");

@@ -43,6 +43,7 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
+      $("#spinner").addClass("d-none");
       var num,spd,dig,gen,rand,i,res,answer,intvl,keyCode;
       function rndm(max) {
         rand = Math.random();

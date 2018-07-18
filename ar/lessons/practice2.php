@@ -61,6 +61,7 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
+      $("#spinner").addClass("d-none");
       var num;
       $tab = $(".container");
       rule = $("select:first").val();

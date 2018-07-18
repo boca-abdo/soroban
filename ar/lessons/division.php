@@ -149,6 +149,7 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
+      $("#spinner").addClass("d-none");
 			var r,l,v,val,level;
 			$('#exercices').on('click', 'a', function () {
 				$("h2.animated").removeClass('animated');

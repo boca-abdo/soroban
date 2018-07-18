@@ -22,6 +22,7 @@
 	<script src="../../js/abacus.js"></script>
 </head>
 <body class="bg-warning text-dark">
+	<?php include '../../assets/spinner.php' ?>
   <div class="navbar fixed-top justify-content-between bg-dark p-0" style="z-index: 5005">
     <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="../dashboard.php" style="box-shadow:none"><i class="fas fa-home"></i></a>
     <div class="dropdown open">

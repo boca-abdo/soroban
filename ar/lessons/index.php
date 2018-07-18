@@ -46,5 +46,10 @@
 		</div>
 		<?php include '../assets/footer.php' ?>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	  	$("#spinner").addClass("d-none");
+		});
+	</script>
 </body>
 </html>

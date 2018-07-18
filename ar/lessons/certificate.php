@@ -28,6 +28,7 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
+      $("#spinner").addClass("d-none");
       $("#download").on("click", function(){
         var name = $("#full-name").val();
         if (name == "") {
