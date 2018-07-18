@@ -10,3 +10,16 @@
   color: #ffc107;
   cursor: pointer
 }
+#bd {
+  font-size: 3rem;
+}
+@media screen and (min-width: 768px) {
+  #bd {
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #bd {
+    font-size: 12rem;
+  }
+}

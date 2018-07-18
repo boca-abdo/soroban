@@ -1,47 +1,9 @@
-<?php
-	include '../../includes/user_check.php';
-	if ($log_id == "" && $log_e == "" && $log_p == "") {
-		header("location: ../auth.php");
-	}
-?>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-	<title>موقع سوروبان</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="../../images/fav.ico">
-	<link rel="stylesheet" href="../../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../css/animate.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-	<link rel="stylesheet" href="../../css/style.css">
-	<link rel="stylesheet" href="../../css/lessons.css">
-  <style media="screen">
-		#bd {
-			font-size: 3rem;
-		}
-		@media screen and (min-width: 768px) {
-			#bd {
-				font-size: 8rem;
-			}
-		}
-		@media screen and (min-width: 1200px) {
-			#bd {
-				font-size: 12rem;
-			}
-		}
-	</style>
-	<script src="../../js/jquery.min.js"></script>
-	<script src="../../js/popper.js"></script>
-	<script src="../../js/bootstrap.min.js"></script>
-</head>
-<body class="bg-warning text-dark">
-  <audio id="beep">
+  <?php include 'assets/header.php' ?>
+	<audio id="beep">
     <source src="../../beep.mp3" type="audio/mpeg">
     <source src="../../beep.ogg" type="audio/mpeg">
     <source src="../../beep.wav" type="audio/mpeg">
   </audio>
-  <?php include 'assets/menu.php' ?>
 	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
 		<div class="col-12 align-self-top">
       <div class="container text-center">
