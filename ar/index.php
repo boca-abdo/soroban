@@ -224,7 +224,7 @@
 	    </nav>
 			<div class="font-weight-bold">
 				<p class="m-0">جميع الحقوق محفوظة لموقع سوروبان 2016-<?php echo date("Y"); ?></p>
-				<p class="text-uppercase m-0" dir="ltr">designed by <a href="http://aws.skwila.net" target="_blank" class="text-warning"><i>aws</i></a></p>
+				<p class="text-uppercase m-0" dir="ltr">designed by <a href="http://aws.skwila.net" target="_blank" class="text-warning"><i>aws</i></a> - <a href="../terms.php">Privacy</a></p>
 			</div>
 		</div>
 	</div>

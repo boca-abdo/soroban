@@ -48,7 +48,8 @@
     </div>
     <div class="row justify-content-center h-100">
       <div class="col-lg-10 align-self-center text-center pt-5">
-        <div class="card bg-dark text-warning rounded-0">
+				<a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
+        <div class="card bg-dark text-warning rounded-0 mt-3">
 					<div id="spinner" class="position-absolute d-none bg-light h-100 w-100 justify-content-center align-items-center text-dark" style="z-index:5001;opacity: 0.7">
 						<i class="fas fa-spinner fa-pulse fa-5x"></i>
 					</div>
