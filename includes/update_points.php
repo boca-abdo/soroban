@@ -14,12 +14,17 @@
   $insert_stmt->bindParam(2, $dt, PDO::PARAM_STR);
   $insert_stmt->bindParam(3, $points, PDO::PARAM_INT);
   $insert_stmt->execute();
-  $pt_stmt = $srbn_con->query("SELECT `b_points`,`e_points` FROM `users` WHERE `id`='$log_id'");
+  $pt_stmt = $srbn_con->query("SELECT `b_points`,`e_points`,`b_total`,`e_total` FROM `users` WHERE `id`='$log_id'");
   $pt_stmt->setFetchMode(PDO::FETCH_ASSOC);
   $pt_row = $pt_stmt->fetch();
   $old = intval($pt_row['b_points']);
+  $total = intval($pt_row['b_total']) + $points;
   if ($class == "exp") {
     $old = intval($pt_row['e_points']);
+    $total = intval($pt_row['e_total']) + $points;
+    $tt_stmt = $srbn_con->query("UPDATE `users` SET `e_total`='$total' WHERE `id`='$log_id'");
+  } else {
+    $tt_stmt = $srbn_con->query("UPDATE `users` SET `b_total`='$total' WHERE `id`='$log_id'");
   }
   if ($points > $old) {
     if ($class == "beg") {

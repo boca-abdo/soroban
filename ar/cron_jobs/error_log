@@ -1,2 +1,0 @@
-[08-Aug-2017 00:00:03 America/Chicago] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'afhim_boca'@'gator3219.hostgator.com' (using password: YES) in /home3/afhim/public_html/includes/db.php on line 2
-[08-Aug-2017 00:00:03 America/Chicago] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home3/afhim/public_html/cron_jobs/update_counter.php on line 3

@@ -21,7 +21,11 @@
   	} else {
       $cert_code = $log_row['cert_code'];
       $level = $log_row['level'];
-      $dt = "20-12-2018";
+      $dt = $log_row['cert_date'];
+      if ($log_row['cert_date'] == null) {
+        $dt = date("Y-m-d");
+        $update = $srbn_con->query("UPDATE `users` SET `cert_date`='$dt' WHERE `id`='$log_id'");
+      }
     }
     if (isset($_GET['name']) && isset($_GET['lang'])) {
       $name = strtoupper($_GET['name']);
@@ -142,7 +146,7 @@
     $pdf->writeHTMLCell(60, 0, '', '', $txt, '', 0, 0, true, 'C', true,0);
     $pdf->setCellPaddings(0, 0, 0, 0);
     $pdf->writeHTMLCell(100, 0, '', '', $html, '', 0, 0, true, 'C', true,0);
-    $pdf->output('name.pdf', 'I');
+    $pdf->output('name.pdf', 'D');
   } catch (\Exception $e) {
     echo $e->getMessage();
   }
