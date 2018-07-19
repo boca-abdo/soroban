@@ -25,6 +25,24 @@
 			}
 		}
 	</style>
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '209610666128223',
+	      cookie     : true,
+	      xfbml      : true,
+	      version    : 'v2.8'
+	    });
+	    FB.AppEvents.logPageView();
+	  };
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "https://connect.facebook.net/ar_AR/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 </head>
 <body class="bg-warning text-dark">
 	<!-- spinner before page loading -->
@@ -164,14 +182,71 @@
 			<i class="fab fa-facebook-square fa-2x bg-primary text-white p-3 rounded"></i>
 			<h3 class="h3 font-weight-bold text-warning my-3">فيسبوك</h3>
 			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-8">
-						<?php // add a facebook share div ?>
+				<div class="bg-light p-3 my-3">
+					<div class="fb-comments" data-href="https://www.facebook.com/sorobane/comments" data-numposts="5" data-width="100%"></div>
+					<hr>
+					<div class="fb-page" data-href="https://www.facebook.com/sorobane/" data-tabs="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+						<div class="fb-xfbml-parse-ignore">
+							<blockquote cite="https://www.facebook.com/sorobane/">
+								<a href="https://www.facebook.com/sorobane/">‎Tarrsat-Inzgane‎</a>
+							</blockquote>
+						</div>
 					</div>
-					<div class="w-100"></div>
-					<hr class="bg-dark">
-					<div class="col-auto">
-						<?php // add a facebook comments plugin div ?>
+				</div>
+			</div>
+		</div>
+		<!-- here starts stats block -->
+		<div class="container py-5 text-center" id="stats">
+			<h3 class="h3 font-weight-bold">احصائيات الموقع</h3>
+			<div class="container">
+				<div class="row justify-content-around">
+					<div class="col-6">
+						<i class="fas fa-2x fa-users"></i>
+						<h5>اﻷعضاء</h5>
+						<ul class="list-group">
+						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
+						    هذا اليوم
+						    <span class="badge badge-warning badge-pill">14</span>
+						  </li>
+						  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-warning border-warning">
+						    هذا الشهر
+						    <span class="badge badge-warning badge-pill">2</span>
+						  </li>
+						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
+						    المجموع
+						    <span class="badge badge-warning badge-pill">1</span>
+						  </li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<i class="fas fa-2x fa-eye"></i>
+						<h5>الزيارات</h5>
+						<ul class="list-group">
+						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
+						    هذا اليوم
+						    <span class="badge badge-warning badge-pill">14</span>
+						  </li>
+						  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-warning border-warning">
+						    هذا الشهر
+						    <span class="badge badge-warning badge-pill">2</span>
+						  </li>
+						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
+						    المجموع
+						    <span class="badge badge-warning badge-pill">1</span>
+						  </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- here starts youtube block -->
+		<div class="w-100 py-5 text-center" style="background-image: url('../images/home2.jpg'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
+			<i class="fab fa-youtube-square fa-2x bg-danger text-white py-2 px-3 rounded"></i>
+			<h3 class="h3 font-weight-bold text-warning my-3">يوتيوب</h3>
+			<div class="container">
+				<div class="bg-danger p-3 my-3">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe id="player" type="text/html" src="https://www.youtube.com/embed/watch?v=2gw72x9bepI&list=PLyGuJh6BiSHArUxsY_CipdtbKZcYYi-DV" frameborder="0"></iframe>
 					</div>
 				</div>
 			</div>
