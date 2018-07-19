@@ -1,92 +1,10 @@
-<?php
-	include '../includes/user_check.php';
-	if ($log_id == "" && $log_e == "" && $log_p == "") {
-		header("location: auth.php");
-	}
-?>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-	<title>موقع سوروبان</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="../images/fav.ico">
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/animate.css">
-	<link rel="stylesheet" href="../css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="../css/style.css">
-	<style media="screen">
-		.gen {
-			font-size: 3rem;
-			text-shadow: -5px 5px 10px #000
-		}
-		.nfo {
-			text-shadow: -2px 2px 5px #000
-		}
-		@media screen and (min-width: 768px) {
-			.gen {
-				font-size: 8rem;
-			}
-			.nfo {
-				font-size: 3rem
-			}
-		}
-		@media screen and (min-width: 1200px) {
-			.gen {
-				font-size: 12rem;
-			}
-			.nfo {
-				font-size: 5rem
-			}
-		}
-	</style>
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/popper.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/series.js"></script>
-</head>
-<body class="bg-warning text-dark" style="height: 100vh">
-	<audio id="beep">
-    <source src="../beep.mp3" type="audio/mpeg">
-    <source src="../beep.ogg" type="audio/mpeg">
-    <source src="../beep.wav" type="audio/mpeg">
-  </audio>
-	<div id="spinner" class="position-fixed d-none bg-primary text-light h-100 w-100 justify-content-center align-items-center" style="z-index:5001">
-		<div class="container" style="overflow: auto">
-			<div class="row justify-content-center">
-				<div id="tv" class="w-100 text-center font-weight-bold">
-				</div>
-				<div class="col-6 py-md-5">
-					<div id="prog" class="bg-light" style="width: 0; height:10px"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-  <div class="navbar fixed-top justify-content-between bg-dark p-0">
-    <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 float-left" href="index.php" style="box-shadow:none"><i class="fas fa-home"></i></a>
-    <ul class="nav p-0">
-      <li class="nav-item">
-        <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="dashboard.php" style="box-shadow:none"><span class="d-none d-md-inline">مركزي</span><i class="fas fa-list-ol mr-md-2"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="profile.php" style="box-shadow:none"><span class="d-none d-md-inline">معلوماتي</span><i class="fas fa-user mr-md-2"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="stats.php" style="box-shadow:none"><span class="d-none d-md-inline">ارقامي</span><i class="fas fa-chart-pie mr-md-2"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="lessons/index.php" style="box-shadow:none"><span class="d-none d-md-inline">دروسي</span><i class="fas fa-graduation-cap mr-md-2"></i></a>
-      </li>
-			<li class="nav-item">
-				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 active" href="challenge.php" style="box-shadow:none"><span class="d-none d-md-inline">التحدي</span><i class="fas fa-stopwatch mr-md-2"></i></a>
-			</li>
-    </ul>
-    <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 float-left" href="../includes/logout.php?q=ar" style="box-shadow:none"><i class="fas fa-power-off"></i></a>
-  </div>
-	<div class="row no-gutters h-100 justify-content-center align-items-center p-0 pt-5">
-		<div class="col-12 align-self-center">
-			<div class="container">
-				<ul class="nav nav-fill nav-tabs border-bottom-0 w-50 mx-auto p-0" id="main" role="tablist">
+<?php include 'assets/header.php' ?>
+				<audio id="beep">
+			    <source src="../beep.mp3" type="audio/mpeg">
+			    <source src="../beep.ogg" type="audio/mpeg">
+			    <source src="../beep.wav" type="audio/mpeg">
+			  </audio>
+				<ul class="nav nav-fill nav-tabs border-bottom-0 w-50 mx-auto p-0 mt-3" id="main" role="tablist">
 				  <li class="nav-item pb-2">
 				    <a class="btn btn-block btn-outline-dark rounded-0" id="beg-tab" data-toggle="tab" href="#beg" role="tab" aria-controls="beg" aria-selected="true" style="box-shadow: none">قسم المبتدئين</a>
 				  </li>
@@ -157,12 +75,13 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
+			$("#spinner").addClass("d-none");
 			var i,keyCode,cl,cls,res,gen,gen2,sr_intvl,cd_intvl,prog_intvl,wd,rand,points,result,point,fa,
 			sr_num = 0,
 			tbl_res = [],
 			tbl_answer = [];
 			function showResult() {
-				$("#spinner").removeClass("d-flex").addClass("d-none");
+				$("#bluestatic").removeClass("d-flex").addClass("d-none");
 				$("#"+cls+"_series").parent().removeClass("d-block").addClass("d-none");
 				$("#tv").html("");
 				$("#"+cls+"_tab").find("ul.list-group").html("");
@@ -285,7 +204,7 @@
 				}
 			}
 			function showInfo() {
-				$("#spinner").removeClass("d-none").addClass("d-flex");
+				$("#bluestatic").removeClass("d-none").addClass("d-flex");
 				$("#tv").html("<h1 class='nfo font-weight-bold'>السلسلة "+(sr_num+1)+"</h1><h1 class='nfo font-weight-bold'>"+cl[sr_num].opr_ar+"</h1>");
 				setTimeout(function(){playSerie()},1000);
 			}

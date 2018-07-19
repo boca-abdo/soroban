@@ -1,80 +1,35 @@
-<?php
-	include '../includes/user_check.php';
-	include '../includes/date.php';
-	if ($log_id == "" && $log_e == "" && $log_p == "") {
-		header("location: auth.php");
-	}
-?>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-	<title>موقع سوروبان</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="../images/fav.ico">
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/animate.css">
-	<link rel="stylesheet" href="../css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="../css/style.css">
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/popper.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/Chart.min.js"></script>
-</head>
-<body class="bg-warning text-dark">
-	<div id="spinner" class="position-absolute d-none bg-light h-100 w-100 justify-content-center align-items-center text-dark" style="z-index:5001;opacity: 0.7">
-		<i class="fas fa-spinner fa-pulse fa-5x"></i>
+<?php include 'assets/header.php' ?>
+				<h1 class="h1 d-none d-md-block mb-3">احصائيات النقط التي سجلتها</h1>
+				<h4 class="h4 d-md-none mb-3">احصائيات النقط التي سجلتها</h4>
+				<div class="row justify-content-center" id="views">
+					<div class="col-sm-3 mb-2">
+						<button type="button" class="btn btn-block btn-outline-dark rounded-0 active" style="box-shadow: none">سنة<span id="year" class="mr-2"><?php echo $year ?></span></button>
+					</div>
+					<div class="col-sm-3 mb-2">
+						<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">اﻷسبوع<span id="week" class="mr-2"><?php echo $week ?></span></button>
+					</div>
+					<div class="col-sm-3 mb-2">
+						<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">شهر<span id="month" class="mr-2"><?php echo $month_arr[$month][0] ?></span></button>
+					</div>
+					<div class="col-sm-3 mb-2">
+						<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">اليوم<span id="day" class="mr-2"><?php echo $day ?></span></button>
+					</div>
+				</div>
+				<hr class="bg-dark">
+				<h1 class="h1 d-none d-md-block mb-3 dp">السنوات</h1>
+				<h4 class="h4 d-md-none mb-3 dp">السنوات</h4>
+				<div class="row justify-content-center" id="calendar"></div>
+				<hr class="bg-dark">
+				<div class="w-100 my-3">
+					<div class="chart-container w-100"></div>
+				</div>
+			</div>
+		</div>
+		<?php include 'assets/footer.php' ?>
 	</div>
-  <div class="navbar fixed-top justify-content-between bg-dark p-0">
-    <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 float-left" href="index.php" style="box-shadow:none"><i class="fas fa-home"></i></a>
-    <ul class="nav p-0">
-      <li class="nav-item">
-        <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="dashboard.php" style="box-shadow:none"><span class="d-none d-md-inline">مركزي</span><i class="fas fa-list-ol mr-md-2"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="profile.php" style="box-shadow:none"><span class="d-none d-md-inline">معلوماتي</span><i class="fas fa-user mr-md-2"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 active" href="stats.php" style="box-shadow:none"><span class="d-none d-md-inline">ارقامي</span><i class="fas fa-chart-pie mr-md-2"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="lessons/index.php" style="box-shadow:none"><span class="d-none d-md-inline">دروسي</span><i class="fas fa-graduation-cap mr-md-2"></i></a>
-      </li>
-			<li class="nav-item">
-				<a class="btn btn-danger rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="challenge.php" style="box-shadow:none"><span class="d-none d-md-inline">التحدي</span><i class="fas fa-stopwatch mr-md-2"></i></a>
-			</li>
-    </ul>
-    <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 float-left" href="../includes/logout.php?q=ar" style="box-shadow:none"><i class="fas fa-power-off"></i></a>
-  </div>
-  <div class="container text-center pt-5">
-		<h1 class="h1 d-none d-md-block mb-3">احصائيات النقط التي سجلتها</h1>
-		<h4 class="h4 d-md-none mb-3">احصائيات النقط التي سجلتها</h4>
-		<div class="row justify-content-center" id="views">
-			<div class="col-sm-3 mb-2">
-				<button type="button" class="btn btn-block btn-outline-dark rounded-0 active" style="box-shadow: none">سنة<span id="year" class="mr-2"><?php echo $year ?></span></button>
-			</div>
-			<div class="col-sm-3 mb-2">
-				<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">اﻷسبوع<span id="week" class="mr-2"><?php echo $week ?></span></button>
-			</div>
-			<div class="col-sm-3 mb-2">
-				<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">شهر<span id="month" class="mr-2"><?php echo $month_arr[$month][0] ?></span></button>
-			</div>
-			<div class="col-sm-3 mb-2">
-				<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">اليوم<span id="day" class="mr-2"><?php echo $day ?></span></button>
-			</div>
-		</div>
-		<hr class="bg-dark">
-		<h1 class="h1 d-none d-md-block mb-3 dp">السنوات</h1>
-		<h4 class="h4 d-md-none mb-3 dp">السنوات</h4>
-		<div class="row justify-content-center" id="calendar"></div>
-		<hr class="bg-dark">
-		<div class="w-100 my-3">
-			<div class="chart-container w-100"></div>
-		</div>
-  </div>
-	<?php include 'assets/footer.php' ?>
   <script type="text/javascript">
     $(document).ready(function() {
+			$("#spinner").addClass("d-none");
 			var i,lbls,b_lbls,e_lbls,b_points,e_points,
 			view = "year",
 			year = <?php echo $year ?>,

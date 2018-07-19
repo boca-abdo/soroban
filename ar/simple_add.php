@@ -1,11 +1,10 @@
   <?php include 'assets/header.php' ?>
-        <h1 class="h1">الضرب بالطريقة الثانية</h1>
+        <h1 class="h1">الجمع البسيط</h1>
 				<hr>
-				<p class="lead">في هذه الطريقة يتم الاعتماد على جداول الضرب. </p>
-				<p class="lead">نقوم بتفكيك العددين حسب الفصول ونضرب كل جزء من أجزاء العدد الثاني في أجزاء العدد الأول وفي كل مرة نضيف الثمثيل المحصل عليه الى المعداد. </p>
-				<p class="text-danger font-weight-bold">لاحظ المثال</p>
+				<p class="lead">لإجراء عملية جمع بسيطة نمثل العدد اﻷول ثم نضيف له عدد خرزات العدد الثاني</p>
+				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
 				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-				<img src="../../images/mul2.gif" alt="mul2" class="img-fluid center-block border border-dark mt-3">
+				<img src="../../images/simple_add.gif" alt="simple add" class="img-fluid center-block border border-dark mt-3">
 				<hr>
 				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
@@ -31,15 +30,14 @@
 					<div class="tab-content w-100 text-center" id="exercices_content">
 						<div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 1</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -51,15 +49,14 @@
 						</div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 2</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -71,15 +68,14 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 3</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -91,15 +87,14 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 4</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span><span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -111,15 +106,14 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 5</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span><span></span><span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -133,7 +127,7 @@
 				</div>
 			</div>
 		</div>
-		<?php include '../assets/footer.php' ?>
+		<?php include 'assets/footer.php' ?>
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
@@ -151,32 +145,37 @@
 				$p = $tab.find("p:last");
 				switch (ex) {
 					case 0:
-						func = getNumber2;
-						lvl = 50;
-						createAbacus(4);
+						func = getNumber1;
+						lvl = 5;
+						rule = "simple_add",
+						createAbacus(1);
 						break;
 					case 1:
-						func = getNumber2;
-						lvl = 51;
-						createAbacus(5);
+						func = getNumber1;
+						lvl = 6;
+						rule = "simple_add",
+						createAbacus(2);
 						break;
 					case 2:
-						func = getNumber2;
-						lvl = 52;
-						createAbacus(6);
+						func = getNumber1;
+						lvl = 7;
+						rule = "simple_add",
+						createAbacus(3);
 						break;
 					case 3:
-						func = getNumber2;
-						lvl = 53;
-						createAbacus(6);
+						func = getNumber1;
+						lvl = 8;
+						rule = "simple_add",
+						createAbacus(4);
 						break;
 					case 4:
-						func = getNumber2;
-						lvl = 54;
-						createAbacus(7);
+						func = getNumber1;
+						lvl = 9;
+						rule = "simple_add",
+						createAbacus(5);
 						break;
 				}
-				checkLevel(lvl,50);
+				checkLevel(lvl,5);
 				rset();
 			});
 			$(".tab-pane").on("click", "button:last", function(){

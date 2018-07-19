@@ -41,7 +41,7 @@
 				<p class="lead text-justify text-indent">وقال الباحثون إن نتائج الدراسة تحفزهم في المستقبل على بناء استراتيجيات جديدة لمساعدة الناس على تنظيم عواطفهم، ومنع أعراض القلق والاكتئاب، خاصة في البلدان النامية، التي يتعرض سكانها المستويات مرتفعة من القلق والاكتئاب.</p>
 			</div>
 		</div>
-		<?php include '../assets/footer.php' ?>
+		<?php include 'assets/footer.php' ?>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){

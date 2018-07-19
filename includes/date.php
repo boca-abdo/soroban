@@ -1,6 +1,7 @@
 <?php
 	// date_default_timezone_set("Etc/GMT-1"); // التوقيت الصيفي
 	date_default_timezone_set("Etc/GMT");
+	$next_monday = date("Y-m-d", strtotime("Next monday"));
 	$year = date("Y");
 	$month = date("m");
 	$day = date("d");

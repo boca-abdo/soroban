@@ -38,15 +38,26 @@ body,html {
 .background-transparent {
 	background: transparent
 }
-@media screen and (min-width: 400px) {
-
+.gen {
+	font-size: 3rem;
+	text-shadow: -5px 5px 10px #000
 }
-@media screen and (min-width: 544px) {
-
+.nfo {
+	text-shadow: -2px 2px 5px #000
 }
 @media screen and (min-width: 768px) {
-
+	.gen {
+		font-size: 8rem;
+	}
+	.nfo {
+		font-size: 3rem
+	}
 }
-@media screen and (min-width: 1000px) {
-
+@media screen and (min-width: 1200px) {
+	.gen {
+		font-size: 12rem;
+	}
+	.nfo {
+		font-size: 5rem
+	}
 }

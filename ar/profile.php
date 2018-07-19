@@ -1,58 +1,5 @@
-<?php
-	include '../includes/user_check.php';
-	if ($log_id == "" && $log_e == "" && $log_p == "") {
-		header("location: auth.php");
-	}
-	$path = "../users/".$log_id."/avatar.jpg";
-	if (!file_exists($path)) {
-		$path = "../images/avatar.jpg";
-	}
-?>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-	<title>موقع سوروبان</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="../images/fav.ico">
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/animate.css">
-	<link rel="stylesheet" href="../css/fontawesome-all.min.css">
-	<link rel="stylesheet" href="../css/style.css">
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/popper.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-</head>
-<body class="bg-warning text-dark">
-  <div class="container" style="height: 100vh">
-    <div class="navbar fixed-top justify-content-between bg-dark p-0">
-      <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 float-left" href="index.php" style="box-shadow:none"><i class="fas fa-home"></i></a>
-			<ul class="nav p-0">
-        <li class="nav-item">
-          <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="dashboard.php" style="box-shadow:none"><span class="d-none d-md-inline">مركزي</span><i class="fas fa-list-ol mr-md-2"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 active" href="profile.php" style="box-shadow:none"><span class="d-none d-md-inline">معلوماتي</span><i class="fas fa-user mr-md-2"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="stats.php" style="box-shadow:none"><span class="d-none d-md-inline">ارقامي</span><i class="fas fa-chart-pie mr-md-2"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="lessons/index.php" style="box-shadow:none"><span class="d-none d-md-inline">دروسي</span><i class="fas fa-graduation-cap mr-md-2"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-danger rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="challenge.php" style="box-shadow:none"><span class="d-none d-md-inline">التحدي</span><i class="fas fa-stopwatch mr-md-2"></i></a>
-        </li>
-      </ul>
-      <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 float-left" href="../includes/logout.php?q=ar" style="box-shadow:none"><i class="fas fa-power-off"></i></a>
-    </div>
-    <div class="row justify-content-center h-100">
-      <div class="col-lg-10 align-self-center text-center pt-5">
-				<a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
-        <div class="card bg-dark text-warning rounded-0 mt-3">
-					<div id="spinner" class="position-absolute d-none bg-light h-100 w-100 justify-content-center align-items-center text-dark" style="z-index:5001;opacity: 0.7">
-						<i class="fas fa-spinner fa-pulse fa-5x"></i>
-					</div>
+<?php include 'assets/header.php' ?>
+				<div class="card bg-dark text-warning rounded-0 mt-3">
           <div class="card-header">
 						<h4 class="card-title">المعلومات الشخصية</h4>
           </div>
@@ -115,11 +62,10 @@
 						<button id="update" type="button" class="btn btn-outline-warning rounded-0 my-3 px-5">تحديث<i class="fas fa-sign-in-alt mr-2"></i></a>
           </div>
         </div>
-      </div>
-      <div class="w-100"></div>
-      <?php include 'assets/footer.php' ?>
-    </div>
-		<div id="Modal" class="modal fade">
+			</div>
+		</div>
+		<?php include 'assets/footer.php' ?>
+		<div id="Modal" class="modal fade mt-5">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content bg-dark text-warning text-center">
 					<div class="modal-header p-0">
@@ -163,6 +109,7 @@
 	</script>
 	<script type="text/javascript">
     $(document).ready(function() {
+			$("#spinner").addClass("d-none");
 			var $btn = $("#update"),
 			testTel = new RegExp('^[0-9]+$');
 			function alertShow(msg) {

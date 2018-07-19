@@ -1,20 +1,53 @@
   <?php include 'assets/header.php' ?>
-        <h1 class="h1">القسمة</h1>
+        <h1 class="h1">المبادلة بخمسة في الجمع</h1>
 				<hr>
-				<p class="lead">لقسمة عددين باستعمال المعداد نقوم بتقسيم المعداد الى جزئين: جزء نضع عليه المقسوم ونطرح منه المقسوم عليه بشكل متكرر، والجزء الآخر خاص بالخارج نضيف اليه خرزة واحدة كلما قمنا بعملية الطرح. </p>
-				<p class="text-danger font-weight-bold">لاحظ المثال</p>
+				<p class="lead">تقول القاعدة : إذا أردنا إضافة عدد فوجدنا عدد الخرزات <span class="font-weight-bold">السفلية </span>غير كاف، ننشط الخرزة العلوية ثم نعطل خرزة أو خرزات سفلية.</p>
+				<p class="lead">العدد الذي نعطله يسمى <span class="font-weight-bold">المساعد الصغير</span> وهو مكمل العدد 5</p>
+				<div class="row justify-content-center">
+					<div class="col-auto bg-dark text-warning py-3 m-2">
+						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">2 + 3</span><br>المساعد الصغير ل 2 هو 3<br>المساعد الصغير ل 3 هو 2
+					</div>
+					<div class="col-auto bg-dark text-warning py-3 m-2">
+						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">1 + 4</span><br>المساعد الصغير ل 4 هو 1<br>المساعد الصغير ل 1 هو 4
+					</div>
+				</div>
+				<h3 class="h3 my-3 d-none d-sm-block">جدول حالات المبادلة بخمسة في الجمع</h3>
+				<div class="table-responsive d-none d-sm-block">
+				  <table class="table table-striped table-sm">
+						<thead>
+							<tr class="border border-dark">
+								<th class="border-top-0 border-bottom-0">الحالة</th>
+								<th class="border-top-0 border-bottom-0">القاعدة</th>
+								<th class="border-top-0 border-bottom-0">التعليل</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="border border-dark">
+								<td class="border-top-0">+1</td>
+								<td class="border-top-0">ننشط الخرزة العلوية ونعطل 4 خرزات سفلية</td>
+								<td class="border-top-0" dir="ltr">+1 = +5 - 4</td>
+							</tr>
+							<tr class="border border-dark">
+								<td class="border-top-0">+2</td>
+								<td class="border-top-0">ننشط الخرزة العلوية ونعطل 3 خرزات سفلية</td>
+								<td class="border-top-0" dir="ltr">+2 = +5 - 3</td>
+							</tr>
+							<tr class="border border-dark">
+								<td class="border-top-0">+3</td>
+								<td class="border-top-0">ننشط الخرزة العلوية ونعطل 2 خرزات سفلية</td>
+								<td class="border-top-0" dir="ltr">+3 = +5 - 2</td>
+							</tr>
+							<tr class="border border-dark">
+								<td class="border-top-0">+4</td>
+								<td class="border-top-0">ننشط الخرزة العلوية ونعطل 1 خرزة سفلية</td>
+								<td class="border-top-0" dir="ltr">+4 = +5 - 1</td>
+							</tr>
+						</tbody>
+				  </table>
+				</div>
+				<p class="text-danger font-weight-bold">لاحظ اﻷمثلة</p>
 				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-				<img src="../../images/division.gif" alt="division" class="img-fluid center-block border border-dark mt-3">
-				<h3 class="mt-3">شرح المثال</h3>
-				<p class="lead">في هذا المثال أنجزنا العملية على أربع مراحل :</p>
-				<ol class="text-right lead">
-					<li>بعد تمثيل المقسوم على المعداد في الجزء الأيسر، نقوم بطرح المقسوم عليه مضروبا في أكبر منزلة قابلة للطرح <span class="font-weight-bold font-italic">(في هذا المثال أكبر منزلة قابلة للطرح هي العشرات لأن 12 × 100 = 1200 أكبر من 266)،</span> نطرح 12 × 10 من 266 فنحصل في الباقي على 146 ، بعد ذلك نضيف واحد مضروب في منزلة العشرات (نفس المنزلة التي قمنا بالطرح منها)، أي 1 × 10 ثم نمثله في الجزء المخصص للخارج (الجزء اﻷيمن من المعداد) </li>
-					<li>نعيد العملية بالنسبة للباقي 146، لنحصل على 146 – 120 = 26 ، مع اضافة 1 × 10 الى الخارج. </li>
-					<li>عندما نجد أن الباقي لا يمكن أن نطرح منه المقسوم عليه ننتقل إلى المنزلة الدنيا (الوحدات في هذا المثال)، فنطرح 12 × 1 من 26 ونضيف 1 × 1 الى الخارج. </li>
-					<li>نعيد العملية بالنسبة للباقي 14، لنحصل على 14 - 12 = 2، مع اضافة 1 × 1 الى الخارج</li>
-				</ol>
-				<p class="lead font-weight-bold">عندما نجد أن الباقي لا يمكن أن نطرح منه المقسوم عليه ننهي العملية، ونقرأ على الخارج 22 وعلى الباقي 2</p>
-				<p class="lead font-weight-bold">ما يزال بامكاننا اتمام العملية اذا اردنا الحصول على خارج عشري ولهذا وجب علينا في بداية العملية تخصيص جزء أكبر من المعداد لتمثيل العدد المراد الحصول عليه</p>
+        <img src="../../images/mob5_add.gif" alt="mob5 add" class="img-fluid center-block border border-dark mt-3">
 				<hr>
 				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
@@ -40,15 +73,14 @@
 					<div class="tab-content w-100 text-center" id="exercices_content">
 						<div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 1</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -60,15 +92,14 @@
 						</div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 2</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -80,15 +111,14 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 3</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -100,15 +130,14 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 4</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span><span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -120,18 +149,17 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3">التمرين 5</h5>
-							<p class="lead">قم بالحسابات اللازمة على المعداد ثم اضغط على زر التحقق</p>
+							<p class="lead">قم بتمثيل العدد اﻷول ثم أضف اليه العدد الثاني</p>
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
-									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span><span></span>
+									<div class="nbr1 col-auto animated flash infinite">
+										<span></span><span></span><span></span><span></span><span></span>
 									</div>
-									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
+										<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span><span></span><span></span>
 									</div>
 								</div>
-								<div id="abacus" class="my-3" style="height: 143px;overflow:hidden"></div>
+								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
 								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
 								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
@@ -142,7 +170,7 @@
 				</div>
 			</div>
 		</div>
-		<?php include '../assets/footer.php' ?>
+		<?php include 'assets/footer.php' ?>
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
@@ -160,32 +188,37 @@
 				$p = $tab.find("p:last");
 				switch (ex) {
 					case 0:
-						func = getNumber3;
-						lvl = 55;
-						createAbacus(4);
+						func = getNumber1;
+						lvl = 15;
+						rule = "mob5_add",
+						createAbacus(1);
 						break;
 					case 1:
-						func = getNumber3;
-						lvl = 56;
-						createAbacus(6);
+						func = getNumber1;
+						lvl = 16;
+						rule = "mob5_add",
+						createAbacus(2);
 						break;
 					case 2:
-						func = getNumber3;
-						lvl = 57;
-						createAbacus(8);
+						func = getNumber1;
+						lvl = 17;
+						rule = "mob5_add",
+						createAbacus(3);
 						break;
 					case 3:
-						func = getNumber3;
-						lvl = 58;
-						createAbacus(6);
+						func = getNumber1;
+						lvl = 18;
+						rule = "mob5_add",
+						createAbacus(4);
 						break;
 					case 4:
-						func = getNumber3;
-						lvl = 59;
-						createAbacus(8);
+						func = getNumber1;
+						lvl = 19;
+						rule = "mob5_add",
+						createAbacus(5);
 						break;
 				}
-				checkLevel(lvl,55);
+				checkLevel(lvl,15);
 				rset();
 			});
 			$(".tab-pane").on("click", "button:last", function(){

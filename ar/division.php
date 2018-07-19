@@ -1,74 +1,20 @@
   <?php include 'assets/header.php' ?>
-        <h1 class="h1">الضرب بالطريقة اﻷولى</h1>
+        <h1 class="h1">القسمة</h1>
 				<hr>
-				<p class="lead">نعتمد في هذه الطريقة على الجمع المتكرر<span class="font-weight-bold">لا حاجة لحفظ جدول الضرب بهذه الطريقة.</span></p>
-				<p class="lead font-weight-bold text-danger"><span class="font-weight-bold">من المهم جدا اتقان المبادلات قبل البدء في تقنية الضرب بالجمع المتكرر </p>
-				<ul>
-          <li><h2 class="text-right">الضرب في 2</h2>
-            <p class="lead">لضرب عدد في 2 نقوم بتمثيله ثم نضيف إليه نفسه</p>
-						<p class="text-danger font-weight-bold">لاحظ المثال</p>
-						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-						<img src="../../images/mul1_2.gif" alt="mul1_2" class="img-fluid center-block border border-dark mt-3">
-          </li>
-					<hr>
-					<li><h2 class="text-right">الضرب في 4</h2>
-            <p class="lead">لضرب عدد في 4 نقوم بتمثيله ثم نضيف اليه نفسه، ثم نضيف للناتج نفسه مرة أخرى</p>
-						<p class="text-danger font-weight-bold">لاحظ المثال</p>
-						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-						<img src="../../images/mul1_4.gif" alt="mul1_4" class="img-fluid center-block border border-dark mt-3">
-          </li>
-					<hr>
-					<li><h2 class="text-right">الضرب في 8</h2>
-            <p class="lead">لضرب عدد في 4 نقوم بتمثيله ثم نضيف اليه نفسه، ثم نضيف للناتج نفسه مرة أخرى، ثم نضيف للناتج نفسه مرة ثالثة</p>
-						<p class="text-danger font-weight-bold">لاحظ المثال</p>
-						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-						<img src="../../images/mul1_8.gif" alt="mul1_8" class="img-fluid center-block border border-dark mt-3">
-          </li>
-					<p class="lead font-weight-bold mt-3">خلال الحالات الثلاث السابقة يكون التعامل كليا مع المعداد، حيث لا نحتاج تذكر العدد أو كتابته. نقوم فقط بتمثيل العدد ثم نشتغل على كل عمود بإضافة العدد الممثل عليه لنفسه مرة (في 2) أو مرتين (في 4) أو ثلاث (في 8). </p>
-					<p class="lead font-weight-bold text-danger">يستحسن دائما البدء من اليسار خلال عملية الجمع المتكرر خصوصا في حالة استعمال المبادلة بعشرة </p>
-					<hr>
-					<li><h2 class="text-right">الضرب في 5</h2>
-            <p class="lead">لضرب عدد في 5 نتبع طريقة الضرب في 4 ثم نضيف للناتج العدد اﻷصلي </p>
-						<p class="text-danger font-weight-bold">لاحظ المثال</p>
-						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-						<img src="../../images/mul1_5.gif" alt="mul1_5" class="img-fluid center-block border border-dark mt-3">
-          </li>
-					<hr>
-					<li><h2 class="text-right">الضرب في 3</h2>
-            <p class="lead">لضرب عدد في 3 نضيف اليه نفسه ثم نضيف للناتج العدد اﻷصلي </p>
-						<p class="text-danger font-weight-bold">لاحظ المثال</p>
-						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-						<img src="../../images/mul1_3.gif" alt="mul1_3" class="img-fluid center-block border border-dark mt-3">
-          </li>
-					<hr>
-					<li><h2 class="text-right">الضرب في 6</h2>
-            <p class="lead">لضرب عدد في 6 نضيف اليه نفسه ثم نضيف للناتج العدد اﻷصلي ، ثم نضيف للناتج نفسه  </p>
-						<p class="text-danger font-weight-bold">لاحظ المثال</p>
-						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-						<img src="../../images/mul1_6.gif" alt="mul1_6" class="img-fluid center-block border border-dark mt-3">
-          </li>
-					<hr>
-					<li><h2 class="text-right">الضرب في 7</h2>
-            <p class="lead">لضرب عدد في 7 نتبع طريقة الضرب في 6 ثم نضيف للناتج العدد اﻷصلي  </p>
-						<p class="text-danger font-weight-bold">لاحظ المثال</p>
-						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-						<img src="../../images/mul1_7.gif" alt="mul1_7" class="img-fluid center-block border border-dark mt-3">
-          </li>
-					<hr>
-					<li><h2 class="text-right">الضرب في مضاعفات 10،100،...</h2>
-            <p class="lead">لضرب عدد في مضاعفات  10، 100، 1000 … نترك اﻷعمدة الأولى فارغة بحسب عدد اﻷصفار، نترك عمود واحد في حالة الضرب في 10، وعمودين في حالة الضرب في 100 وهكذا. ثم نقوم بضرب العدد في الرقم اﻷخير بعد اﻷصفار بطريقة الجمع المتكرر التي تعلمناها في الأمثلة أعلاه. </p>
-						<p class="text-danger font-weight-bold">لاحظ المثال</p>
-						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-						<img src="../../images/mul1_10.gif" alt="mul1_10" class="img-fluid center-block border border-dark mt-3">
-          </li>
-					<hr>
-					<li><h2 class="text-right">الضرب في 9</h2>
-            <p class="lead">قد تلاحظون أننا بدأنا بالضرب في 10 قبل الضرب في 9، هذا صحيح لأن قاعدة الضرب في 9 تعتمد على الطرح وليس على الجمع، أي أنه اذا اردنا ضرب عدد في 9 نقوم بضربه في 10 ثم نطرح من الناتج العدد اﻷصلي. </p>
-						<p class="text-danger font-weight-bold">لاحظ المثال</p>
-						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
-						<img src="../../images/mul1_9.gif" alt="mul1_9" class="img-fluid center-block border border-dark mt-3">
-          </li>
-				</ul>
+				<p class="lead">لقسمة عددين باستعمال المعداد نقوم بتقسيم المعداد الى جزئين: جزء نضع عليه المقسوم ونطرح منه المقسوم عليه بشكل متكرر، والجزء الآخر خاص بالخارج نضيف اليه خرزة واحدة كلما قمنا بعملية الطرح. </p>
+				<p class="text-danger font-weight-bold">لاحظ المثال</p>
+				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
+				<img src="../../images/division.gif" alt="division" class="img-fluid center-block border border-dark mt-3">
+				<h3 class="mt-3">شرح المثال</h3>
+				<p class="lead">في هذا المثال أنجزنا العملية على أربع مراحل :</p>
+				<ol class="text-right lead">
+					<li>بعد تمثيل المقسوم على المعداد في الجزء الأيسر، نقوم بطرح المقسوم عليه مضروبا في أكبر منزلة قابلة للطرح <span class="font-weight-bold font-italic">(في هذا المثال أكبر منزلة قابلة للطرح هي العشرات لأن 12 × 100 = 1200 أكبر من 266)،</span> نطرح 12 × 10 من 266 فنحصل في الباقي على 146 ، بعد ذلك نضيف واحد مضروب في منزلة العشرات (نفس المنزلة التي قمنا بالطرح منها)، أي 1 × 10 ثم نمثله في الجزء المخصص للخارج (الجزء اﻷيمن من المعداد) </li>
+					<li>نعيد العملية بالنسبة للباقي 146، لنحصل على 146 – 120 = 26 ، مع اضافة 1 × 10 الى الخارج. </li>
+					<li>عندما نجد أن الباقي لا يمكن أن نطرح منه المقسوم عليه ننتقل إلى المنزلة الدنيا (الوحدات في هذا المثال)، فنطرح 12 × 1 من 26 ونضيف 1 × 1 الى الخارج. </li>
+					<li>نعيد العملية بالنسبة للباقي 14، لنحصل على 14 - 12 = 2، مع اضافة 1 × 1 الى الخارج</li>
+				</ol>
+				<p class="lead font-weight-bold">عندما نجد أن الباقي لا يمكن أن نطرح منه المقسوم عليه ننهي العملية، ونقرأ على الخارج 22 وعلى الباقي 2</p>
+				<p class="lead font-weight-bold">ما يزال بامكاننا اتمام العملية اذا اردنا الحصول على خارج عشري ولهذا وجب علينا في بداية العملية تخصيص جزء أكبر من المعداد لتمثيل العدد المراد الحصول عليه</p>
 				<hr>
 				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
 				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
@@ -98,11 +44,11 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span>
+										<span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -118,11 +64,11 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span><span></span>
+										<span></span><span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -138,11 +84,11 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span>
+										<span></span><span></span><span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -158,11 +104,11 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span><span></span>
+										<span></span><span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
@@ -178,14 +124,14 @@
 							<div class="py-3">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
-										<span></span><span></span><span></span><span></span><span></span>
+										<span></span><span></span><span></span><span></span>
 									</div>
 									<div class="w-100"></div>
 									<div class="nbr2 col-auto">
-										<i class="fas fa-times mr-2 d-inline" style="font-size: 20px"></i><span></span>
+										<i class="fas fa-divide mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 									</div>
 								</div>
-								<div id="abacus" class="my-3" style="height: 143px"></div>
+								<div id="abacus" class="my-3" style="height: 143px;overflow:hidden"></div>
 								<div id="status"></div>
 								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
 								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
@@ -196,7 +142,7 @@
 				</div>
 			</div>
 		</div>
-		<?php include '../assets/footer.php' ?>
+		<?php include 'assets/footer.php' ?>
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
@@ -214,32 +160,32 @@
 				$p = $tab.find("p:last");
 				switch (ex) {
 					case 0:
-						func = getNumber2;
-						lvl = 45;
-						createAbacus(2);
-						break;
-					case 1:
-						func = getNumber2;
-						lvl = 46;
-						createAbacus(3);
-						break;
-					case 2:
-						func = getNumber2;
-						lvl = 47;
+						func = getNumber3;
+						lvl = 55;
 						createAbacus(4);
 						break;
-					case 3:
-						func = getNumber2;
-						lvl = 48;
-						createAbacus(5);
-						break;
-					case 4:
-						func = getNumber2;
-						lvl = 49;
+					case 1:
+						func = getNumber3;
+						lvl = 56;
 						createAbacus(6);
 						break;
+					case 2:
+						func = getNumber3;
+						lvl = 57;
+						createAbacus(8);
+						break;
+					case 3:
+						func = getNumber3;
+						lvl = 58;
+						createAbacus(6);
+						break;
+					case 4:
+						func = getNumber3;
+						lvl = 59;
+						createAbacus(8);
+						break;
 				}
-				checkLevel(lvl,45);
+				checkLevel(lvl,55);
 				rset();
 			});
 			$(".tab-pane").on("click", "button:last", function(){
