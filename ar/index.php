@@ -16,7 +16,7 @@
 		$visits_all = $row['t_counts'];
 		$visits_month = $row['m_counts'];
 		$visits_day = $row['counts'];
-	} catch (\Exception $e) {
+	} catch (Exception $e) {
 		echo $e->getMessage();
 	}
 ?>
@@ -76,8 +76,8 @@
 					<a href="../fr/index.php" class="btn btn-outline-warning rounded-0">Version française</a>
 					<a href="../en/index.php" class="btn btn-outline-warning rounded-0">English version</a>
 				</div>
-        <div class="w-25 mx-auto my-3">
-          <a href="auth.php" class="btn btn-lg btn-block btn-outline-warning rounded-0 font-weight-bold">دخول<i class="fas fa-sign-in-alt mr-2 d-none d-sm-inline-block"></i></a>
+        <div class="mx-auto my-3">
+          <a href="auth.php" class="btn btn-lg btn-outline-warning rounded-0 font-weight-bold px-5">دخول<i class="fas fa-sign-in-alt mr-2"></i></a>
         </div>
         <a href="#about" class="btn btn-outline-warning animated bounce infinite mt-3" style="border-radius: 20px"><i class="fas fa-angle-double-down fa-3x" style="cursor:pointer"></i></a>
       </div>
@@ -259,7 +259,7 @@
 			</div>
 		</div>
 		<!-- here starts youtube block -->
-		<div class="w-100 py-5 text-center" style="background-image: url('../images/home2.jpg'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
+		<div class="w-100 py-5 text-center" style="background-image: url('../images/home3.jpg'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
 			<i class="fab fa-youtube-square fa-2x bg-danger text-white py-2 px-3 rounded"></i>
 			<h3 class="h3 font-weight-bold text-warning my-3">يوتيوب</h3>
 			<div class="container">
@@ -311,10 +311,10 @@
 			</div>
 			<hr class="bg-warning">
 			<nav class="nav justify-content-center">
-        <a class="nav-link text-warning" href="#" style="box-shadow: none"><i class="fab fa-facebook-square fa-lg px-2"></i></a>
-        <a class="nav-link text-warning" href="#" style="box-shadow: none"><i class="fab fa-twitter-square fa-lg px-2"></i></a>
-        <a class="nav-link text-warning" href="#" style="box-shadow: none"><i class="fab fa-google-plus-square fa-lg px-2"></i></a>
-        <a class="nav-link text-warning" href="#" style="box-shadow: none"><i class="fab fa-youtube-square fa-lg px-2"></i></a>
+        <a class="nav-link text-warning" href="https://www.facebook.com/sorobane/" target="_blank" style="box-shadow: none"><i class="fab fa-facebook-square fa-lg px-2"></i></a>
+        <a class="nav-link text-warning" href="https://twitter.com/Soroban_online" target="_blank" style="box-shadow: none"><i class="fab fa-twitter-square fa-lg px-2"></i></a>
+        <a class="nav-link text-warning" href="https://plus.google.com/u/0/117099424530846763778" target="_blank" style="box-shadow: none"><i class="fab fa-google-plus-square fa-lg px-2"></i></a>
+        <a class="nav-link text-warning" href="https://www.youtube.com/channel/UC4aEPO_MU_NJ3JHybb3cBIg" target="_blank" style="box-shadow: none"><i class="fab fa-youtube-square fa-lg px-2"></i></a>
 	    </nav>
 			<div class="font-weight-bold">
 				<p class="m-0">جميع الحقوق محفوظة لموقع سوروبان 2016-<?php echo date("Y"); ?></p>
