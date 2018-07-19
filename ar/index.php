@@ -1,5 +1,24 @@
 <?php
-
+	include '../includes/visiters.php';
+	try {
+		$today = date("Y-m-d");
+		$first_day = date("Y-m-d", strtotime("01-".date("m")."-2018"));
+		$last_day = date("Y-m-d", strtotime(date("t")."-".date("m")."-2018"));
+		$query = $srbn_con->query("SELECT `id` FROM `users` WHERE 1");
+		$members_all = $query->rowCount();
+		$query = $srbn_con->query("SELECT `id` FROM `users` WHERE `first_login` BETWEEN '$first_day' AND '$last_day'");
+		$members_month = $query->rowCount();
+		$query = $srbn_con->query("SELECT `id` FROM `users` WHERE `first_login`='$today'");
+		$members_day = $query->rowCount();
+		$query = $srbn_con->query("SELECT * FROM `counter` WHERE 1");
+		$query->setFetchMode(PDO::FETCH_ASSOC);
+		$row = $query->fetch();
+		$visits_all = $row['t_counts'];
+		$visits_month = $row['m_counts'];
+		$visits_day = $row['counts'];
+	} catch (\Exception $e) {
+		echo $e->getMessage();
+	}
 ?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -206,15 +225,15 @@
 						<ul class="list-group">
 						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
 						    هذا اليوم
-						    <span class="badge badge-warning badge-pill">14</span>
+						    <span class="badge badge-warning badge-pill"><?php echo $members_day; ?></span>
 						  </li>
 						  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-warning border-warning">
 						    هذا الشهر
-						    <span class="badge badge-warning badge-pill">2</span>
+						    <span class="badge badge-warning badge-pill"><?php echo $members_month; ?></span>
 						  </li>
 						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
 						    المجموع
-						    <span class="badge badge-warning badge-pill">1</span>
+						    <span class="badge badge-warning badge-pill"><?php echo $members_all; ?></span>
 						  </li>
 						</ul>
 					</div>
@@ -224,15 +243,15 @@
 						<ul class="list-group">
 						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
 						    هذا اليوم
-						    <span class="badge badge-warning badge-pill">14</span>
+						    <span class="badge badge-warning badge-pill"><?php echo $visits_day; ?></span>
 						  </li>
 						  <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-warning border-warning">
 						    هذا الشهر
-						    <span class="badge badge-warning badge-pill">2</span>
+						    <span class="badge badge-warning badge-pill"><?php echo $visits_month; ?></span>
 						  </li>
 						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
 						    المجموع
-						    <span class="badge badge-warning badge-pill">1</span>
+						    <span class="badge badge-warning badge-pill"><?php echo $visits_all; ?></span>
 						  </li>
 						</ul>
 					</div>
