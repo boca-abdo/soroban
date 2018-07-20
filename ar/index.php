@@ -27,13 +27,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="../images/fav.ico">
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/animate.css">
-	<link rel="stylesheet" href="../css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style.css">
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/popper.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<style media="screen">
 		@media (max-width: 600px) {
 			#jumbo .display-2 {
@@ -44,26 +44,16 @@
 			}
 		}
 	</style>
-	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '209610666128223',
-	      cookie     : true,
-	      xfbml      : true,
-	      version    : 'v2.8'
-	    });
-	    FB.AppEvents.logPageView();
-	  };
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "https://connect.facebook.net/ar_AR/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
 </head>
 <body class="bg-warning text-dark">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = 'https://connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v3.0&appId=209610666128223&autoLogAppEvents=1';
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<!-- spinner before page loading -->
 	<?php include '../assets/spinner.php' ?>
 	<!-- here starts jumbo block -->
@@ -201,15 +191,13 @@
 			<i class="fab fa-facebook-square fa-2x bg-primary text-white p-3 rounded"></i>
 			<h3 class="h3 font-weight-bold text-warning my-3">فيسبوك</h3>
 			<div class="container">
-				<div class="bg-light p-3 my-3">
+				<div class="bg-light p-3 my-3" style="overflow: auto">
 					<div class="fb-comments" data-href="https://www.facebook.com/sorobane/comments" data-numposts="5" data-width="100%"></div>
 					<hr>
-					<div class="fb-page" data-href="https://www.facebook.com/sorobane/" data-tabs="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-						<div class="fb-xfbml-parse-ignore">
-							<blockquote cite="https://www.facebook.com/sorobane/">
-								<a href="https://www.facebook.com/sorobane/">‎Tarrsat-Inzgane‎</a>
-							</blockquote>
-						</div>
+					<div class="fb-page" data-href="https://www.facebook.com/Sorobane" data-tabs="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+						<blockquote cite="https://www.facebook.com/Sorobane" class="fb-xfbml-parse-ignore">
+							<a href="https://www.facebook.com/Sorobane">Programme soroban pour le calcul mental</a>
+						</blockquote>
 					</div>
 				</div>
 			</div>
@@ -263,7 +251,7 @@
 			<i class="fab fa-youtube-square fa-2x bg-danger text-white py-2 px-3 rounded"></i>
 			<h3 class="h3 font-weight-bold text-warning my-3">يوتيوب</h3>
 			<div class="container">
-				<div class="bg-danger p-3 my-3">
+				<div class="bg-danger p-sm-3 my-3">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/nOYMWltP1kQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
@@ -281,19 +269,20 @@
 								<div class="row">
 									<div class="col-md-6">
 										<label for="name" class="form-label">الاسم الكامل</label>
-										<input class="form-control border-warning text-warning rounded-0" style="background: transparent" type="text" name="name">
+										<input id="nwsltr_name" class="form-control border-warning text-warning rounded-0" style="background: transparent" type="text" name="name">
 									</div>
 									<div class="col-md-6">
 										<label for="email" class="form-label">البريد الالكتروني</label>
-										<input class="form-control border-warning text-warning rounded-0" style="background: transparent" type="email" name="email">
+										<input id="nwsltr_e" class="form-control border-warning text-warning rounded-0" style="background: transparent" type="email" name="email">
 									</div>
 								</div>
 							</fieldset>
 							<fieldset class="form-group">
 								<label for="name" class="form-label">الرسالة</label>
-								<textarea class="form-control border-warning text-warning rounded-0" style="background: transparent" name="message" rows="7" cols="80"></textarea>
+								<textarea id="nwsltr_msg" class="form-control border-warning text-warning rounded-0" style="background: transparent" name="message" rows="7" cols="80" maxlength="200"></textarea>
 							</fieldset>
-							<button type="submit" class="btn btn-outline-warning font-weight-bold rounded-0 float-left" name="send">أرسل<i class="fas fa-envelope mr-2"></i></button>
+							<div class="text-center" id="nwsltr_status"></div>
+							<button id="nwsltr_btn" type="button" class="btn btn-outline-warning font-weight-bold rounded-0 float-left" name="send" style="box-shadow:none">أرسل<i class="fas fa-envelope mr-2"></i></button>
 						</form>
 					</div>
 					<div class="col-10 col-md-4 text-center text-md-right order-md-first mt-3 mt-md-0">
@@ -353,6 +342,34 @@
 						$("a[href='"+hash+"']").addClass("active");
 					}
 				});
+			});
+			$("#nwsltr_btn").on("click", function(){
+				$("#nwsltr_status").text("");
+				name = $("#nwsltr_name").val();
+				e = $("#nwsltr_e").val();
+				msg = $("#nwsltr_msg").val();
+				if (name == "" || e == "" || msg == "") {
+					$("#nwsltr_status").text("المرجو تعبئة جميع الخانات");
+				} else {
+					$.ajax({
+						url: "../includes/newsletter.php",
+						type: "POST",
+						data: {
+							name: name,
+							e: e,
+							msg: msg,
+						},
+						error: function(stt,xhr,err) {
+							console.log(err);
+						},
+						success: function(res) {
+							if (res == "done") {
+								$("#nwsltr_btn").addClass("d-none");
+								$("#nwsltr_status").text("شكرا على تفاعلكم");
+							}
+						}
+					});
+				}
 			});
     });
   </script>
