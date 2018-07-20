@@ -22,9 +22,9 @@
 <div class="row no-gutters h-100 justify-content-center p-0 pt-5">
   <div class="col-12 align-self-top">
     <div class="container text-center">
-      <a href="index.php"><img src="images/logo.png" class="img-fluid" alt=""></a>
-      <i class="far fa-frown fa-5x d-block my-5"></i>
-      <h2 class="h2 animated pulse infinite">الصفحة المطلوبة غير متوفرة</h2>
+      <a href="index.php"><img src="../images/logo.png" class="img-fluid" alt=""></a>
+      <i class="fas fa-wrench fa-5x d-block my-5"></i>
+      <h2 class="h2 animated pulse infinite">La version française du site soroban est en cours de maintenance, vous pouvez accéder à la version arabe <a href="../ar/index.php">ici</a></h2>
 
     </div>
   </div>

@@ -1,1 +1,2 @@
-ErrorDocument 404 http://soroban.skwila.net/404.php
+ErrorDocument 404 /404.php
+IndexIgnore *

@@ -6,7 +6,7 @@
 	}
 	$path = "../users/".$log_id."/avatar.jpg";
 	if (!file_exists($path)) {
-		$path = "../images/avatar.jpg";
+		$path = "../images/avatar.png";
 	}
 ?>
 <!DOCTYPE html>
