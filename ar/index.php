@@ -68,18 +68,18 @@
 	<?php include '../assets/spinner.php' ?>
 	<!-- here starts jumbo block -->
   <div id="" class="container-fluid" style="height: 100vh;background-image: url('../images/home.jpg'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
-    <div class="row justify-content-center align-items-end h-100 pb-5">
+		<div class="btn-group my-3 position-absolute" style="right:10px">
+			<a href="../fr/index.php"><img src="../images/fr.png"></a>
+			<a href="../en/index.php"><img src="../images/us.png"></a>
+		</div>
+		<div class="row justify-content-center align-items-end h-100 pb-5">
       <div class="col-auto text-center text-warning" id="jumbo">
         <h1 class="display-2 animated fadeInLeft">برنامج سوروبان</h1>
         <h1 class="display-4 animated fadeInRight">للحساب الذهني وتنمية الذكاء</h1>
-				<div class="btn-group my-3">
-					<a href="../fr/index.php" class="btn btn-outline-warning rounded-0">Version française</a>
-					<a href="../en/index.php" class="btn btn-outline-warning rounded-0">English version</a>
-				</div>
-        <div class="mx-auto my-3">
-          <a href="auth.php" class="btn btn-lg btn-outline-warning rounded-0 font-weight-bold px-5">دخول<i class="fas fa-sign-in-alt mr-2"></i></a>
+        <div class="mx-auto my-5">
+          <a href="auth.php" class="btn btn-lg btn-outline-warning rounded-0 font-weight-bold px-5" style="box-shadow:none">دخول<i class="fas fa-sign-in-alt mr-2"></i></a>
         </div>
-        <a href="#about" class="btn btn-outline-warning animated bounce infinite mt-3" style="border-radius: 20px"><i class="fas fa-angle-double-down fa-3x" style="cursor:pointer"></i></a>
+        <a href="#about" class="btn btn-outline-warning animated bounce infinite mt-3" style="border-radius: 20px;box-shadow:none"><i class="fas fa-angle-double-down fa-3x" style="cursor:pointer"></i></a>
       </div>
     </div>
   </div>
@@ -109,32 +109,32 @@
 			</p>
 			<hr class="bg-dark">
 			<div class="row text-center">
-				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3 anim d-none" data-animation="animated fadeInRightBig">
+				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
 					<h4 class="h4 font-weight-bold">تثبيت</h4>
 					<i class="fas fa-anchor fa-2x my-2"></i>
 					<p class="font-weight-bold">ينمي القدرات العقلية و يثبت الصورة الذهنية.</p>
 				</div>
-				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3 anim d-none" data-animation="animated fadeInDownBig">
+				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
 					<h4 class="h4 font-weight-bold">مهم</h4>
 					<i class="fas fa-briefcase fa-2x my-2"></i>
 					<p class="font-weight-bold">يربط بين فصي الدماغ  الايمن و الايسر ويجعلهما متناغمين.</p>
 				</div>
-				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3 anim d-none" data-animation="animated fadeInLeftBig">
+				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
 					<h4 class="h4 font-weight-bold">قوي</h4>
 					<i class="fas fa-bolt fa-2x my-2"></i>
 					<p class="font-weight-bold">يقوي التخيل و ينشط الدماغ.</p>
 				</div>
-				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3 anim d-none" data-animation="animated fadeInRightBig">
+				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
 					<h4 class="h4 font-weight-bold">مرن</h4>
 					<i class="fas fa-smile fa-2x my-2"></i>
 					<p class="font-weight-bold">يساعد على الابداع ،المبادرة و التنافس الشريف.</p>
 				</div>
-				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3 anim d-none" data-animation="animated fadeInUpBig">
+				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
 					<h4 class="h4 font-weight-bold">محبوب</h4>
 					<i class="fas fa-heart fa-2x my-2"></i>
 					<p class="font-weight-bold">يحبب مادة  الرياضيات لديه ويجعله يثق بنفسه ويعتمد عليها .</p>
 				</div>
-				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3 anim d-none" data-animation="animated fadeInLeftBig">
+				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
 					<h4 class="h4 font-weight-bold">مفيد</h4>
 					<i class="fas fa-graduation-cap fa-2x my-2"></i>
 					<p class="font-weight-bold">يطور مهارات التفكير،التركيز ،دقة الملاحظة و سرعة التحليل.</p>
@@ -173,7 +173,7 @@
 		<!-- here starts products block -->
 		<div class="container pt-5 text-center" id="products">
 			<h3 class="h3 font-weight-bold">كتاب تعلم سوروبان</h3>
-			<div class="row align-items-center anim d-none" data-animation="animated fadeInRightBig">
+			<div class="row align-items-center">
 				<div class="col-md-3 py-3">
 			  	<img class="img-fluid img-thumbnail" src="../images/soroban_book.jpg" alt="Generic placeholder image">
 				</div>
@@ -185,7 +185,7 @@
 			</div>
 			<hr class="bg-dark">
 			<h3 class="h3 font-weight-bold">المعداد سوروبان</h3>
-			<div class="row align-items-center anim d-none" data-animation="animated fadeInLeftBig">
+			<div class="row align-items-center">
 				<div class="col-md-3 py-3">
 					<img class="img-fluid img-thumbnail" src="../images/abacus_for_sell.jpg" alt="Generic placeholder image">
 				</div>
@@ -219,10 +219,10 @@
 			<h3 class="h3 font-weight-bold">احصائيات الموقع</h3>
 			<div class="container">
 				<div class="row justify-content-around">
-					<div class="col-6">
+					<div class="col-sm-6">
 						<i class="fas fa-2x fa-users"></i>
 						<h5>اﻷعضاء</h5>
-						<ul class="list-group">
+						<ul class="list-group pr-0">
 						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
 						    هذا اليوم
 						    <span class="badge badge-warning badge-pill"><?php echo $members_day; ?></span>
@@ -237,10 +237,10 @@
 						  </li>
 						</ul>
 					</div>
-					<div class="col-6">
+					<div class="col-sm-6">
 						<i class="fas fa-2x fa-eye"></i>
 						<h5>الزيارات</h5>
-						<ul class="list-group">
+						<ul class="list-group pr-0">
 						  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-dark text-warning border-warning">
 						    هذا اليوم
 						    <span class="badge badge-warning badge-pill"><?php echo $visits_day; ?></span>
@@ -265,7 +265,7 @@
 			<div class="container">
 				<div class="bg-danger p-3 my-3">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe id="player" type="text/html" src="https://www.youtube.com/embed/watch?v=2gw72x9bepI&list=PLyGuJh6BiSHArUxsY_CipdtbKZcYYi-DV" frameborder="0"></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/nOYMWltP1kQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -324,9 +324,9 @@
 	</div>
   <script type="text/javascript">
     $(document).ready(function() {
-			var el,pos,anim,hash;
 			// remove spinner after page load
 			$("#spinner").addClass("d-none");
+			var el,pos,anim,hash;
 			// smooth scrolling on menu
       $("#jumbo,#menu").on('click', 'a', function(e) {
 				$("#menu").find("a").removeClass("active");
@@ -345,15 +345,6 @@
 				if (window.pageYOffset >= $(".navbar").offset().top) {
 			    $(".navbar").addClass("sticky-top");
 			  }
-				// animate block on scroll point
-				$(".anim").each(function(){
-					var el = $(this);
-					var anim = el.data('animation');
-					var pos = el.offset().top;
-					if (pos < $(window).scrollTop() + 600) {
-							el.removeClass("d-none").addClass(anim)
-					}
-				});
 				// add active class for menu links
 				$("#menu").find("a").each(function(){
 					hash = this.hash;
