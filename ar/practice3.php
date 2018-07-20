@@ -41,7 +41,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $("#spinner").addClass("d-none");
-      var num,spd,dig,gen,rand,i,res,answer,intvl,keyCode;
+      var num,spd,dig,clr,gen,rand,i,res,answer,intvl,keyCode;
       function rndm(max) {
         rand = Math.random();
         while (rand < max) {
@@ -55,11 +55,15 @@
         intvl = setInterval(function(){
           gen = Math.floor(rndm(0.1) * dig);
           $("#beep").get(0).play();
+          clr = "dark";
+          if (i % 2 == 0) {
+            clr = "primary";
+          }
           if (gen % 2 == 0 && res >= gen) {
             res -= gen;
-            $("#bd").html("<div id='gen'>"+gen+"<i class='fas fa-minus mr-2' style='font-size: 1.5rem'></i></div>");
+            $("#bd").html("<div class='text-"+clr+"' id='gen'>"+gen+"<i class='fas fa-minus mr-2' style='font-size: 1.5rem'></i></div>");
           } else {
-            $("#bd").html("<div id='gen'>"+gen+"<i class='fas fa-plus mr-2' style='font-size: 1.5rem'></i></div>");
+            $("#bd").html("<div class='text-"+clr+"' id='gen'>"+gen+"<i class='fas fa-plus mr-2' style='font-size: 1.5rem'></i></div>");
             res += gen
           }
           i++;
