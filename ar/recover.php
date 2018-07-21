@@ -14,32 +14,32 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </head>
 <body class="bg-warning text-dark">
-	<?php include '../assets/spinner.php' ?>
+	<?php // include '../assets/spinner.php' ?>
   <div class="container" style="height: 100vh">
     <div class="row justify-content-center h-100">
       <div class="col-lg-8 align-self-top text-center pt-3">
         <a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
-
           <?php
-          date_default_timezone_set("Etc/GMT");
-          $today = date("Y-m-d H:i:s");
-          $next = date("Y-m-d H:i:s", strtotime("Yesterday -24h"));
-          echo $next."<br>";
-          echo
+						require_once '../includes/db.php';
+						require_once '../includes/security.php';
+	          date_default_timezone_set("Etc/GMT");
+	          $today = date("Y-m-d H:i:s");
             if (isset($_GET['e']) && isset($_GET['hash'])) {
               $e = $_GET['e'];
-              $d_e = decrypt($e, $k);
               $hash = $_GET['hash'];
-              $query = $srbn_con->query("SELECT * FROM recovery WHERE e='$e' AND hash='$hash'");
-              $num1 = $query->rowCount();
-              $query->setFetchMode(PDO::FETCH_ASSOC);
+							$query = $srbn_con->query("SELECT * FROM `recovery` WHERE `email`='$e' AND `hash`='$hash'");
+							$num1 = $query->rowCount();
+							$query->setFetchMode(PDO::FETCH_ASSOC);
               $row = $query->fetch();
               $today = date("Y-m-d H:i:s");
               $diff = round((strtotime($today) - strtotime($row['rec_datetime']))/(60*60));
-              $query = $srbn_con->query("SELECT * FROM users WHERE e='$d_e'");
+              $query = $srbn_con->query("SELECT * FROM `users` WHERE `email`='$e'");
               $num2 = $query->rowCount();
               if ($num1 < 1 || $num2 < 1 || $diff > 24) {
-                // deny access
+          ?>
+					<i class="far fa-frown animated zoomIn text-danger fa-5x mt-5"></i>
+					<h1 class="text-danger animated flash infinite mt-3">الصفحة المطلوبة غير متوفرة</h1>
+					<?php
               } else {
           ?>
           <div class="card bg-dark rounded-0 text-warning card-shadow mt-3">
@@ -47,12 +47,15 @@
               <h5 class="card-title">تحديث الرمز السري</h5>
             </div>
             <div class="card-block p-3">
-  						<label for="">البريد الالكتروني</label>
-  						<input class="form-control text-center background-transparent border-warning rounded-0" type="email" name="" value="">
-  						<small class="form-text">
-  							ستتوصلون برسالة على هذا البريد، المرجو اتباع التعليمات الواردة بها لتحديث الرمز السري لحسابكم
-  						</small>
-  						<button id="send" class="btn btn-outline-warning rounded-0 my-3" type="button" name="button" style="box-shadow:none">ارسال<i class="fas fa-envelope mr-2"></i></button>
+							<fieldset class="form-group">
+								<label for="">الرمز السري</label>
+	  						<input id="p" class="form-control text-center background-transparent border-warning rounded-0" type="password">
+							</fieldset>
+							<fieldset class="form-group">
+								<label for="">تأكيد الرمز السري</label>
+	  						<input id="c_p" class="form-control text-center background-transparent border-warning rounded-0" type="password">
+							</fieldset>
+  						<button id="recover" class="btn btn-outline-warning rounded-0 my-3" type="button" name="button" style="box-shadow:none">تحديث<i class="fas fa-redo mr-2"></i></button>
   						<div id="status"></div>
   					</div>
             <div class="card-footer border-warning text-sm-right">
@@ -71,6 +74,36 @@
   <script type="text/javascript">
     $(document).ready(function() {
 			$("#spinner").addClass("d-none");
+			$("#recover").on("click", function(){
+				$("#status").text("");
+				var p = $("#p").val();
+				var c_p = $("#c_p").val();
+				if (p.length < 6) {
+					$("#status").text("لايسمح بأقل من 6 رموز");
+				} else if (p != c_p) {
+					$("#status").text("الرمزان غير متطابقان");
+				} else {
+					$.ajax({
+						url: "../includes/update_pass.php",
+						type: "POST",
+						data: {
+							e: "<?php echo $_GET['e']?>",
+							p: p,
+						},
+						error: function(stt,xhr,err) {
+							console.log(err);
+						},
+						success: function(res) {
+							if (res == "done") {
+								$("#status").text("لقد تم تحديث رمزكم السري بنجاح");
+								setTimeout(function(){
+									window.open("auth.php", "_self");
+								},1000);
+							}
+						}
+					});
+				}
+			});
     });
   </script>
 </body>
