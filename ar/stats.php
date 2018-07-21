@@ -80,9 +80,9 @@
 				$('.chart-container').find("canvas").remove();
 				$('.chart-container').append('<canvas id="chart"></canvas>');
 				var ctx = document.getElementById('chart').getContext('2d');
-				document.getElementById('chart').style.height = "200px";
+				document.getElementById('chart').style.height = "600px";
 				var myChart = new Chart(ctx, {
-					type: "bar",
+					type: "horizontalBar",
 					data: {
 						labels: l,
 						datasets: [{
