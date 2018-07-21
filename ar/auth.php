@@ -72,7 +72,7 @@
 											<fieldset class="form-group">
 				                <label for="email">البريد الالكتروني</label>
 				                <div class="input-group">
-				                  <span class="input-group-addon rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-at"></i></span>
+				                  <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-at"></i></span>
 				                  <input type="email" id="s_e" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
 				                </div>
 				              </fieldset>
@@ -81,7 +81,7 @@
 											<fieldset class="form-group">
 				                <label for="password">الرمز السري</label>
 				                <div class="input-group">
-				                  <span class="input-group-addon rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-lock"></i></span>
+				                  <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-lock"></i></span>
 				                  <input type="password" id="s_p" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
 				                </div>
 				              </fieldset>
@@ -102,7 +102,7 @@
 		                  <fieldset class="form-group">
 		                    <label for="email">البريد الالكتروني</label>
 		                    <div class="input-group">
-		                      <span class="input-group-addon rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-at"></i></span>
+		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-at"></i></span>
 		                      <input type="email" id="r_e" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
 		                    </div>
 		                  </fieldset>
@@ -111,7 +111,7 @@
 		                  <fieldset class="form-group">
 		                    <label for="c_email">تأكيد البريد الالكتروني</label>
 		                    <div class="input-group">
-		                      <span class="input-group-addon rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-at"></i></span>
+		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-at"></i></span>
 		                      <input type="email" id="r_e_c" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
 		                    </div>
 		                  </fieldset>
@@ -120,7 +120,7 @@
 		                  <fieldset class="form-group">
 		                    <label for="fname">الاسم الاول</label>
 		                    <div class="input-group">
-		                      <span class="input-group-addon rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-user"></i></span>
+		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-user"></i></span>
 		                      <input type="text" id="r_fn" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
 		                    </div>
 		                  </fieldset>
@@ -129,7 +129,7 @@
 		                  <fieldset class="form-group">
 		                    <label for="lname">الاسم الثاني</label>
 		                    <div class="input-group">
-		                      <span class="input-group-addon rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-user"></i></span>
+		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-user"></i></span>
 		                      <input type="text" id="r_ln" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
 		                    </div>
 		                  </fieldset>
@@ -138,7 +138,7 @@
 		                  <fieldset class="form-group">
 		                    <label for="password">الرمز السري</label>
 		                    <div class="input-group">
-		                      <span class="input-group-addon rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-lock"></i></span>
+		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-lock"></i></span>
 		                      <input type="password" id="r_p" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
 		                    </div>
 		                  </fieldset>
@@ -147,7 +147,7 @@
 		                  <fieldset class="form-group">
 		                    <label for="c_password">تأكيد الرمز السري</label>
 		                    <div class="input-group">
-		                      <span class="input-group-addon rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-lock"></i></span>
+		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-lock"></i></span>
 		                      <input type="password" id="r_p_c" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
 		                    </div>
 		                  </fieldset>
