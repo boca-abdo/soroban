@@ -62,14 +62,15 @@
 			<a href="../fr/index.php"><img src="../images/fr.png"></a>
 			<a href="../en/index.php"><img src="../images/us.png"></a>
 		</div>
-		<div class="row justify-content-center align-items-end h-100 pb-5">
-      <div class="col-auto text-center text-warning" id="jumbo">
-        <h1 class="display-2 animated fadeInLeft">برنامج سوروبان</h1>
-        <h1 class="display-4 animated fadeInRight">للحساب الذهني وتنمية الذكاء</h1>
-        <div class="mx-auto my-5">
+		<div class="row justify-content-center align-items-end h-100 pb-3">
+      <div class="col-12 text-center text-warning" id="jumbo">
+				<img class="img-fluid" src="../images/logo.png" alt="logo">
+        <h1 class="display-2">برنامج سوروبان</h1>
+        <h1 class="display-4">للحساب الذهني وتنمية الذكاء</h1>
+        <div class="mx-auto my-sm-5">
           <a href="auth.php" class="btn btn-lg btn-outline-warning rounded-0 font-weight-bold px-5" style="box-shadow:none">دخول<i class="fas fa-sign-in-alt mr-2"></i></a>
         </div>
-        <a href="#about" class="btn btn-outline-warning animated bounce infinite mt-3" style="border-radius: 20px;box-shadow:none"><i class="fas fa-angle-double-down fa-3x" style="cursor:pointer"></i></a>
+        <a href="#about" class="btn btn-outline-warning animated bounce infinite mt-3" style="border-radius: 20px;box-shadow:none"><i class="fas fa-angle-double-down fa-2x" style="cursor:pointer"></i></a>
       </div>
     </div>
   </div>
