@@ -3,6 +3,9 @@ body,html {
 	font-family: Cairo, times, sans-serif;
 	height: 100vh;
 }
+@supports (display: flex) {
+  .noflex: { display: none; }
+}
 .hand {
 	font-family: 'Crafty Girls', Changa, sans-serif;
 }

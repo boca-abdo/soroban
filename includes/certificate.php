@@ -24,7 +24,6 @@
       $dt = $log_row['cert_date'];
       if ($log_row['cert_date'] == null) {
         $dt = date("Y-m-d");
-        $update = $srbn_con->query("UPDATE `users` SET `cert_date`='$dt' WHERE `id`='$log_id'");
       }
     }
     if (isset($_GET['name']) && isset($_GET['lang'])) {
@@ -120,8 +119,9 @@
       $pdf->SetFont('dejavusans', 'BI', 20);
     }
     $pdf->Write(0, $txt, '', 0, 'C', true, 0, false, false, 0);
-    if ($cert_code == "") {
+    if ($cert_code == null) {
       $cert_code = getCode();
+      $update = $srbn_con->query("UPDATE `users` SET `cert_date`='$dt',cert_code='$cert_code' WHERE `id`='$log_id'");
     }
     if ($lang == 'ar') {
       $html = "<span>امضاء : صالح أفهيم</span>";
