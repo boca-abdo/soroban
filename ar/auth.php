@@ -1,7 +1,20 @@
 <?php
 	include '../includes/user_check.php';
 	if ($log_id != "" && $log_e != "" && $log_p != "") {
-		header("location: dashboard.php");
+		$log_stmt = $srbn_con->prepare("SELECT * FROM `users` WHERE `id`=? AND `email`=? AND `password`=?");
+		$log_stmt->bindParam(1, $log_id, PDO::PARAM_INT);
+    $log_stmt->bindParam(2, $log_e, PDO::PARAM_STR);
+    $log_stmt->bindParam(3, $log_p, PDO::PARAM_STR);
+    try {
+      $log_stmt->execute();
+      if ($log_stmt->rowCount() > 0) {
+        $log_stmt->setFetchMode(PDO::FETCH_ASSOC);
+        $log_row = $log_stmt->fetch();
+				header("location: dashboard.php");
+      }
+    } catch (PDOException $err) {
+      echo $err->getMessage();
+    }
 	}
 ?>
 <!DOCTYPE html>

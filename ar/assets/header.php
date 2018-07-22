@@ -3,6 +3,7 @@
 	include '../includes/date.php';
 	if ($log_id == "" && $log_e == "" && $log_p == "") {
 		header("location: auth.php");
+		exit();
 	}
 	$path = "../users/".$log_id."/avatar.jpg";
 	if (!file_exists($path)) {

@@ -39,7 +39,7 @@
 						</div>
           </div>
           <div class="w-100"></div>
-          <div class="col-lg-6 pt-5" style="">
+          <div class="col-lg-6 pt-5 px-0">
             <div id="abacus" class="my-3 mr-sm-5" style="height: 143px;overflow: hidden"></div>
           </div>
           <div class="w-100"></div>

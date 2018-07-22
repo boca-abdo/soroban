@@ -57,7 +57,7 @@
 	<!-- spinner before page loading -->
 	<?php include '../assets/spinner.php' ?>
 	<!-- here starts jumbo block -->
-  <div id="" class="container-fluid" style="height: 100vh;background-image: url('../images/home.jpg'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
+  <div id="top" class="container-fluid" style="height: 100vh;background-image: url('../images/home.jpg'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
 		<div class="btn-group my-3 position-absolute" style="right:10px">
 			<a href="../fr/index.php"><img src="../images/fr.png"></a>
 			<a href="../en/index.php"><img src="../images/us.png"></a>
@@ -300,6 +300,9 @@
 				</div>
 			</div>
 			<hr class="bg-warning">
+			<div id="logo-warning">
+				<a href="#top"><img class="img-fluid my-3" src="../images/logo-warning.png" alt="logo"></a>
+			</div>
 			<nav class="nav justify-content-center">
         <a class="nav-link text-warning" href="https://www.facebook.com/sorobane/" target="_blank" style="box-shadow: none"><i class="fab fa-facebook-square fa-lg px-2"></i></a>
         <a class="nav-link text-warning" href="https://twitter.com/Soroban_online" target="_blank" style="box-shadow: none"><i class="fab fa-twitter-square fa-lg px-2"></i></a>
@@ -318,7 +321,7 @@
 			$("#spinner").addClass("d-none");
 			var el,pos,anim,hash;
 			// smooth scrolling on menu
-      $("#jumbo,#menu").on('click', 'a', function(e) {
+      $("#jumbo,#menu,#logo-warning").on('click', 'a', function(e) {
 				$("#menu").find("a").removeClass("active");
 				$(this).addClass("active");
         if (this.hash !== "") {

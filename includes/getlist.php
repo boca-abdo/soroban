@@ -24,6 +24,11 @@
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $i = 1;
     while ($row = $stmt->fetch()){
+      if ($row['city'] == null) {
+        $ct = "";
+      } else {
+        $ct = $row['city'];
+      }
       if ($lst == "nor") {
         if ($i < 4) {
           switch ($tbl) {
@@ -75,7 +80,7 @@
             $points = $row['e_total'];
             break;
         }
-        array_push($data,array($i,$row['fname']." ".$row['lname'],$row['city'],$row['teacher'],$points));
+        array_push($data,array($i,$row['fname']." ".$row['lname'],$ct,$row['teacher'],$points));
       }
       $i++;
     }
