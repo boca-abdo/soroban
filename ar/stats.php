@@ -78,10 +78,10 @@
 			];
 			function createChart(l,b,e){
 				$('.chart-container').find("canvas").remove();
-				$('.chart-container').append('<canvas id="chart"></canvas>');
+				$('.chart-container').append('<canvas id="chart" height="400"></canvas>');
 				var ctx = document.getElementById('chart').getContext('2d');
-				document.getElementById('chart').style.height = "600px";
 				var myChart = new Chart(ctx, {
+					responsive: false,
 					type: "horizontalBar",
 					data: {
 						labels: l,
