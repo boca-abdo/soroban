@@ -2,6 +2,7 @@
 body,html {
 	font-family: Cairo, times, sans-serif;
 	height: 100vh;
+	font-size: 12px;
 }
 @supports (display: flex) {
   .noflex: { display: none; }
@@ -49,11 +50,19 @@ body,html {
 	text-shadow: -2px 2px 5px #000
 }
 @media screen and (min-width: 768px) {
+	body,html {
+		font-size: 14px;
+	}
 	.gen {
 		font-size: 8rem;
 	}
 	.nfo {
 		font-size: 3rem
+	}
+}
+@media screen and (min-width: 992px) {
+	body,html {
+		font-size: 16px;
 	}
 }
 @media screen and (min-width: 1200px) {
