@@ -49,6 +49,12 @@ body,html {
 .nfo {
 	text-shadow: -2px 2px 5px #000
 }
+
+@media screen and (min-width: 480px) {
+	body,html {
+		font-size: 14px;
+	}
+}
 @media screen and (min-width: 768px) {
 	body,html {
 		font-size: 14px;
