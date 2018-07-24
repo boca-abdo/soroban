@@ -18,7 +18,7 @@
 		          <div class="card-header">
 								<h4 class="card-title">قسم المبتدئين</h4>
 		          </div>
-		          <div class="card-block" style="min-height:300px">
+		          <div class="card-block">
 		            <ul class="nav nav-tabs justify-content-center w-100 p-0" id="beginners-tab" role="tablist">
 		              <li class="nav-item w-50">
 		                <a class="btn btn-outline-warning active w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" id="week1-tab" data-toggle="tab" href="#week1" role="tab" aria-controls="week1" aria-selected="true" style="box-shadow:none">الترتيب الاسبوعي</a>
@@ -66,7 +66,7 @@
 		          <div class="card-header">
 								<h4 class="card-title">قسم المتفوقين</h4>
 		          </div>
-		          <div class="card-block" style="min-height:300px">
+		          <div class="card-block">
 		            <ul class="nav nav-tabs justify-content-center w-100 p-0" id="experts-tab" role="tablist">
 		              <li class="nav-item w-50">
 		                <a class="btn btn-outline-warning active w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" id="week2-tab" data-toggle="tab" href="#week2" role="tab" aria-controls="week2" aria-selected="true" style="box-shadow:none">الترتيب الاسبوعي</a>
