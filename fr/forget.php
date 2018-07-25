@@ -56,7 +56,7 @@
 						type: "POST",
 						data: {
 							e: e,
-							lang: "ar"
+							lang: "fr"
 						},
 						error: function(stt,xhr,err) {
 							console.log(err);

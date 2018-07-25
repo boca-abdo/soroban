@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
-	<title>موقع سوروبان</title>
+	<title>SOROBAN ONLINE</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="../images/fav.ico">
@@ -38,28 +38,28 @@
               if ($num1 < 1 || $num2 < 1 || $diff > 24) {
           ?>
 					<i class="far fa-frown animated zoomIn text-danger fa-5x mt-5"></i>
-					<h1 class="text-danger animated flash infinite mt-3">الصفحة المطلوبة غير متوفرة</h1>
+					<h1 class="text-danger animated flash infinite mt-3">Page indisponible</h1>
 					<?php
               } else {
           ?>
           <div class="card bg-dark rounded-0 text-warning card-shadow mt-3">
             <div class="card-header border-warning">
-              <h5 class="card-title">تحديث الرمز السري</h5>
+              <h5 class="card-title">Changement du mot de passe</h5>
             </div>
             <div class="card-block p-3">
 							<fieldset class="form-group">
-								<label for="">الرمز السري</label>
+								<label for="">Mot de passe</label>
 	  						<input id="p" class="form-control text-center background-transparent border-warning rounded-0" type="password">
 							</fieldset>
 							<fieldset class="form-group">
-								<label for="">تأكيد الرمز السري</label>
+								<label for="">Confirmer mot de passe</label>
 	  						<input id="c_p" class="form-control text-center background-transparent border-warning rounded-0" type="password">
 							</fieldset>
-  						<button id="recover" class="btn btn-outline-warning rounded-0 my-3" type="button" name="button" style="box-shadow:none">تحديث<i class="fas fa-redo mr-2"></i></button>
+  						<button id="recover" class="btn btn-outline-warning rounded-0 my-3" type="button" name="button" style="box-shadow:none">Changer<i class="fas fa-redo ml-2"></i></button>
   						<div id="status"></div>
   					</div>
             <div class="card-footer border-warning text-sm-right">
-              <a href="auth.php" class="text-warning">تسجيل الدخول</a>
+              <a href="auth.php" class="text-warning">connexion</a>
             </div>
           </div>
           <?php
@@ -79,9 +79,9 @@
 				var p = $("#p").val();
 				var c_p = $("#c_p").val();
 				if (p.length < 6) {
-					$("#status").text("لايسمح بأقل من 6 رموز");
+					$("#status").text("Pas moins de 6 caractères");
 				} else if (p != c_p) {
-					$("#status").text("الرمزان غير متطابقان");
+					$("#status").text("Mots de passe non identiques");
 				} else {
 					$.ajax({
 						url: "../includes/update_pass.php",
@@ -95,7 +95,7 @@
 						},
 						success: function(res) {
 							if (res == "done") {
-								$("#status").text("لقد تم تحديث رمزكم السري بنجاح");
+								$("#status").text("Votre mot de passe a été changé avec succes");
 								setTimeout(function(){
 									window.open("auth.php", "_self");
 								},1000);
