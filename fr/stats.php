@@ -1,23 +1,23 @@
 <?php include 'assets/header.php' ?>
-				<h1 class="h1 d-none d-md-block mb-3">احصائيات النقط التي سجلتها</h1>
-				<h4 class="h4 d-md-none mb-3">احصائيات النقط التي سجلتها</h4>
+				<h2 class="h2 d-none d-md-block text-uppercase mb-3">Statistiques des points marqués</h2>
+				<h5 class="h5 d-md-none text-uppercase mb-3">Statistiques des points marqués</h5>
 				<div class="row justify-content-center" id="views">
 					<div class="col-sm-3 mb-2">
-						<button type="button" class="btn btn-block btn-outline-dark rounded-0 active" style="box-shadow: none">سنة<span id="year" class="mr-2"><?php echo $year ?></span></button>
+						<button type="button" class="btn btn-block btn-outline-dark rounded-0 active" style="box-shadow: none">Année<span id="year" class="ml-2"><?php echo $year ?></span></button>
 					</div>
 					<div class="col-sm-3 mb-2">
-						<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">اﻷسبوع<span id="week" class="mr-2"><?php echo $week ?></span></button>
+						<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">Semaine<span id="week" class="ml-2"><?php echo $week ?></span></button>
 					</div>
 					<div class="col-sm-3 mb-2">
-						<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">شهر<span id="month" class="mr-2"><?php echo $month_arr[$month][0] ?></span></button>
+						<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">Mois<span id="month" class="ml-2"><?php echo $month_arr[$month][1] ?></span></button>
 					</div>
 					<div class="col-sm-3 mb-2">
-						<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">اليوم<span id="day" class="mr-2"><?php echo $day ?></span></button>
+						<button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow: none">Jour<span id="day" class="ml-2"><?php echo $day ?></span></button>
 					</div>
 				</div>
 				<hr class="bg-dark">
-				<h1 class="h1 d-none d-md-block mb-3 dp">السنوات</h1>
-				<h4 class="h4 d-md-none mb-3 dp">السنوات</h4>
+				<h1 class="h1 d-none d-md-block mb-3 dp">Années</h1>
+				<h4 class="h4 d-md-none mb-3 dp">Années</h4>
 				<div class="row justify-content-center" id="calendar"></div>
 				<hr class="bg-dark">
 				<div class="w-100 my-3">
@@ -36,44 +36,44 @@
 			month = <?php echo $month ?>,
 			week = <?php echo $week ?>,
 			day = <?php echo $day ?>,
-			ttl = "مبيان نقط سنة " + year,
+			ttl = "graphique de points marqués en " + year,
 			months = [
 				{
 					days: 31,
-					name: "يناير"
+					name: "janvier"
 				},{
 					days: 28,
-					name: "فبراير"
+					name: "février"
 				},{
 					days: 31,
-					name: "مارس"
+					name: "mars"
 				},{
 					days: 30,
-					name: "أبريل"
+					name: "avril"
 				},{
 					days: 31,
-					name: "ماي"
+					name: "mai"
 				},{
 					days: 30,
-					name: "يونيو"
+					name: "juin"
 				},{
 					days: 31,
-					name: "يوليوز"
+					name: "juillet"
 				},{
 					days: 31,
-					name: "غشت"
+					name: "aout"
 				},{
 					days: 30,
-					name: "شتنبر"
+					name: "septembre"
 				},{
 					days: 31,
-					name: "أكتوبر"
+					name: "octobre"
 				},{
 					days: 30,
-					name: "نونبر"
+					name: "novembre"
 				},{
 					days: 31,
-					name: "دجنبر"
+					name: "décembre"
 				}
 			];
 			function createChart(l,b,e){
@@ -86,7 +86,7 @@
 					data: {
 						labels: l,
 						datasets: [{
-							label: "المبتدئين",
+							label: "DÉBUTANTS",
 							data: b,
 							backgroundColor: 'rgba(192, 57, 43,1.0)',
 							lineTension: 0,
@@ -98,7 +98,7 @@
 							pointBackgroundColor: 'red',
 							steppedLine: false,
 						},{
-							label: "المتفوقين",
+							label: "EXPRETS",
 							data: e,
 							backgroundColor: 'rgba(44, 62, 80,1.0)',
 							lineTension: 0,
@@ -151,11 +151,11 @@
 					success: function(res) {
 						data = JSON.parse(res);
 						for (i = 0; i < data.b.points.length; i++) {
-							b_lbls[i] = "المحاولة " + (i+1);
+							b_lbls[i] = "essai " + (i+1);
 							b_points[i] = Number(data.b.points[i]);
 						}
 						for (i = 0; i < data.e.points.length; i++) {
-							e_lbls[i] = "المحاولة " + (i+1);
+							e_lbls[i] = "essai " + (i+1);
 							e_points[i] = Number(data.e.points[i]);
 						}
 						lbls = b_lbls;
@@ -165,7 +165,7 @@
 						if (lbls.length > 0) {
 							createChart(lbls,b_points,e_points);
 						} else {
-							$(".chart-container").html("<h3 class='animated flash infinite text-danger'>لا توجد معطيات لهذا التاريخ</h3>");
+							$(".chart-container").html("<h3 class='animated flash infinite text-danger'>Aucune donnée disponible pour cette date</h3>");
 						}
 					},
 					complete: function() {
@@ -251,20 +251,20 @@
 				view = $(this).find("span").attr("id");
 				switch (view) {
 					case 'year':
-						$(".dp").text("السنوات");
-						$(".st").text("مبيان نقط سنة " + year);
+						$(".dp").text("Années");
+						$(".st").text("Graphique des points marqués en " + year);
 						break;
 					case 'month':
-						$(".dp").text("أشهر سنة " + year);
-						$(".st").text("مبيان نقط شهر " + months[month-1].name + " " + year);
+						$(".dp").text("Mois de l'année " + year);
+						$(".st").text("Graphique des points marqués en " + months[month-1].name + " " + year);
 						break;
 					case 'week':
-						$(".dp").text("أسابيع سنة " + year);
-						$(".st").text("مبيان نقط اﻷسبوع " + week + " من سنة " + year);
+						$(".dp").text("Semaine de l'année " + year);
+						$(".st").text("Graphique des points marqués à la semaine " + week + " de l'année " + year);
 						break;
 					case 'day':
-						$(".dp").text("أيام شهر " + months[month-1].name + " " + year);
-						$(".st").text("مبيان نقط يوم " + day + " " + months[month-1].name + " " + year);
+						$(".dp").text("Jours du mois de " + months[month-1].name + " " + year);
+						$(".st").text("Graphique des points marqués en " + day + " " + months[month-1].name + " " + year);
 						break;
 				}
 				fillCalendar(view);
@@ -278,24 +278,24 @@
 						$("span#week").text(1);
 						year = val;
 						week = 1;
-						ttl = "مبيان نقط سنة " + year;
+						ttl = "Graphique des points marqués en " + year;
 						break;
 					case "month":
 						$("span#month").text(months[val-1].name);
 						$("span#day").text(1);
 						month = val;
 						day = 1;
-						ttl = "مبيان نقط شهر " + months[month-1].name + " " + year;
+						ttl = "Graphique des points marqués en " + months[month-1].name + " " + year;
 						break;
 					case "week":
 						$("span#week").text(val);
 						week = val;
-						ttl = "مبيان نقط اﻷسبوع " + week + " من سنة " + year;
+						ttl = "Graphique des points marqués à la semaine " + week + " de l'année " + year;
 						break;
 					case "day":
 						$("span#day").text(val);
 						day = val;
-						ttl = "مبيان نقط يوم " + day + " " + months[month-1].name + " " + year;
+						ttl = "Graphique des points marqués en " + day + " " + months[month-1].name + " " + year;
 						break;
 				}
 				getData(view,year,month,week,day);
