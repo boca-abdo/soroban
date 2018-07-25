@@ -90,7 +90,7 @@
 			<button class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:none"><img src="<?php echo $path; ?>" alt="avatar" width="25" height="25" class="rounded-circle"></button>
 			<div class="dropdown-menu bg-dark rounded-0 text-left p-0" aria-labelledby="dropdownMenu2" style="left: -120px;z-index: 9999">
 				<a class="dropdown-item" href="profile.php"><i class="fas fa-user mr-2"></i>profil</a>
-				<a class="dropdown-item" href="../includes/logout.php?q=ar"><i class="fas fa-power-off mr-2"></i>deconnexion</a>
+				<a class="dropdown-item" href="../includes/logout.php?q=fr"><i class="fas fa-power-off mr-2"></i>deconnexion</a>
 			</div>
 		</div>
   </div>

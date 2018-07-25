@@ -1,7 +1,7 @@
 <?php include 'assets/header.php' ?>
 				<div class="card bg-dark text-warning rounded-0 mt-3">
           <div class="card-header">
-						<h4 class="card-title">المعلومات الشخصية</h4>
+						<h4 class="card-title text-uppercase">Mon profil</h4>
           </div>
           <div class="card-block p-3">
 						<div class="mx-auto position-relative" style="width:150px;height:150px">
@@ -11,55 +11,55 @@
             <form class="form-row justify-content-center" action="" method="post" autocomplete="off" novalidate>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="fname">الاسم العائلي</label>
+                  <label for="fname">Nom</label>
                   <input id="fname" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['fname'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="lname">الاسم الشخصي</label>
+                  <label for="lname">Prénom</label>
                   <input id="lname" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['lname'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="adress">العنوان</label>
+                  <label for="adress">Adresse</label>
                   <input id="adress" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['adress'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="city">المدينة</label>
+                  <label for="city">Ville</label>
                   <input id="city" onkeydown="initialize()" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['city'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="tel">رقم الهاتف</label>
+                  <label for="tel">Téléphone</label>
                   <input id="tel" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['tel'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="teacher">الأستاذ</label>
+                  <label for="teacher">Professeur</label>
                   <input id="teacher" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['teacher'] ?>">
                 </fieldset>
               </div>
 							<div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="b_date">تاريخ الازدياد</label>
+                  <label for="b_date">Date de naissance</label>
                   <input id="b_date" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="date" max="<?php echo date("Y-m-d") ?>" style="background:transparent" value="<?php echo $log_row['b_date'] ?>">
                 </fieldset>
               </div>
 							<div class="col-md-6">
-								<label>الرمز السري</label>
-								<button type="button" class="btn btn-block btn-outline-warning font-weight-bold rounded-0" data-toggle="modal" data-target="#Modal">تحديث الرمز السري</button>
+								<label>Mot de passe</label>
+								<button type="button" class="btn btn-block btn-outline-warning font-weight-bold rounded-0" data-toggle="modal" data-target="#Modal">Changer mot de passe</button>
 							</div>
             </form>
           </div>
 					<div class="card-footer justify-content-center" style="overflow:hidden">
 						<span class="d-block text-danger"></span>
-						<button id="update" type="button" class="btn btn-outline-warning rounded-0 my-3 px-5">تحديث<i class="fas fa-sign-in-alt mr-2"></i></a>
+						<button id="update" type="button" class="btn btn-outline-warning rounded-0 my-3 px-5">Procéder<i class="fas fa-sign-in-alt ml-2"></i></a>
           </div>
         </div>
 			</div>
@@ -69,7 +69,7 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content bg-dark text-warning text-center">
 					<div class="modal-header p-0">
-						<h3 class="modal-title p-3">تحديث الرمز السري</h3>
+						<h3 class="modal-title p-3 text-uppercase">Changement de mot de passe</h3>
 						<button type="button" class="btn btn-sm btn-danger rounded-0" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true"><i class="fa fa-times"></i></span>
 						</button>
@@ -77,22 +77,22 @@
 					<div class="modal-body">
             <form class="" action="" method="post" autocomplete="off" novalidate>
               <fieldset class="form-group">
-                <label for="old">الرمز السري السابق</label>
+                <label for="old">Mot de passe actuel</label>
                 <input type="password" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" style="background:transparent" id="old">
               </fieldset>
               <fieldset class="form-group">
-                <label for="password">الرمز السري الجديد</label>
+                <label for="password">Nouveau mot de passe</label>
                 <input type="password" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" style="background:transparent" id="password">
               </fieldset>
 							<fieldset class="form-group">
-                <label for="c_password">تأكيد الرمز السري</label>
+                <label for="c_password">Confirmer mot de passe</label>
                 <input type="password" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" style="background:transparent" id="c_password">
               </fieldset>
             </form>
 					</div>
 					<div class="modal-footer justify-content-center">
 						<div class="w-100 text-danger"></div>
-						<button type="button" class="btn btn-block btn-outline-warning rounded-0" id="pass">تحديث<i class="fas fa-sign-in-alt mr-2"></i></button>
+						<button type="button" class="btn btn-block btn-outline-warning rounded-0" id="pass">Changer<i class="fas fa-sign-in-alt ml-2"></i></button>
 					</div>
 				</div>
 			</div>
@@ -113,21 +113,21 @@
 			var $btn = $("#update"),
 			testTel = new RegExp('^[0-9]+$');
 			function alertShow(msg) {
-				$btn.removeClass("btn-outline-info").addClass("btn-outline-danger").html("هناك خطأ<i class='fas fa-exclamation-triangle animated bounceIn infinite mr-2'></i>").prev().removeClass("animated fadeOutLeft").addClass("animated fadeInRight").text(msg);
+				$btn.removeClass("btn-outline-info").addClass("btn-outline-danger").html("Corrigez<i class='fas fa-exclamation-triangle animated bounceIn infinite ml-2'></i>").prev().removeClass("animated fadeOutLeft").addClass("animated fadeInRight").text(msg);
 			}
 			function alertHide() {
-				$btn.removeClass("btn-outline-danger").addClass("btn-outline-warning").html("تحديث<i class='fas fa-sign-in-alt mr-2'></i>").prev().removeClass("animated fadeInRight").addClass("animated fadeOutLeft");
+				$btn.removeClass("btn-outline-danger").addClass("btn-outline-warning").html("Procéder<i class='fas fa-sign-in-alt ml-2'></i>").prev().removeClass("animated fadeInRight").addClass("animated fadeOutLeft");
 			}
 			$(".myfile").on('change', function(){
 				$("#spinner").removeClass("d-none").addClass("d-flex");
 				$btn = $("#update");
 				alertHide();
-				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("المرجو الانتظار<i class='fas fa-spinner fa-spin mr-2'></i>");
+				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("Patientez<i class='fas fa-spinner fa-spin ml-2'></i>");
 				var file = $(this).prop("files")[0]
 				if (file.type != "image/jpeg") {
-					alertShow("لا يسمح الا بالصور من فئة jpg");
+					alertShow("seules les images jpeg sont supportés");
 				} else if (file.size > 5000000) {
-					alertShow("حجم الصورة لا يجب أن يتعدى 5 ميجا");
+					alertShow("Pas plus de 5M");
 				} else {
 					formdata = new FormData();
 					formdata.append("file", file);
@@ -144,14 +144,14 @@
 						},
 		        success: function(res){
 							if (res == "done") {
-								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("تم بنجاح<i class='fas fa-check mr-2'></i>");
+								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("succès<i class='fas fa-check ml-2'></i>");
 								setTimeout(function(){location.reload()},1000);
 							} else if (res == "size") {
-								alertShow("حجم الصورة لا يجب أن يتعدى 5 ميجا");
+								alertShow("Pas plus de 5M");
 							} else if (res == "type") {
-								alertShow("لا يسمح الا بالصور من فئة jpg");
+								alertShow("seules les images jpeg sont supportés");
 							} else {
-								alertShow("حدث خطأ غير متوقع أثناء تحميل الصورة، المرجو اعادة المحاولة لاحقا");
+								alertShow("Erreure inattendue, veuillez réessayer plus tard");
 								// console.log(res);
 							}
 		        },
@@ -164,15 +164,15 @@
 			$("#update").on('click', function(){
 				$btn = $(this);
 				alertHide();
-				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("المرجو الانتظار<i class='fas fa-spinner fa-spin mr-2'></i>");
+				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("Patientez<i class='fas fa-spinner fa-spin ml-2'></i>");
 				if ($("#fname").val() == "") {
-					alertShow("المرجو ادخال الاسم العائلي");
+					alertShow("Taper votre nom");
 				} else if ($("#lname").val() == "") {
-					alertShow("المرجو ادخال الاسم الشخصي");
+					alertShow("Tapez votre prénom");
 				} else if (testTel.test($("#tel").val()) == false) {
-					alertShow("المرجو استعمال الارقام فقط");
+					alertShow("Utilisez les chiffres");
 				} else if ($("#b_date").val() == "") {
-					alertShow("المرجو ادخال تاريخ ازدياد صحيح");
+					alertShow("Date de naissance incorrecte");
 				} else {
 					$.ajax({
 						url: "../includes/profile.php",
@@ -191,7 +191,7 @@
 						},
 						success: function(res) {
 							if (res == "done") {
-								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("تم بنجاح<i class='fas fa-check mr-2'></i>");
+								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("succès<i class='fas fa-check ml-2'></i>");
 								setTimeout(function(){location.reload()},1000);
 							} else {
 								console.log(res);
@@ -203,13 +203,13 @@
 			$("#pass").on('click', function(){
 				$btn = $(this);
 				alertHide();
-				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("المرجو الانتظار<i class='fas fa-spinner fa-spin mr-2'></i>");
+				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("Patientez<i class='fas fa-spinner fa-spin ml-2'></i>");
 				if ($("#old").val() == "" || $("#password").val() == "" || $("#c_password").val() == "") {
-					alertShow("يجب تعبئة جميع الخانات");
+					alertShow("Champs obligatoires");
 				} else if ($("#password").val().length < 6) {
-					alertShow("المرجو استعمال 6 حروف على اﻷقل");
+					alertShow("Pas moins de 6 caractères");
 				} else if ($("#password").val() != $("#c_password").val()) {
-					alertShow("الرمزان غير متطابقان");
+					alertShow("Mots de passes non identiques");
 				} else {
 					$.ajax({
 						url: "../includes/password.php",
@@ -223,11 +223,11 @@
 						},
 						success: function(res) {
 							if (res == "old") {
-								alertShow("الرمز السري خاطئ");
+								alertShow("Mot de passe incorrect");
 							} else if (res == "short") {
-								alertShow("المرجو استعمال 6 حروف على اﻷقل");
+								alertShow("Pas moins de 6 caractères");
 							} else if (res == "done") {
-								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("تم بنجاح<i class='fas fa-check mr-2'></i>");
+								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("succès<i class='fas fa-check ml-2'></i>");
 								setTimeout(function(){location.reload()},1000)
 							} else {
 								console.log(res);
