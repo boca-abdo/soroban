@@ -18,9 +18,9 @@
 	}
 ?>
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
-	<title>موقع سوروبان</title>
+	<title>SOROBAN ONLINE</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="../images/fav.ico">
@@ -46,7 +46,7 @@
 	     var js, fjs = d.getElementsByTagName(s)[0];
 	     if (d.getElementById(id)) {return;}
 	     js = d.createElement(s); js.id = id;
-	     js.src = "https://connect.facebook.net/en_US/sdk.js";
+	     js.src = "https://connect.facebook.net/fr_FR/sdk.js";
 	     fjs.parentNode.insertBefore(js, fjs);
 	   }(document, 'script', 'facebook-jssdk'));
 	</script>
@@ -56,13 +56,6 @@
   <div class="container" style="height: 100vh">
     <div class="row justify-content-center h-100">
       <div class="col-lg-8 align-self-top text-center pt-3">
-				<div class="alert bg-dark text-warning alert-dismissible fade show d-none rounded-0 px-5">
-					<button type="button" class="close p-3" aria-label="Close">
-				    <span aria-hidden="true"><i class="fas fa-xs fa-times text-light"></i></span>
-				    <span class="sr-only">Close</span>
-				  </button>
-					<span class="font-weight-bold">نحيطكم علما أن الموقع يستخدم الكوكيز، يمكنم الاطلاع على قوانين الموقع وسياسة الخصوصية على الرابط أسفل الصفحة</span>
-				</div>
         <a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
         <div class="card bg-dark rounded-0 text-warning card-shadow mt-3">
           <div class="card-header border-warning">
@@ -71,10 +64,10 @@
           <div class="card-block py-3">
 						<ul class="nav nav-tabs justify-content-center w-100 p-0" id="myTab" role="tablist">
 						  <li class="nav-item w-50">
-						    <a class="btn btn-outline-warning active w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="box-shadow:none">دخول المستخدم</a>
+						    <a class="btn btn-outline-warning text-uppercase font-weight-bold active w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="box-shadow:none">connexion</a>
 						  </li>
 						  <li class="nav-item w-50">
-						    <a class="btn btn-outline-warning w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="box-shadow:none">مستخدم جديد</a>
+						    <a class="btn btn-outline-warning text-uppercase font-weight-bold w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="box-shadow:none">inscription</a>
 						  </li>
 						</ul>
 						<div class="tab-content p-3" id="myTabContent">
@@ -83,7 +76,7 @@
 									<div class="row">
 										<div class="col-md-6">
 											<fieldset class="form-group">
-				                <label for="email">البريد الالكتروني</label>
+				                <label for="email">Email</label>
 				                <div class="input-group">
 				                  <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-at"></i></span>
 				                  <input type="email" id="s_e" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
@@ -92,7 +85,7 @@
 										</div>
 										<div class="col-md-6">
 											<fieldset class="form-group">
-				                <label for="password">الرمز السري</label>
+				                <label for="password">Mot de passe</label>
 				                <div class="input-group">
 				                  <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-lock"></i></span>
 				                  <input type="password" id="s_p" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
@@ -103,7 +96,7 @@
 		              <div class="alert bg-warning text-dark rounded-0 font-weight-bold animated d-none"></div>
 		              <fieldset class="form-group row justify-content-center">
 		                <div class="col-sm-4 mx-auto">
-		                  <button type="button" id="s_s" class="btn btn-outline-warning btn-block rounded-0" name="button">دخول<i class="fas fa-sign-in-alt mr-2"></i></button>
+		                  <button type="button" id="s_s" class="btn btn-outline-warning btn-block rounded-0" name="button">Entrer<i class="fas fa-sign-in-alt ml-2"></i></button>
 		                </div>
 		              </fieldset>
 		            </form>
@@ -113,7 +106,7 @@
 		              <div class="row">
 		                <div class="col-md-6">
 		                  <fieldset class="form-group">
-		                    <label for="email">البريد الالكتروني</label>
+		                    <label for="email">Email</label>
 		                    <div class="input-group">
 		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-at"></i></span>
 		                      <input type="email" id="r_e" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
@@ -122,7 +115,7 @@
 		                </div>
 		                <div class="col-md-6">
 		                  <fieldset class="form-group">
-		                    <label for="c_email">تأكيد البريد الالكتروني</label>
+		                    <label for="c_email">Confirmer email</label>
 		                    <div class="input-group">
 		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-at"></i></span>
 		                      <input type="email" id="r_e_c" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
@@ -131,7 +124,7 @@
 		                </div>
 		                <div class="col-md-6">
 		                  <fieldset class="form-group">
-		                    <label for="fname">الاسم الاول</label>
+		                    <label for="fname">Nom</label>
 		                    <div class="input-group">
 		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-user"></i></span>
 		                      <input type="text" id="r_fn" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
@@ -140,7 +133,7 @@
 		                </div>
 		                <div class="col-md-6">
 		                  <fieldset class="form-group">
-		                    <label for="lname">الاسم الثاني</label>
+		                    <label for="lname">Prénom</label>
 		                    <div class="input-group">
 		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-user"></i></span>
 		                      <input type="text" id="r_ln" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
@@ -149,7 +142,7 @@
 		                </div>
 		                <div class="col-md-6">
 		                  <fieldset class="form-group">
-		                    <label for="password">الرمز السري</label>
+		                    <label for="password">Mot de passe</label>
 		                    <div class="input-group">
 		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-lock"></i></span>
 		                      <input type="password" id="r_p" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
@@ -158,7 +151,7 @@
 		                </div>
 		                <div class="col-md-6">
 		                  <fieldset class="form-group">
-		                    <label for="c_password">تأكيد الرمز السري</label>
+		                    <label for="c_password">Confirmer mot de passe</label>
 		                    <div class="input-group">
 		                      <span class="input-group-prepend p-2 rounded-0 bg-warning text-dark border-left-0 border-top-0 border-bottom-0" style="background: transparent"><i class="fas fa-lock"></i></span>
 		                      <input type="password" id="r_p_c" class="form-control rounded-0 text-center text-warning border-warning" style="background: transparent">
@@ -169,7 +162,7 @@
 		              <div class="alert bg-warning text-dark rounded-0 font-weight-bold animated d-none"></div>
 		              <fieldset class="form-group row justify-content-center">
 		                <div class="col-sm-4 mx-auto">
-		                  <button type="button" id="r_s" class="btn btn-outline-warning btn-block rounded-0" name="button">دخول<i class="fas fa-sign-in-alt mr-2"></i></button>
+		                  <button type="button" id="r_s" class="btn btn-outline-warning btn-block rounded-0" name="button">Entrer<i class="fas fa-sign-in-alt ml-2"></i></button>
 		                </div>
 		              </fieldset>
 		            </form>
@@ -180,25 +173,32 @@
 								<hr class="bg-warning">
 							</div>
 							<div class="col-auto">
-								<span>أو عن طريق</span>
+								<span class="text-uppercase">ou</span>
 							</div>
 							<div class="col-3 col-sm-4 col-xl-5">
 								<hr class="bg-warning">
 							</div>
 							<div class="w-100"></div>
 							<div class="col-sm-6 col-md-4 my-2">
-								<button type="button" class="btn btn-outline-warning btn-block rounded-0" id="fb">فيسبوك<i class="fab fa-facebook-square mr-2"></i></button>
+								<button type="button" class="btn btn-outline-warning btn-block rounded-0 text-uppercase" id="fb">facebook<i class="fab fa-facebook-square ml-2"></i></button>
 							</div>
 							<div class="col-sm-6 col-md-4 my-2">
-								<button type="button" class="btn btn-outline-warning btn-block rounded-0" id="ggl">غوغل<i class="fab fa-google mr-2"></i></button>
+								<button type="button" class="btn btn-outline-warning btn-block rounded-0 text-uppercase" id="ggl">google<i class="fab fa-google ml-2"></i></button>
 							</div>
 							<div class="col-12 text-center" id="scl"></div>
 						</div>
           </div>
           <div class="card-footer border-warning text-sm-right">
-            <a href="forget.php" class="text-warning">نسيت الرمز السري</a>
+            <a href="forget.php" class="text-warning">Mot de passe oublié?</a>
           </div>
         </div>
+				<div class="alert bg-dark text-warning alert-dismissible fade show d-none rounded-0 px-5 mt-3">
+					<button type="button" class="close p-3" aria-label="Close">
+				    <span aria-hidden="true"><i class="fas fa-xs fa-times text-light"></i></span>
+				    <span class="sr-only">Close</span>
+				  </button>
+					<span class="font-weight-bold">notre site utilise les cookies afin de garantir une navigation facile. pour plus d'informations veuillez lire notre charte de confidentialité à la fin de la page.</span>
+				</div>
       </div>
       <div class="w-100"></div>
       <?php include 'assets/footer.php' ?>
@@ -245,7 +245,7 @@
 								if (res === "done") {
 									location.reload();
 								} else {
-									$("#scl").text("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.");
+									$("#scl").text("Erreure inattendue, veuillez réessayer plus tard");
 									console.log(res);
 								}
 							},
@@ -267,7 +267,7 @@
 							if (res === "done") {
 								location.reload();
 							} else {
-								$("#scl").text("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.");
+								$("#scl").text("Erreure inattendue, veuillez réessayer plus tard");
 								console.log(res);
 							}
 						},
@@ -298,30 +298,30 @@
 			}
 			function alertShow(msg,al) {
 				al.removeClass("d-none");
-				$btn.removeClass("btn-info").addClass("btn-danger").html('هناك خطأ<i class="fas fa-exclamation-triangle fa-fw mr-2 animated zoomIn infinite"></i>');
+				$btn.removeClass("btn-info").addClass("btn-danger").html('Corrigez<i class="fas fa-exclamation-triangle fa-fw ml-2 animated zoomIn infinite"></i>');
 				al.removeClass("fadeOut").addClass("fadeIn").text(msg);
 			}
 			function alertHide(al) {
-				$btn.removeClass("btn-danger").addClass("btn-outline-warning").html('دخول<i class="fas fa-sign-in-alt fa-fw mr-2"></i>');
+				$btn.removeClass("btn-danger").addClass("btn-outline-warning").html('Entrer<i class="fas fa-sign-in-alt fa-fw ml-2"></i>');
 				al.removeClass("fadeIn").addClass("fadeOut");
 			}
 			setTimeout(function(){
-				$(".alert").first().removeClass("d-none").addClass("animated fadeInRight");
+				$(".alert").last().removeClass("d-none").addClass("animated fadeInRight");
 			},5000);
-			$(".alert:first").on("click", ".close", function(){
-				$(".alert:first").addClass("animated fadeOutLeft");
+			$(".alert:last").on("click", ".close", function(){
+				$(".alert:last").addClass("animated fadeOutLeft");
 				setTimeout(function(){ // change this to trigger in the end of the animation
-					$(".alert:first").addClass("d-none");
+					$(".alert:last").addClass("d-none");
 				},1000);
 			});
 			$("#s_s").on("click", function(){
 				$btn = $(this);
 				$alert = $(this).parents("fieldset").prev();
-				$btn.removeClass("btn-outline-warning").addClass("btn-info").html('المرجو الانتظار<i class="fas fa-spinner fa-pulse fa-fw mr-2"></i>');
+				$btn.removeClass("btn-outline-warning").addClass("btn-info").html('Patientez<i class="fas fa-spinner fa-pulse fa-fw ml-2"></i>');
 				if ($s_e.val() == "") {
-					alertShow("المرجو ادخال البريد الالكتروني",$alert);
+					alertShow("Champ obligatoire",$alert);
 				} else if($s_p.val() == "") {
-					alertShow("المرجو ادخال الرمز السري",$alert);
+					alertShow("Champ obligatoire",$alert);
 				} else {
 					$.ajax({
 						url: "../includes/sign.php",
@@ -332,14 +332,14 @@
 						},
 						success: function(res) {
 							if (res === "email") {
-								alertShow("البريد الالكتروني غير متوفر",$alert);
+								alertShow("Email indisponible",$alert);
 							} else if (res === "password") {
-								alertShow("الرمز السري غير صحيح",$alert);
+								alertShow("Mot de passe incorrect",$alert);
 							} else if (res === "success") {
-								$btn.removeClass("btn-info").addClass("btn-success").html('مرحبا بكم<i class="fas fa-check fa-fw mr-2"></i>');
+								$btn.removeClass("btn-info").addClass("btn-success").html('Bienvenue<i class="fas fa-check fa-fw ml-2"></i>');
 								setTimeout(function(){location.reload()},1000);
 							} else {
-								alertShow("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.",$alert);
+								alertShow("Erreure inattendue, veuillez réessayer plus tard",$alert);
 								console.log(res);
 							}
 						},
@@ -352,27 +352,21 @@
 			$("#r_s").on("click", function(){
 				$btn = $(this);
 				$alert = $(this).parents("fieldset").prev();
-				$btn.removeClass("btn-outline-warning").addClass("btn-info").html('المرجو الانتظار<i class="fas fa-spinner fa-pulse fa-fw mr-2"></i>');
-        if ($r_e.val() == "") {
-					alertShow("المرجو ادخال البريد الالكتروني",$alert);
+				$btn.removeClass("btn-outline-warning").addClass("btn-info").html('Patientez<i class="fas fa-spinner fa-pulse fa-fw ml-2"></i>');
+        if ($r_e.val() == "" || $r_fn.val() == "" || $r_ln.val() == "" || $r_p.val() == "") {
+					alertShow("Champ obligatoire",$alert);
 				} else if(testEmail.test($r_e.val()) == false) {
-					alertShow("البريد الالكتروني غير صحيح",$alert);
+					alertShow("Email incorrect",$alert);
 				} else if($r_e_c.val() == "") {
-					alertShow("المرجو تأكيد البريد الالكتروني",$alert);
+					alertShow("Confirmez votre email",$alert);
 				} else if($r_e.val() !== $r_e_c.val()) {
-					alertShow("البريدان غير متطابقان",$alert);
-				} else if($r_fn.val() == "") {
-					alertShow("المرجو ادخال الاسم الاول",$alert);
-				} else if($r_ln.val() == "") {
-					alertShow("المرجو ادخال الاسم الثاني",$alert);
-				} else if($r_p.val() == "") {
-					alertShow("المرجو ادخال الرمز السري",$alert);
+					alertShow("Emails non identiques",$alert);
 				} else if($r_p.val().length < 6) {
-					alertShow("6 حروف أو أكثر",$alert);
+					alertShow("Pas moins de 6 caractères",$alert);
 				} else if($r_p_c.val() == "") {
-					alertShow("المرجو تأكيد الرمز السري",$alert);
+					alertShow("Confirmez votre mot de passe",$alert);
 				} else if($r_p.val() !== $r_p_c.val()) {
-					alertShow("الرمزان غير متطابقان",$alert);
+					alertShow("Mots de passe non identiques",$alert);
 				} else {
 					$.ajax({
 						url: "../includes/register.php",
@@ -385,16 +379,16 @@
 						},
 						success: function(res) {
               if (res === "email") {
-								alertShow("البريد الالكتروني خاطئ",$alert);
+								alertShow("Email incorrect",$alert);
 							} else if (res === "dup") {
-								alertShow("البريد الالكتروني سبق استخدامه",$alert);
+								alertShow("Email déjà utilisé",$alert);
 							} else if (res === "pass") {
-								alertShow("6 حروف أو أكثر",$alert);
+								alertShow("Pas moins de 6 caractères",$alert);
 							} else if (res === "success") {
-								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html('مرحبا بكم<i class="fas fa-check fa-fw mr-2"></i>');
+								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html('Bienvenue<i class="fas fa-check fa-fw ml-2"></i>');
 								setTimeout(function() {location.reload();},1000);
 							} else {
-								alertShow("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.",$alert);
+								alertShow("Erreure inattendue, veuillez réessayer plus tard",$alert);
 								console.log(res);
 							}
 						},
