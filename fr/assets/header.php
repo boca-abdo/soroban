@@ -11,9 +11,9 @@
 	}
 ?>
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
-	<title>موقع سوروبان</title>
+	<title>SOROBAN ONLINE</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="../images/fav.ico">
@@ -43,57 +43,56 @@
 		</div>
 	</div>
 	<?php include '../assets/spinner.php' ?>
-  <div class="navbar fixed-top justify-content-between bg-dark p-0" style="z-index: 5005">
-		<div class="dropdown open float-left">
-			<button class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:none"><img src="<?php echo $path; ?>" alt="avatar" width="25" height="25" class="rounded-circle"></button>
-			<div class="dropdown-menu bg-dark rounded-0 text-right p-0" aria-labelledby="dropdownMenu2" style="left: -120px;z-index: 9999">
-				<a class="dropdown-item" href="profile.php"><i class="fas fa-user ml-2"></i>معلوماتي</a>
-				<a class="dropdown-item" href="../includes/logout.php?q=ar"><i class="fas fa-power-off ml-2"></i>تسجيل الخروج</a>
-			</div>
-		</div>
+  <div class="navbar fixed-top justify-content-between text-uppercase bg-dark p-0" style="z-index: 5005">
+		<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="index.php" style="box-shadow:none"><i class="fas fa-home"></i></a>
 		<ul class="nav p-0">
 			<li class="nav-item">
-				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="dashboard.php" style="box-shadow:none"><span class="d-none d-md-inline">مركزي</span><i class="fas fa-list-ol mr-md-2"></i></a>
+				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="dashboard.php" style="box-shadow:none"><i class="fas fa-tachometer-alt mr-md-2"></i><span class="d-none d-md-inline">acceuil</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="stats.php" style="box-shadow:none"><span class="d-none d-md-inline">ارقامي</span><i class="fas fa-chart-pie mr-md-2"></i></a>
+				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="stats.php" style="box-shadow:none"><i class="fas fa-chart-pie mr-md-2"></i><span class="d-none d-md-inline">stats</span></a>
 			</li>
 			<li class="nav-item">
 				<div class="dropdown open">
-		      <button class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:none"><span class="d-none d-md-inline">دروسي</span><i class="fas fa-graduation-cap mr-md-2"></i></button>
+		      <button class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:none"><i class="fas fa-graduation-cap mr-md-2"></i><span class="d-none d-md-inline text-uppercase">cours</span></button>
 		      <div class="dropdown-menu bg-dark rounded-0 text-center p-0" aria-labelledby="dropdownMenu1" style="left: -120px;z-index: 9999">
-		        <a class="dropdown-item" href="history.php">ماهو سوروبان؟</a>
-		        <a class="dropdown-item" href="repr.php">تمثيل اﻷعداد</a>
+		        <a class="dropdown-item" href="history.php">SOROBAN, c'est quoi?</a>
+		        <a class="dropdown-item" href="repr.php">Représentation</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="practice1.php">تدريب تمثيل اﻷعداد</a>
+		        <a class="dropdown-item" href="practice1.php">Entraînement</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="simple_add.php">الجمع البسيط</a>
-		        <a class="dropdown-item" href="simple_sub.php">الطرح البسيط</a>
-		        <a class="dropdown-item" href="mob5_add.php">المبادلة بخمسة في الجمع</a>
-		        <a class="dropdown-item" href="mob5_sub.php">المبادلة بخمسة في الطرح</a>
-		        <a class="dropdown-item" href="mob10_add.php">المبادلة بعشرة في الجمع</a>
-		        <a class="dropdown-item" href="mob10_sub.php">المبادلة بعشرة في الطرح</a>
-		        <a class="dropdown-item" href="mob105_add.php">المبادلة بخمسة وعشرة في الجمع</a>
-		        <a class="dropdown-item" href="mob105_sub.php">المبادلة بخمسة وعشرة في الطرح</a>
+		        <a class="dropdown-item" href="simple_add.php">addition simple</a>
+		        <a class="dropdown-item" href="simple_sub.php">soustraction simple</a>
+		        <a class="dropdown-item" href="mob5_add.php">Les amis de 5 - addition -</a>
+		        <a class="dropdown-item" href="mob5_sub.php">Les amis de 5 - soustraction -</a>
+		        <a class="dropdown-item" href="mob10_add.php">Les amis de 10 - addition -</a>
+		        <a class="dropdown-item" href="mob10_sub.php">Les amis de 10 - soustraction -</a>
+		        <a class="dropdown-item" href="mob105_add.php">Les amis de 5 et 10 - addition -</a>
+		        <a class="dropdown-item" href="mob105_sub.php">Les amis de 5 et 10 - soustraction -</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="practice2.php">تدريب المبادلات</a>
+		        <a class="dropdown-item" href="practice2.php">Entraînement</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="mul1.php">الضرب - الطريقة 1 -</a>
-		        <a class="dropdown-item" href="mul2.php">الضرب - الطريقة 2 -</a>
-		        <a class="dropdown-item" href="division.php">القسمة</a>
+		        <a class="dropdown-item" href="mul1.php">multiplication 1</a>
+		        <a class="dropdown-item" href="mul2.php">multiplication 2</a>
+		        <a class="dropdown-item" href="division.php">division</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="practice3.php">تدريب السرعة</a>
+		        <a class="dropdown-item" href="practice3.php">Entraînement vitesse</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item bg-danger" href="certificate.php">تحميل الشهادة</a>
+		        <a class="dropdown-item bg-danger" href="certificate.php">certificat</a>
 		      </div>
 		    </div>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-danger rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="challenge.php" style="box-shadow:none"><span class="d-none d-md-inline">التحدي</span><i class="fas fa-stopwatch mr-md-2"></i></a>
+				<a class="btn btn-danger rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="challenge.php" style="box-shadow:none"><i class="fas fa-stopwatch mr-md-2"></i><span class="d-none d-md-inline">Challenge</span></a>
 			</li>
 		</ul>
-
-    <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 float-left" href="index.php" style="box-shadow:none"><i class="fas fa-home"></i></a>
+		<div class="dropdown open">
+			<button class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:none"><img src="<?php echo $path; ?>" alt="avatar" width="25" height="25" class="rounded-circle"></button>
+			<div class="dropdown-menu bg-dark rounded-0 text-left p-0" aria-labelledby="dropdownMenu2" style="left: -120px;z-index: 9999">
+				<a class="dropdown-item" href="profile.php"><i class="fas fa-user mr-2"></i>profil</a>
+				<a class="dropdown-item" href="../includes/logout.php?q=ar"><i class="fas fa-power-off mr-2"></i>deconnexion</a>
+			</div>
+		</div>
   </div>
 	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">
 		<div class="col-12 align-self-top">
