@@ -32,6 +32,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js?hl=fr" async defer></script>
 	<script>
 	  window.fbAsyncInit = function() {
 	    FB.init({
@@ -158,6 +159,9 @@
 		                    </div>
 		                  </fieldset>
 		                </div>
+										<div class="col-auto mx-auto mb-3" id="captcha">
+											<div class="g-recaptcha" data-sitekey="6LeG1TEUAAAAAK120wk9fdBg1kY-tZQYWwrEXsTy"></div>
+										</div>
 		              </div>
 		              <div class="alert bg-warning text-dark rounded-0 font-weight-bold animated d-none"></div>
 		              <fieldset class="form-group row justify-content-center">
@@ -350,10 +354,13 @@
 				}
 			});
 			$("#r_s").on("click", function(){
+				var response = grecaptcha.getResponse();
 				$btn = $(this);
 				$alert = $(this).parents("fieldset").prev();
 				$btn.removeClass("btn-outline-warning").addClass("btn-info").html('Patientez<i class="fas fa-spinner fa-pulse fa-fw ml-2"></i>');
-        if ($r_e.val() == "" || $r_fn.val() == "" || $r_ln.val() == "" || $r_p.val() == "") {
+        if (response == "") {
+					alertShow("Verifiez le captcha",$alert);
+				} else if ($r_e.val() == "" || $r_fn.val() == "" || $r_ln.val() == "" || $r_p.val() == "") {
 					alertShow("Champ obligatoire",$alert);
 				} else if(testEmail.test($r_e.val()) == false) {
 					alertShow("Email incorrect",$alert);

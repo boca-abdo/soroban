@@ -32,6 +32,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://www.google.com/recaptcha/api.js?hl=ar" async defer></script>
 	<script>
 	  window.fbAsyncInit = function() {
 	    FB.init({
@@ -56,13 +57,7 @@
   <div class="container" style="height: 100vh">
     <div class="row justify-content-center h-100">
       <div class="col-lg-8 align-self-top text-center pt-3">
-				<div class="alert bg-dark text-warning alert-dismissible fade show d-none rounded-0 px-5">
-					<button type="button" class="close p-3" aria-label="Close">
-				    <span aria-hidden="true"><i class="fas fa-xs fa-times text-light"></i></span>
-				    <span class="sr-only">Close</span>
-				  </button>
-					<span class="font-weight-bold">نحيطكم علما أن الموقع يستخدم الكوكيز، يمكنم الاطلاع على قوانين الموقع وسياسة الخصوصية على الرابط أسفل الصفحة</span>
-				</div>
+
         <a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
         <div class="card bg-dark rounded-0 text-warning card-shadow mt-3">
           <div class="card-header border-warning">
@@ -165,6 +160,9 @@
 		                    </div>
 		                  </fieldset>
 		                </div>
+										<div class="col-auto mx-auto mb-3" id="captcha">
+											<div class="g-recaptcha" data-sitekey="6LeG1TEUAAAAAK120wk9fdBg1kY-tZQYWwrEXsTy"></div>
+										</div>
 		              </div>
 		              <div class="alert bg-warning text-dark rounded-0 font-weight-bold animated d-none"></div>
 		              <fieldset class="form-group row justify-content-center">
@@ -199,6 +197,13 @@
             <a href="forget.php" class="text-warning">نسيت الرمز السري</a>
           </div>
         </div>
+				<div class="alert bg-dark text-warning alert-dismissible fade show d-none rounded-0 px-5 mt-3">
+					<button type="button" class="close p-3" aria-label="Close">
+				    <span aria-hidden="true"><i class="fas fa-xs fa-times text-light"></i></span>
+				    <span class="sr-only">Close</span>
+				  </button>
+					<span class="font-weight-bold">نحيطكم علما أن الموقع يستخدم الكوكيز، يمكنم الاطلاع على قوانين الموقع وسياسة الخصوصية على الرابط أسفل الصفحة</span>
+				</div>
       </div>
       <div class="w-100"></div>
       <?php include 'assets/footer.php' ?>
@@ -306,12 +311,12 @@
 				al.removeClass("fadeIn").addClass("fadeOut");
 			}
 			setTimeout(function(){
-				$(".alert").first().removeClass("d-none").addClass("animated fadeInRight");
+				$(".alert").last().removeClass("d-none").addClass("animated fadeInRight");
 			},5000);
-			$(".alert:first").on("click", ".close", function(){
-				$(".alert:first").addClass("animated fadeOutLeft");
+			$(".alert:last").on("click", ".close", function(){
+				$(".alert:last").addClass("animated fadeOutLeft");
 				setTimeout(function(){ // change this to trigger in the end of the animation
-					$(".alert:first").addClass("d-none");
+					$(".alert:last").addClass("d-none");
 				},1000);
 			});
 			$("#s_s").on("click", function(){
@@ -350,10 +355,13 @@
 				}
 			});
 			$("#r_s").on("click", function(){
+				var response = grecaptcha.getResponse();
 				$btn = $(this);
 				$alert = $(this).parents("fieldset").prev();
 				$btn.removeClass("btn-outline-warning").addClass("btn-info").html('المرجو الانتظار<i class="fas fa-spinner fa-pulse fa-fw mr-2"></i>');
-        if ($r_e.val() == "") {
+				if (response == "") {
+					alertShow("Verifiez le captcha",$alert);
+				} else if ($r_e.val() == "") {
 					alertShow("المرجو ادخال البريد الالكتروني",$alert);
 				} else if(testEmail.test($r_e.val()) == false) {
 					alertShow("البريد الالكتروني غير صحيح",$alert);
