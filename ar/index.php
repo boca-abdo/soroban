@@ -94,7 +94,8 @@
 		</nav>
 		<!-- here starts about block -->
 		<div class="container py-5 text-center" id="about">
-			<h1 class="h1 font-weight-bold">عن البرنامج</h1>
+			<i class="fas fa-info-circle fa-5x"></i>
+			<h3 class="h3 font-weight-bold my-3">عن البرنامج</h3>
 			<p class="lead text-justify font-weight-bold">
 						برنامج سروبان للحساب الذهني هو برنامج تعليمي و تدريبي للطفل، يهدف إلى تنمية القدرات الذهنية للطفل و تطوير مهارات التفكير و التركيز، دقة الملاحظة ، القراءة و الكتابة ٠٠٠و يعتمد البرنامج على تقنية حديثة في تدريس الرياضيات باستخدام المعداد الياباني "سوروبان" و الاعداد للنهوض بالقدرات الذهنية و تعليمه العمليات الحسابية (جمع،طرح،ضرب وقسمة) بطريقة فيها الكثير من المتعة و المرح.
 			</p>
@@ -163,6 +164,9 @@
 		</div>
 		<!-- here starts products block -->
 		<div class="container pt-5 text-center" id="products">
+			<i class="fas fa-bullhorn fa-5x"></i>
+			<h3 class="h3 font-weight-bold my-3">منتوجاتنا</h3>
+			<hr class="bg-dark">
 			<h3 class="h3 font-weight-bold">كتاب تعلم سوروبان</h3>
 			<div class="row align-items-center">
 				<div class="col-md-3 py-3">
@@ -205,7 +209,9 @@
 		</div>
 		<!-- here starts stats block -->
 		<div class="container py-5 text-center" id="stats">
-			<h3 class="h3 font-weight-bold">احصائيات الموقع</h3>
+			<i class="fas fa-chart-pie fa-5x"></i>
+			<h3 class="h3 font-weight-bold my-3">احصائيات الموقع</h3>
+			<hr class="bg-dark">
 			<div class="container">
 				<div class="row justify-content-around">
 					<div class="col-sm-6">
@@ -262,7 +268,9 @@
 		<!-- here starts contact block -->
 		<div class="w-100 bg-dark text-warning text-center py-3" id="contact">
 			<div class="container">
-				<h3 class="h3 font-weight-bold">اتصل بنا</h3>
+				<i class="fas fa-envelope fa-5x"></i>
+				<h3 class="h3 font-weight-bold my-3">اتصل بنا</h3>
+				<hr class="bg-warning">
 				<div class="row justify-content-center text-right">
 					<div class="col-md-8 py-3">
 						<form class="" action="" method="post" novalidate autocomplete="off">

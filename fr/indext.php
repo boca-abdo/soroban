@@ -68,7 +68,7 @@
         <h1 class="display-2 text-uppercase">programme soroban</h1>
         <h1 class="display-4">pour le calcul mental et dévelopement de l'intelligence</h1>
         <div class="mx-auto my-sm-5">
-          <a href="auth.php" class="btn btn-lg btn-outline-warning rounded-0 font-weight-bold text-uppercase px-5" style="box-shadow:none">entrer<i class="fas fa-sign-in-alt mr-2"></i></a>
+          <a href="auth.php" class="btn btn-lg btn-outline-warning rounded-0 font-weight-bold text-uppercase px-5" style="box-shadow:none">entrer<i class="fas fa-sign-in-alt ml-2"></i></a>
         </div>
         <a href="#about" class="btn btn-outline-warning animated bounce infinite mt-3" style="border-radius: 20px;box-shadow:none"><i class="fas fa-angle-double-down fa-2x" style="cursor:pointer"></i></a>
       </div>
@@ -82,7 +82,7 @@
 	        <a class="btn btn-outline-warning font-weight-bold w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="#about" style="box-shadow: none"><span class="d-none d-sm-block">A propos</span><i class="fas fa-info-circle px-2 d-sm-none"></i></a>
 	      </li>
 	      <li>
-	        <a class="btn btn-outline-warning font-weight-bold w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="#products" style="box-shadow: none"><span class="d-none d-sm-block">Produits</span><i class="fas fa-bullhorn px-2 d-sm-none"></i></a>
+	        <a class="btn btn-outline-warning font-weight-bold w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="#products" style="box-shadow: none"><span class="d-none d-sm-block">Certifié</span><i class="fas fa-graduation-cap px-2 d-sm-none"></i></a>
 	      </li>
 	      <li>
 	        <a class="btn btn-outline-warning font-weight-bold w-100 rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="#stats" style="box-shadow: none"><span class="d-none d-sm-block">Stats</span><i class="fas fa-chart-pie px-2 d-sm-none"></i></a>
@@ -94,8 +94,9 @@
 		</nav>
 		<!-- here starts about block -->
 		<div class="container py-5 text-center" id="about">
-			<h1 class="h1 font-weight-bold text-uppercase">a propos</h1>
-			<p class="lead font-weight-bold text-justify">Programme Soroban pour la calculer mental est un programme d'éducation et de formation pour les enfants, visant leurs capacités mentales, et le développement de leurs pensées, de leurs concentrations,de leurs précisions et de leurs observations...  Le programme dépend de la technologie moderne dans l'enseignement des mathématiques .A l'aide du boulier japonais "Soroban" et des nombres,l’apprenant arrive à manipuler les quatre opérations (addition, soustraction, multiplication et division) d'une manière où il y a beaucoup de plaisir et d'amusement. .</p>
+			<i class="fas fa-info-circle fa-5x"></i>
+			<h3 class="h3 font-weight-bold text-uppercase my-3">a propos</h3>
+			<p class="lead font-weight-bold text-justify text-indent">Programme Soroban pour la calculer mental est un programme d'éducation et de formation pour les enfants, visant leurs capacités mentales, et le développement de leurs pensées, de leurs concentrations,de leurs précisions et de leurs observations...  Le programme dépend de la technologie moderne dans l'enseignement des mathématiques .A l'aide du boulier japonais "Soroban" et des nombres,l’apprenant arrive à manipuler les quatre opérations (addition, soustraction, multiplication et division) d'une manière où il y a beaucoup de plaisir et d'amusement. .</p>
 			<hr class="bg-dark">
 			<div class="row text-center">
 				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
@@ -115,7 +116,7 @@
 				</div>
 				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
 					<h4 class="h4 font-weight-bold">Fiable</h4>
-					<i class="fas fa-smile fa-2x my-2"></i>
+					<i class="far fa-smile fa-2x my-2"></i>
 					<p class="font-weight-bold">Créativité, initiative et  concurrence loyale.</p>
 				</div>
 				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
@@ -161,29 +162,12 @@
 		</div>
 		<!-- here starts products block -->
 		<div class="container pt-5 text-center" id="products">
-			<h3 class="h3 font-weight-bold">Méthodologie SOROBAN</h3>
-			<div class="row align-items-center">
-				<div class="col-md-3 py-3">
-			  	<img class="img-fluid img-thumbnail" src="../images/soroban_book.jpg" alt="Generic placeholder image">
-				</div>
-			  <div class="col-md-9 py-3">
-					<p class="lead font-weight-bold text-justify">
-						دار نشر المانية تقوم بطباعة كتابي الاول ''منهجية تدريس السوروبان - تَعَلَّمْ و عَلِّمْ السوروبان'' الكتاب موجه ل :السادة الاساتذة - الاباء و الامهات الغيوريين على ابنائهم و الذين لا يجدون مؤسسة تدرس السوروبان بالقرب من سكناهم - المدارس الخاصة و الجمعيات العاطلون عن العمل ذوي الشواهد العليا. الكتاب به جميع اسرار السوروبان و كل ما تحتاجه لتدريسه.لست مرغما بعد اليوم حضور الدورات التكوينية المكلفة و التنقل و حجز الفنادق . الكتاب الان يباع في نسخته الالكترونية ,ويتم طبعه الان وسيتم بيعه في 40 دولة عبر العالم و سيكون في الاسواق قريبا ان شاء الله.
-					</p>
-				</div>
-			</div>
-			<hr class="bg-dark">
-			<h3 class="h3 font-weight-bold">Boulier soroban</h3>
-			<div class="row align-items-center">
-				<div class="col-md-3 py-3">
-					<img class="img-fluid img-thumbnail" src="../images/abacus_for_sell.jpg" alt="Generic placeholder image">
-				</div>
-			  <div class="col-md-9 py-3">
-					<p class="lead font-weight-bold text-justify">
-						معداد خشبي من النوع الجيد (الطول24cm, العرض 10.5cm عرض الخرزة 1.7cm - عدد القضبان 11 - الثمن 100 دراهم مغربية ما يعادل 10دولار امريكي) معداد الاستاذ (350 درهم = 35دولار امريكي) لمن يهمه الامر الرجاء مراسلتي على afhim101@gmail.com
-					</p>
-				</div>
-			</div>
+			<i class="fas fa-award fa-5x"></i>
+			<h3 class="h3 font-weight-bold text-uppercase my-3">Certificat du site</h3>
+			<img class="img-fluid img-thumbnail" src="../images/soroban_book.jpg" alt="Generic placeholder image">
+			<p class="lead font-weight-bold text-justify text-indent mt-3">
+				Nous vous proposons un cours de très haute qualité visant toutes les compétences requises pour acquerir un niveau professionnel au programme soroban pour le dévelopement de l'intelligence. En outre, un certificat de fin de cours vous sera offert gratuitement.
+			</p>
 		</div>
 		<!-- here starts facebook block -->
 		<div class="w-100 py-5 text-center" style="background-image: url('../images/home2.jpg'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
@@ -203,7 +187,9 @@
 		</div>
 		<!-- here starts stats block -->
 		<div class="container py-5 text-center" id="stats">
-			<h3 class="h3 font-weight-bold">Statistiques</h3>
+			<i class="fas fa-chart-pie fa-5x"></i>
+			<h3 class="h3 font-weight-bold text-uppercase my-3">Statistiques</h3>
+			<hr class="bg-dark">
 			<div class="container">
 				<div class="row justify-content-around">
 					<div class="col-sm-6">
@@ -260,7 +246,9 @@
 		<!-- here starts contact block -->
 		<div class="w-100 bg-dark text-warning text-center py-3" id="contact">
 			<div class="container">
-				<h3 class="h3 font-weight-bold">Contactez nous</h3>
+				<i class="fas fa-envelope fa-5x"></i>
+				<h3 class="h3 font-weight-bold text-uppercase my-3">Contactez nous</h3>
+				<hr class="bg-warning">
 				<div class="row justify-content-center text-left">
 					<div class="col-md-8 py-3">
 						<form class="" action="" method="post" novalidate autocomplete="off">
@@ -281,18 +269,18 @@
 								<textarea id="nwsltr_msg" class="form-control border-warning text-warning rounded-0" style="background: transparent" name="message" rows="7" cols="80" maxlength="200"></textarea>
 							</fieldset>
 							<div class="text-center" id="nwsltr_status"></div>
-							<button id="nwsltr_btn" type="button" class="btn btn-outline-warning font-weight-bold rounded-0 float-right" name="send" style="box-shadow:none">Envoyer<i class="fas fa-envelope mr-2"></i></button>
+							<button id="nwsltr_btn" type="button" class="btn btn-outline-warning font-weight-bold rounded-0 float-right" name="send" style="box-shadow:none">Envoyer<i class="fas fa-envelope ml-2"></i></button>
 						</form>
 					</div>
 					<div class="col-10 col-md-4 text-center text-md-left order-md-first mt-3 mt-md-0">
 						<img class="img-thumbnail my-3" src="../images/salah.jpg" width="200" alt="afhim salah">
 						<ul class="list-unstyled pr-0">
-							<li><i class="fas fa-user-circle ml-2"></i>Afhim salah</li>
-							<li><i class="fas fa-briefcase ml-2"></i>Professeur EP</li>
-							<li><i class="fas fa-map-marker-alt ml-2"></i>Tarrast - inzgane</li>
-							<li><i class="fas fa-phone ml-2"></i>00212641636015</li>
-							<li><i class="fas fa-graduation-cap ml-2"></i>Entraîneur soroban agrée</li>
-							<li><i class="fas fa-laptop ml-2"></i>Programmeur - écrivain</li>
+							<li><i class="fas fa-user-circle mr-2"></i>Afhim salah</li>
+							<li><i class="fas fa-briefcase mr-2"></i>Professeur EP</li>
+							<li><i class="fas fa-map-marker-alt mr-2"></i>Tarrast - inzgane</li>
+							<li><i class="fas fa-phone mr-2"></i>00212641636015</li>
+							<li><i class="fas fa-graduation-cap mr-2"></i>Entraîneur soroban agrée</li>
+							<li><i class="fas fa-laptop mr-2"></i>Programmeur - écrivain</li>
 						</ul>
 					</div>
 				</div>
