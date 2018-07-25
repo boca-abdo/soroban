@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="fr" dir="ltr">
 <head>
-	<title>موقع سوروبان</title>
+	<title>SOROBAN ONLINE</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="../images/fav.ico">
@@ -22,19 +22,19 @@
         <a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
         <div class="card bg-dark rounded-0 text-warning card-shadow mt-3">
           <div class="card-header border-warning">
-            <h5 class="card-title">نسيت الرمز السري</h5>
+            <h5 class="card-title">Mot de passe oublié</h5>
           </div>
           <div class="card-block p-3">
-						<label for="">البريد الالكتروني</label>
+						<label for="">Email</label>
 						<input class="form-control text-center background-transparent border-warning rounded-0" type="email" name="" value="">
 						<small class="form-text">
-							ستتوصلون برسالة على هذا البريد، المرجو اتباع التعليمات الواردة بها لتحديث الرمز السري لحسابكم
+							Nous vous envoyerons un message de confirmation sur cet email
 						</small>
-						<button id="send" class="btn btn-outline-warning rounded-0 my-3" type="button" name="button" style="box-shadow:none">ارسال<i class="fas fa-envelope mr-2"></i></button>
+						<button id="send" class="btn btn-outline-warning rounded-0 my-3" type="button" name="button" style="box-shadow:none">Envoyer<i class="fas fa-envelope ml-2"></i></button>
 						<div id="status"></div>
 						</div>
           <div class="card-footer border-warning text-sm-right">
-            <a href="auth.php" class="text-warning">تسجيل الدخول</a>
+            <a href="auth.php" class="text-warning">connexion</a>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
 				$("#status").text("");
 				e = $("input").val();
 				if (e == "") {
-					$("#status").text("المرجو ادخال بريد الكتروني صحيح");
+					$("#status").text("Email incorrect");
 				} else {
 					$.ajax({
 						url: "../includes/recover.php",
@@ -60,15 +60,15 @@
 						},
 						error: function(stt,xhr,err) {
 							console.log(err);
-							$("#status").text("حدث خطأ غير متوقع المرجو اعادة المحاولة، اذا استمر المشكل اتصلوا بادارة الموقع");
+							$("#status").text("Erreure inattendue, veuillez réessayer plus tard");
 						},
 						success: function(res) {
 							if (res == "fake") {
-								$("#status").text("هذا البريد غير متوفر على الموقع، يمكنكم انشاء حساب جديد");
+								$("#status").text("Cet email n'est pas disponible sur notre site");
 							} else if (res == "done") {
-								$("#status").text("طلبكم قيد الدراسة، المرجو الاطلاع على بريدكم الوارد أو المزعج واتباع الخطوات الواردة بالرسالة");
+								$("#status").text("Demande enregistrée avec succes, veuillez consultez votre boite de récéption ou spam");
 							} else {
-								$("#status").text("حدث خطأ غير متوقع المرجو اعادة المحاولة، اذا استمر المشكل اتصلوا بادارة الموقع");
+								$("#status").text("Erreure inattendue, veuillez réessayer plus tard");
 							}
 						}
 					});
