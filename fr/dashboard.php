@@ -39,7 +39,7 @@
 			                </thead>
 			                <tbody></tbody>
 			              </table>
-										<button type="button" class="btn btn-outline-warning rounded-0 d-block mt-3 mx-auto" style="box-shadow:none" data-toggle="modal" data-target="#Mymodal" data-list="bw">Classement<i class="fas fa-list-ol ml-2"></i></button>
+										<button type="button" class="btn btn-outline-warning rounded-0 d-none mt-3 mx-auto" style="box-shadow:none" data-toggle="modal" data-target="#Mymodal" data-list="bw">Classement<i class="fas fa-list-ol ml-2"></i></button>
 			            </div>
 			            <div class="tab-pane fade" id="all1" role="tabpanel" aria-labelledby="all-tab">
 										<table class="table table-sm table-hover table-bordered table-striped text-left">
@@ -87,7 +87,7 @@
 			                </thead>
 			                <tbody></tbody>
 			              </table>
-										<button type="button" class="btn btn-outline-warning rounded-0 d-block mt-3 mx-auto" style="box-shadow:none" data-toggle="modal" data-target="#Mymodal" data-list="ew">Classement<i class="fas fa-list-ol ml-2"></i></button>
+										<button type="button" class="btn btn-outline-warning rounded-0 d-none mt-3 mx-auto" style="box-shadow:none" data-toggle="modal" data-target="#Mymodal" data-list="ew">Classement<i class="fas fa-list-ol ml-2"></i></button>
 			            </div>
 			            <div class="tab-pane fade" id="all2" role="tabpanel" aria-labelledby="all2-tab">
 										<table class="table table-sm table-hover table-bordered table-striped text-left">
@@ -173,13 +173,12 @@
 					},
 					complete: function() {
 						row = tbody.find("tr");
-						if (row.length == 4 && lst == "nor") {
-							row.last().addClass("bg-warning text-dark").before("<tr><td colspan='3' class='text-center'>Votre position</td></tr>");
+						if ((tbl == "bw" && row.length > 3) || (tbl == "ew" && row.length > 3)) {
+							tbody.parent().next().removeClass("d-none").addClass("d-block");
 						}
 						if (row.length == 0) {
 							tbody.parent().after("<a class='text-warning animated bounceIn infinite' href='challenge.php'>Soyez le premier à marquer des points</a>");
 						}
-
 						if (lst == "mdl") {
 							row.each(function(){
 								if ($(this).find("td:eq(1)").text() == username) {
@@ -187,6 +186,9 @@
 								}
 							});
 						} else {
+							if (row.length == 4) {
+								row.last().addClass("bg-warning text-dark").before("<tr><td colspan='3' class='text-center'>Votre position</td></tr>");
+							}
 							if ((tbl == "bw" && row.length != 0) || (tbl == "ew" && row.length != 0)) {
 								var names = "";
 								row.each(function(){
