@@ -1,44 +1,41 @@
 	<?php include 'assets/header.php' ?>
-        <h1 class="h1">نبذة تاريخية</h1>
-    		<p class="lead text-justify text-indent">منذ أكثر من 26 قرنا استخدم اليونانيون علب مصنوعة من الرخام لحساب صفقات السلع. وفي وقت لاحق، انشرت هذه العلب بين المناطق الشرقية والوسطى للإمبراطورية الرومانية .</p>
-				<p class="lead text-justify text-indent">ثم تم استخدام صندوق به رمال أو غبار رقيق فيما بعد لرسم خطوط عليها بالعصي او بالاصابع للقيام بالعمليات الحسابية. ويبدو أن الشعب الصيني تمكن في وقت لاحق من تشكيل نوع مختلف من المعداد الخاص بهم (سوان بان SUAN - PAN) ، عبارة عن علبة بها قضبان تحمل 5 خرزات سفلية و خرزتين علويتين.</p>
+        <h1 class="h1 text-uppercase mt-3">D'où est venu soroban</h1>
+    		<p class="lead text-justify text-indent">Pendant plus de 26 siècles, les Grecs ont utilisé des boîtes en marbre pour calculer les transactions de produits de base. Ces canettes ont été publiées plus tard entre les régions orientales et centrales de l'Empire romain.</p>
+				<p class="lead text-justify text-indent">Une boîte avec du sable ou de la poussière fine a ensuite été utilisée pour dessiner des lignes avec des bâtons ou des doigts pour effectuer des calculs. Il semble que les Chinois aient plus tard réussi à former un type différent de leur abaque (SUAN PAN), une boîte avec des baguettes portant 5 perles inférieures et deux perles supérieures.</p>
 				<hr>
 				<figure class="figure">
 					<img class="figure-img img-thumbnail" src="../../images/suan-pan.png" alt="suan-pan abacus">
-					<figcaption class="figure-caption text-dark">معداد سوان بان الصيني</figcaption>
+					<figcaption class="figure-caption text-dark">L'abaque chinois SUAN PAN</figcaption>
 				</figure>
-				<p class="lead text-justify text-indent">في نهاية المطاف، سافر المعداد الصيني إلى اليابان في القرن 16 من خلال الصفقات التجارية بينهما. قام اليابانيون بدراسته ما يقارب 300 سنة ثم قاموا بنزع خرزة واحدة سفلية وأخرى علوية فيما بعد، ليتوصلوا إلى معدادهم الخاص سنة 1930م والذي ينمي الذكاء أكثر من غيره.</p>
+				<p class="lead text-justify text-indent">À la fin, l'abaque chinois a voyagé au Japon au 16ème siècle par des accords commerciaux entre eux. Les Japonais l'ont étudié pendant environ 300 ans et ont ensuite enlevé une perle inférieure et plus tard une autre supérieure pour atteindre leur propre abaque en 1930, qui développe l'intelligence plus que les autres.</p>
 				<hr>
 				<figure class="figure">
 					<img class="figure-img img-thumbnail" src="../../images/abacus.png" alt="soroban abacus">
-					<figcaption class="figure-caption text-dark">معداد سوروبان الياباني</figcaption>
+					<figcaption class="figure-caption text-dark">L'abaque japaonais SOROBAN</figcaption>
 				</figure>
-				<p class="lead text-justify text-indent">مؤخرا تم اعتماد السوروبان في البرامج التعليمية للعديد من الدول ليتم تدريسه في المدارس للتلاميذ، كما قامت منظمة اليونسكو بإضافة المعداد الى قائمة التراث الثقافي العالمي غير المادي.</p>
+				<p class="lead text-justify text-indent">Récemment Soroban a été accrédité dans les programmes éducatifs de nombreux pays à enseigner dans les écoles pour les étudiants, et l'UNESCO a ajouté l'abaque à la liste du patrimoine culturel immatériel mondial.</p>
 				<hr>
-				<h1 class="h1">أهداف تدريس السوروبان</h1>
-				<ul class="text-right h5">
-					<li>تنمية وتطوير قدرات الطفل الذهنية</li>
-					<li>إحداث توازن بين الفص الأيمن والفص الأيسر للدماغ</li>
-					<li>إكساب الطفل التركيز، السرعة في القراءة والكتابة والثقة في النفس</li>
-					<li>إكتساب العديد من المواهب الذهنية التي ستساعده من دون شك مدى الحياة</li>
-					<li>تنمية القدرات العقلية، زيادة سرعة الاستجابة وتقوية الذاكرة</li>
-					<li>زيادة عدد خلايا الدماغ المستخدمة أثناء العمليات</li>
-					<li>ينشط الفص الأيمن للدماغ (اكتشف العلماء في تجربة قاموا بها أن الفص الأيمن سجل نشاطا كهربائيا عاليا، عندما تم وضعه تحت جهاز مخطط كهربائي للدماغ أثناء قيام المستخدم بالحساب الذهني عن طريق تصور المعداد)</li>
-					<li>تأدية مختلف العمليات الحسابية مهما كان حجمها أو تعقيدها وتحبيب الرياضيات لدى المتعلم</li>
-					<li>استخدام حاسة السمع وحاسة البصر أي أنه يشد انتباه المتعلم، وهذا ما يكسبه قدرة عالية على التركيز</li>
-					<li>يمنع شيخوخة الدماغ ومرض الزهايمر. في الواقع عند تكرار حركة الأصابع على خرزات المعداد لوحظ تدفق الدم في الدماغ. لذلك هناك دورات سوروبان في اليابان للمسنين</li>
-					<li>يعتبر البرنامج أرضية هادفة وتربوية للطفل، فعوض ترکه والمؤثرات السلبية كالرسوم المتحركة وألعاب الإنترنت دون رقيب، يجد الطفل في البرنامج ضالته ويقضي فعلا وقتا ممتعا ومفيدا في التعل</li>
-					<li>يدرب المتعلم على حل المشكلات الرياضياتية لأكبر وقت ممكن. يقول أينشتاين: <span class="font-weight-bold">ليست الفكرة في أني فائق الذكاء، بل كل ما في الأمر أني أقضي وقتا أطول في حل المشاكل</span></li>
+				<h1 class="h1 text-uppercase">objectifs de l'enseignement du soroban</h1>
+				<ul class="h5 text-left">
+					<li>Développer les capacités mentales des enfants.</li>
+					<li>Équilibre entre le lobe droit et gauche du cerveau.</li>
+					<li>Améliorer l'attention de l'enfant, la vitesse dans la lecture, l'écriture et la confiance en soi.</li>
+					<li>Acquérir de nombreux talents mentaux qui l'aideront sans aucun doute toute sa vie.</li>
+					<li>Développer la capacité mentale, augmenter la réactivité et améliorer la mémoire.</li>
+					<li>Augmenter le nombre de cellules cérébrales utilisées pendant les opérations</li>
+					<li>Active le lobe droit du cerveau (des scientifiques ont découvert dans une expérience que le lobe droit a enregistré une forte activité électrique, lorsqu'il est placé sous le dispositif d'un schéma électrique du cerveau tandis que le calcul mental de l'utilisateur par la perception de l'abaque).</li>
+					<li>Effectuer divers calculs, quelle que soit leur taille ou complexité.</li>
+					<li>La maturation des mathématiques chez l'enfant.</li>
+					<li>L'utilisation du sens de l'ouïe et du sens de la vue, c'est-à-dire attirer l'attention de l'apprenant, ce qui lui donne une grande capacité de concentration.</li>
+					<li>Prévient le vieillissement du cerveau et la maladie d'Alzheimer. En fait, durant le mouvement des doigts sur les perles de l'abaque, on a observé l'afflux du sang dans le cerveau. C'est pour cela qu'on organise des cours de Soropan au Japon pour les personnes âgées.</li>
+					<li>Le programme SOROBAN est un terrain significatif et éducatif pour l'enfant, et au lieu de le laisser à des influences négatives, comme la télé et les jeux vidéos, l'enfant jouille le programme et passe vraiment un moment de plaisir à apprendre.</li>
+					<li>Entraîne l'apprenant à passer plus de temps à résoudre des problèmes mathématiques. Einstein dit:<span class="font-weight-bold">L'idée n'est pas que je sois super intelligent, mais que je passe plus de temps à résoudre des problèmes</span></li>
 				</ul>
 				<hr>
-				<p class="lead text-justify text-indent">أظهرت دراسة أمريكية حديثة أن تدريب الدماغ البشري على إجراء العمليات الحسابية، وحل مسائل
-الرياضيات، يعزز الصحة النفسية للأشخاص، ويكافح أعراض الاكتئاب والقلق. الدراسة أجراها باحثون بجامعة "ديوك" الأمريكية، ونشروا نتائجها في دورية Clinical psychological science العلمية.
-</p>
-				<p class="lead text-justify text-indent">وحلل الباحثون نشاط الدماغ لدى 186 من الطلاب الجامعيين، عبر استخدام نوع من مسح الدماغ، يسمى التصوير بالرنين المغناطيسي الوظيفي، وذلك أثناء إجراء بعض العمليات الرياضية، اعتمادا على المعلومات الموجودة بذاكرتهم. ووجدوا أن حل العمليات الرياضية، اعتمادا على الذاكرة، يحفز منطقة في الدماغ تسمى<span class="font-italic font-weight-bold"> القشرة ما قبل الجبهية الظهرية الوحشية </span>المرتبطة بمشاعر الاكتئاب والقلق.</p>
-				<p class="lead text-justify text-indent">ووجد الباحثون أيضا أن النشاط المكثف لتلك المنطقة بالدماغ مرتبط بانخفاض
-أعراض القلق والاكتئاب لدى الأشخاص.
-</p>
-				<p class="lead text-justify text-indent">وقال الباحثون إن نتائج الدراسة تحفزهم في المستقبل على بناء استراتيجيات جديدة لمساعدة الناس على تنظيم عواطفهم، ومنع أعراض القلق والاكتئاب، خاصة في البلدان النامية، التي يتعرض سكانها المستويات مرتفعة من القلق والاكتئاب.</p>
+				<p class="lead text-justify text-indent">Une étude américaine récente montre que qu'habituer le cerveau humain à effectuer des calculs mathématiques et résoudre des problèmes mathématiques améliore la santé mentale des personnes et combat les symptômes de la dépression et de l'anxiété. L'étude a été menée par des chercheurs de la Duke University of America, et a publié ses résultats dans la revue scientifique Clinical Psychological Science.</p>
+				<p class="lead text-justify text-indent">Des chercheurs ont analysé l'activité cérébrale de 186 étudiants par IRM, effectuants certaines opérations mathématiques basées sur des informations dans leur mémoire. Et ont trouvé que la résolution de processus mathématiques, en fonction de la mémoire, stimule une zone dans le cerveau appelée <span class="font-italic font-weight-bold">Cortex dorsal préfrontal </span>, qui est associée à des sentiments de dépression et d'anxiété.</p>
+				<p class="lead text-justify text-indent">Ces chercheurs ont également constaté que l'activité intense de cette zone dans le cerveau est associée à une diminution des symptômes de l'anxiété et de la dépression chez les personnes.</p>
+				<p class="lead text-justify text-indent">Ils ont déclaré que ces résultats les inciteront à développer de nouvelles stratégies pour aider les gens à réguler leurs émotions et à prévenir les symptômes d'anxiété et de dépression, en particulier dans les pays en développement dont les niveaux d'anxiété et de dépression sont élevés.</p>
 			</div>
 		</div>
 		<?php include 'assets/footer.php' ?>
