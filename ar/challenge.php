@@ -165,7 +165,7 @@
 						i++;
 						if (i > cl[sr_num].rank2) {
 							tbl_res.push(res);
-							console.log(res);
+							// console.log(res);
 							clearInterval(sr_intvl);
 							setTimeout(function(){showInput()},1000);
 						} else {
@@ -186,7 +186,7 @@
 					res = gen * gen2;
 					$("#tv").html("<p class='gen m-0'>"+gen+"</p><p class='text-left pl-5 m-0'><i class='fas fa-2x fa-times text-warning mx-2 d-md-none'></i><i class='fas fa-5x fa-times text-warning mx-4 d-none d-md-inline'></i><p class='gen m-0'>"+gen2+"</p>");
 					tbl_res.push(res);
-					console.log(res);
+					// console.log(res);
 					setTimeout(function(){showInput()},cl[sr_num].speed);
 				}
 				if (cl[sr_num].opr_ar.indexOf("طرح") > -1) {
@@ -199,7 +199,7 @@
 					res = gen - gen2;
 					$("#tv").html("<p class='gen m-0'>"+gen+"</p><p class='text-left pl-5 m-0'><i class='fas fa-2x fa-minus text-warning mx-2 d-md-none'></i><i class='fas fa-5x fa-minus text-warning mx-4 d-none d-md-inline'></i><p class='gen m-0'>"+gen2+"</p>");
 					tbl_res.push(res);
-					console.log(res);
+					// console.log(res);
 					setTimeout(function(){showInput()},cl[sr_num].speed);
 				}
 			}
@@ -248,11 +248,11 @@
 			});
 			$('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
 				$("#"+cls+"_tab").find("ul.list-group").html("");
-				$("#"+cls).find(".card-footer").find("button").text("انطلق")
-				cl = beg,
+				$("#"+cls).find(".card-footer").find("button").text("انطلق");
+				cl = beg;
 				cls = "beg";
 			  if ($(this).attr('href') == "#exp") {
-					cl = exp,
+					cl = exp;
 					cls = "exp"
 				}
 				createSeries(cls,cl);
