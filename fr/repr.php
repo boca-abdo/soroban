@@ -1,31 +1,32 @@
 	<?php include 'assets/header.php' ?>
-        <h1 class="h1">تمثيل اﻷعداد</h1>
-        <ol class="text-right h3 p-0">
-          <li>مكونات المعداد
+        <h1 class="h1 text-uppercase mt-3">Représentation des nombres sur le boulier</h1>
+        <ol class="text-left h3 p-0">
+          <li><span class="text-uppercase">composants du boulier</span>
             <img src="../../images/comp.png" alt="" class="img-fluid center-block">
-            <p class="lead text-indent text-justify mt-3">يتكون معداد السوروبان من إطار خارجي مصنوع من الخشب، وعارضة فاصلة بين الخرزات السفلية والعلوية، وقضبان حديدية تحمل خرزات مصنوعة من خشب العرعار.</p>
-            <p class="lead text-indent text-justify font-weight-bold"><span class="text-danger">ملاحظة هامة : </span>لا ننصح الآباء بالمعداد المصنوع من البلاستيك نظرا لخطورته على صحة المتعلم حيث أن مادة البلاستيك لها مدة نهاية الصلاحية يجب احترامها, كما أن البلاستيك مادة غير معقمة عكس خشب العرعار المعروف انه معقم و مانح للطاقة. بالإضافة إلى أن المعداد المصنوع من البلاستيك به خرزات صغيرة الحجم و جد متقاربة لا تتيح مرونة للمتعلم اثناء استخدامه من طرف الأفارقة والأوروبيين عکس الآسيويين لخصوصيتهم الجسدية.</p>
+            <p class="lead text-indent text-justify mt-3">Le boulier SOROBAN est composé d'un cadre extérieur en bois, d'une barre transversale séparant les perles inférieures et supérieure et de barres de fer portant des billes en bois.</p>
           </li>
-          <li>كيف أتعامل مع المعداد
+          <li><span class="text-uppercase">positionner son boulier</span>
             <div class="row no-gutters">
               <div class="col-md-6">
                 <figure class="figure">
         					<img class="figure-img img-fluid" src="../../images/sit1.png" alt="sitting front">
-        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">يجب أن يكون المعداد سوروبان متوازيا مع حافة الطاولة، وعلى بعد 7 الى 12 سم. لمسك المعداد يمكن استعمال اصبعين أو ثلاثة أصابع. ويجب أن تكون وضعية المعداد على الطاولة مستقرة وتابثة. </figcaption>
+        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">Le boulier SOROBAN doit être parallèle au bord de la table et à une distance de 7 à 12 cm. Pour tenir le boulier, deux ou trois doigts peuvent être utilisés. La position du boulier sur la table doit être stable et bien fixe.</figcaption>
         				</figure>
               </div>
               <div class="col-md-6">
                 <figure class="figure">
         					<img class="figure-img img-fluid" src="../../images/sit2.png" alt="sitting over">
-        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">يجب أن تكون وضعية المتدرب مريحة وتابثة. من أجب ذلك يستحسن أن يكون البطن على بعد 10سم من الطاولة أوالمكتب، كما يجب أن يكون انحناء الشخص مريحا محققا زاوية 15 درجة عن الوضعية الافقية للطاولة.</figcaption>
+        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">La position de l'apprenant doit être confortable. Il est recommandé que l'abdomen soit à 10 cm de la table, et que la courbure de la personne soit confortable avec un angle de 15 degrés par rapport à l'horizontal de la table.</figcaption>
         				</figure>
               </div>
             </div>
           </li>
-          <li>التمثيل باستخدام اﻷصابع
-            <p class="lead text-indent text-justify">دائما في برنامج السوروبان أحسن طريقة للتقديم هي البدء بتمثيل الأعداد بالأصابع. أقصى عدد يمكن تمثيله بكلتا اليدين هو تسعة و تسعون وليس عشرة. عند التدقيق في أصابع اليدين جيدا نلاحظ أنه يمكن تقسيمها إلى مجموعتين. المجموعة الأولى تضم أربعة أصابع متشابهة ومجتمعة ولها تقريبا نفس الطول و هي كل من السبابة، الوسطى، الخنصر والبنصر. أما المجموعة الثانية فيها أصبع واحد مختلف عن الأصابع اﻷخرى معزول عنها وهو الإبهام. قيمة كل واحد من أصابع المجموعة الأولى هي واحد أي قيمة السبابة هي واحد. وقيمة الوسطى واحد إلا أنها تأتي في المرتبة الثانية فتصبح اثنان. وقيمة الخنصر واحد إلا أنها تأتي في المرتبة الثالثة فتصبح ثلاثة . وقيمة البنصر واحد إلا أنها تأتي في المرتبة الرابعة فتصبح أربعة. لكن ما القيمة التي سيأخذها الإبهام؟ نعلم جيدا أن قيمة الشيء لا تقدر إلا إذا افتقدناها. لنفترض مثلا ید بدون إبهام. هل تستطيع هذه اليد الكتابة بشكل سليم؟ هل تستطيع استعمال الفرشاة لحك الاسنان؟ الجواب طبعا لا. إذن قيمة الإبهام أعلى مرتبة ودرجة من الأصابع اﻷخرى. من هنا جاءت قيمة الإبهام هي خمسة.</p>
+          <li><span class="text-uppercase">La représentation par les doigts</span>
+            <p class="lead text-indent text-justify">On commence toujours dans le programme SOROBAN par représenter les nombres avec les doigts. Le nombre maximum pouvant être représenté par les deux mains est de quatre-vingt-dix-neuf au lieu de dix. En observant la main, on constate qu'elle peut être divisés en deux groupes: Le premier se compose de quatre doigts avec presque la même longueur, à savoir l'index, le majeur, l'annulaire et l'auriculaire. Et le deuxième contenant un seul doigt isolé des autres nommé le pouce.</p>
+						<p class="lead text-indent text-justify">La valeur de chacun des doigts du premier groupe est de un, alors que la valeur du pouce est de cinq.</p>
+						<p class="lead text-indent text-justify">La main droite est utilisé pour représenter les unités, alors que la main gauche sert à représenter les dizaines.</p>
             <hr>
-            <h5 class="h5 text-center font-weight-bold my-3">تمثيل اﻷرقام من 1 الى 9</h5>
+            <h5 class="h5 text-center font-weight-bold my-3">représentation des unités</h5>
             <div class="row no-gutters justify-content-center">
               <?php
                 $i = 1;
@@ -34,7 +35,7 @@
               <div class="col-4 col-sm-2">
                 <figure class="figure text-center">
         					<img class="figure-img img-fluid" src="../../images/hands/hand_<?php echo $i ?>.png" alt="hand">
-        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">تمثيل الرقم <?php echo $i ?></figcaption>
+        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">le chiffre <?php echo $i ?></figcaption>
         				</figure>
               </div>
               <?php
@@ -44,27 +45,31 @@
               <div class="w-100"></div>
               <hr>
               <div class="col-12 text-center">
-                <h5 class="h5 font-weight-bold mt-3">تمثيل العدد 0</h5>
-                <img src="../../images/hands/hand_0.png" alt="hand 0">
+                <h5 class="h5 font-weight-bold mt-3">le nombre zéro</h5>
                 <img src="../../images/hands/hand_00.png" alt="hand 0">
-                <p class="lead text-justify text-indent mt-3">نمثل العدد صفر بإدخال جميع الأصابع داخل كف اليد. أي إحكام قبضة اليد. آنفا عندما كنا نعد من واحد الى تسعة باستعمال الأصابع لاحظنا بروزها و خروجها، الآن في وضعية الصفر نلاحظ انقباضها واختبائها داخل الكف كأنها تقول لصاحبها، إذا ارتكبت جريمة فانا لست شريكك فيها. كما تفسر كذلك بأن كل من يهتم بالقتال والملاكمة فهو يساوي صفر.</p>
+                <img src="../../images/hands/hand_0.png" alt="hand 0">
               </div>
             </div>
             <hr>
-            <div class="text-center">
-              <h5 class="h5 text-center font-weight-bold mt-3">تمثيل اﻷعداد أكبر من 9</h5>
+            <!-- <div class="text-center">
+              <img src="../../images/hands/hand_0.png" alt="hand">
+              <img src="../../images/hands/hand_00.png" alt="hand">
+              <input id="hand" class="col-sm-4 form-control rounded-0 text-center background-transparent mx-auto border-dark mt-3" type="number" min="0" max="99" placeholder="Tapez un nombre ici" style="box-shadow: none">
+              <span class="text-danger"></span>
+            </div> -->
+						<div class="text-center" dir="rtl">
+              <h5 class="h5 text-center font-weight-bold mt-3">représentation des dizaines</h5>
               <img src="../../images/hands/hand_0.png" alt="hand">
               <img src="../../images/hands/hand_00.png" alt="hand">
               <input id="hand" class="col-sm-4 form-control rounded-0 text-center background-transparent mx-auto border-dark mt-3" type="number" min="0" max="99" placeholder="أكتب عددا هنا لترى تمثيله" style="box-shadow: none">
               <span class="text-danger"></span>
-              <p class="lead text-justify text-indent mt-3">لتمثيل اﻷعداد أكبر من 9 نستعمل كلتا اليدين. اليد اليمنى لتمثيل الوحدات و اليد اليسرى لتمثيل العشرات</p>
             </div>
           </li>
-          <li>التمثيل باستخدام المعداد
+          <li><span class="text-uppercase">La représentation à l'aide du boulier</span>
 						<div class="text-center">
 							<img src="../../images/hand_abacus.png" alt="abacus hands representation">
 						</div>
-						<p class="lead text-indent text-justify">بملاحظة الصورة أعلاه نستنتج أن تمثيل اﻷعداد بالمعداد مطابق لتمثيلها باﻷصابع، حيث تأخد الخرزة العلوية دور الإبهام بينما تأخد الخرزات السفلية دور كل من السبابة والوسطى والخنصر والبنصر</p>
+						<p class="lead text-indent text-justify">En observant l'image au dessus, on constate que la perle supérieure est équivalente au pouce, alors que les perles inférieures sont équivalentes aux autres doigts. Soit, la perle supérieure représente cinq, et les perles inférieures représentent un chacune.</p>
 						<div class="row no-gutters justify-content-center">
               <?php
                 $i = 0;
@@ -73,7 +78,7 @@
               <div class="col-4 col-sm-2">
                 <figure class="figure text-center">
         					<img class="figure-img img-fluid" src="../../images/abacus/<?php echo $i ?>.png" alt="hand">
-        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">تمثيل الرقم <?php echo $i ?></figcaption>
+        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">le chiffre <?php echo $i ?></figcaption>
         				</figure>
               </div>
               <?php
@@ -81,7 +86,7 @@
                 }
               ?>
 							<div class="w-100">
-								<p class="lead text-indent text-justify">ويمكننا التمثيل بالمعداد من الانتقال إلى تمثيل اﻷعداد اﻷكبر من 99، وكذلك اﻷعداد العشرية حيث نستغل النقاط المتواجدة على بعض اﻷعمدة لتحديد بداية كل فصل.</p>
+								<p class="lead text-indent text-justify">En passant à la représentation à l'aide du boulier, on peut représenter les grands nombre (plus de 99) et aussi les nombres décimaux, et cela à l'aide des points situés sur la barre transversale du boulier qui servent à indiquer le début de chaque partie.</p>
 							</div>
 							<div class="col-md-6 text-center p-2">
 								<img src="../../images/fosol.png" alt="fosol" class="img-fluid">
@@ -91,7 +96,7 @@
 							</div>
 						</div>
 						<hr>
-						<div class="text-center">
+						<div class="text-center" dir="rtl">
 							<div class="">
 								<img src="../../images/abacus/0.png" alt="abacus line" class="">
 								<img src="../../images/abacus/0.png" alt="abacus line" class="">
@@ -104,91 +109,91 @@
 							<small class="text-danger"></small>
 						</div>
 					</li>
-					<li>طريقة تحريك الخززات
-					<p class="lead text-indent text-justify">بالنسبة لبرنامج السوروبان يتم ايلاء اهمية قصوى لدور الاصابع في تحريك الخرزات، فالإبهام دوره رفع الخرزات السفلية نحو الأعلى في اتجاه العارضة، أما السبابة فدورها هو إنزال الخرزات السفلية نحو الأسفل في حين يتمثل دور الوسطى في رفع أو إنزال الخرزات العلوية.</p>
+					<li><span class="text-uppercase">Comment déplacer les perles</span>
+					<p class="lead text-indent text-justify">Le rôle des doigts dans le déplacement des billes est primordial: le pouce sert à soulever les perles inférieures vers le haut en direction de la barre transversale, tandis que l'index sert à les baisser. Alors que le majeur sert à soulever ou baisser la perle supérieure.</p>
 						<div class="row justify-content-center" id="move-beads">
 							<div class="col-md-4">
 								<figure class="figure text-center">
         					<img class="figure-img img-fluid" src="../../images/abacus/active5_0.png" alt="activate beads">
-        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">استعمل الوسطى لتحريك الخرزة العلوية للأعلى وللأسفل</figcaption>
+        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">On utilise le majeur pour déplacer la perle supérieure vers le haut ou vers le bas</figcaption>
         				</figure>
 							</div>
 							<div class="col-md-4">
 								<figure class="figure text-center">
         					<img class="figure-img img-fluid" src="../../images/abacus/active1_0.png" alt="activate beads">
-        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">استعمل الإبهام لتنشيط الخرزات السفلية والسبابة لتعطيلها</figcaption>
+        					<figcaption class="figure-caption text-dark text-center px-2" style="font-size: 1rem">On utilise le pouce pour déplacer les perles inférieures vers le bas et l'index vers le haut</figcaption>
         				</figure>
 							</div>
 						</div>
 					</li>
         </ol>
-				<p class="lead text-indent text-justify font-weight-bold">ملاحظة : إن الممارسة على معداد السوروبان تعتبر بمثابة رياضة للأصابع و التي بدون شك ستساعد في تحسين جودة الخط و إحكام قبضة اليد. كما أن الأصابع عندما تلمس الخرزات يتم إرسال سيالة عصبية إلى الدماغ ومع الممارسة المكثفة يتم خلق رابط عصبي قوي يساعد المتعلم في عملية التخيل أي عملية الحساب الذهني دون الاعتماد على المعداد.</p>
+				<p class="lead text-indent text-justify font-weight-bold">Note: La pratique sur le boulier est un sport pour les doigts qui contribuera sans aucun doute à améliorer la qualité de l'écriture et à serrer la main. Lorsque le bout des doigts touche les perles, un neurotransmetteur est envoyé au cerveau et, avec une pratique intense, un lien neuronal fort est créé qui aide l'apprenant à imaginer un calcul mental sans dépendre de l'abaque.</p>
 				<hr>
-				<h2 class="h2 text-center animated flash infinite">احصل على شهادة التدريب</h2>
-				<h5 class="h5 my-3">قم بانهاء جميع التمارين بعد نهاية كل وحدة للحصول على شهادة التدريب</h5>
+				<h2 class="h2 text-center text-uppercase animated flash infinite">Obtener votre certificat</h2>
+				<h5 class="h5 my-3">Complétez les exercices de chaque unité pour obtenir votre certificat.</h5>
 				<p class="lead animated flash infinite text-danger font-weight-bold"></p>
 				<div class="row border border-dark mx-3">
-					<ul class="nav nav-fill nav-tabs border-bottom-0 w-100 p-0" id="exercices" role="tablist">
+					<ul class="nav nav-fill nav-tabs border-bottom-0 text-uppercase w-100 p-0" id="exercices" role="tablist">
 					  <li class="nav-item">
-					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="0" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>1</a>
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="0" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">exercice </span>1</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="1" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>2</a>
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="1" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">exercice </span>2</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="2" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>3</a>
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="2" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">exercice </span>3</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="3" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>4</a>
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="3" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">exercice </span>4</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="4" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">التمرين </span>5</a>
+					    <a class="btn btn-block btn-outline-dark border-right-0 border-left-0 border-top-0 rounded-0" data-ex="4" data-toggle="tab" role="tab" aria-selected="false" style="box-shadow: none"><span class="d-none d-md-inline">exercice </span>5</a>
 					  </li>
 					</ul>
 					<div class="tab-content w-100 text-center" id="exercices_content">
 						<div class="tab-pane fade" role="tabpanel">
-							<h5 class="h3 my-3">التمرين 1</h5>
-							<p class="lead">اكتب العدد الموافق للتمثيل ثم اضعط على زر التحقق</p>
-							<div class="py-3">
+							<h5 class="h3 my-3 text-uppercase">exercice 1</h5>
+							<p class="lead">Tapez le nombre équivalent à la représentation</p>
+							<div class="py-3" dir="rtl">
 								<img src="../../images/hands/hand_0.png" alt="hand" class="">
 								<img src="../../images/hands/hand_00.png" alt="hand" class="">
 								<input class="col-8 col-sm-4 form-control rounded-0 text-center background-transparent mx-auto border-dark my-3" type="number" min="0" max="99" style="box-shadow: none">
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
 							</div>
 							<p></p>
 						</div>
 					  <div class="tab-pane fade" role="tabpanel">
-							<h5 class="h3 my-3">التمرين 2</h5>
-							<p class="lead">اكتب العدد الموافق للتمثيل ثم اضعط على زر التحقق</p>
-							<div class="py-3">
+							<h5 class="h3 my-3 text-uppercase">exercice 2</h5>
+							<p class="lead">Tapez le nombre équivalent à la représentation</p>
+							<div class="py-3" dir="rtl">
 								<img src="../../images/abacus/0.png" alt="abacus" class="">
 								<img src="../../images/abacus/0.png" alt="abacus" class="">
 								<input class="col-8 col-sm-4 form-control rounded-0 text-center background-transparent mx-auto border-dark my-3" type="number" min="0" max="99" style="box-shadow: none">
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
-							<h5 class="h3 my-3">التمرين 3</h5>
-							<p class="lead">مثل العدد على المعداد ثم اضغط على زر التحقق</p>
-							<div class="py-3">
+							<h5 class="h3 my-3 text-uppercase">exercice 3</h5>
+							<p class="lead">Représente le nombre sur le boulier</p>
+							<div class="py-3" dir="rtl">
 								<img src="../../images/hands/hand_0.png" alt="hand" class="">
 								<img src="../../images/hands/hand_00.png" alt="hand" class="">
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
-							<h5 class="h3 my-3">التمرين 4</h5>
-							<p class="lead">مثل العدد على المعداد ثم اضغط على زر التحقق</p>
-							<div class="py-3">
+							<h5 class="h3 my-3 text-uppercase">exercice 4</h5>
+							<p class="lead">Représente le nombre sur le boulier</p>
+							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold animated flash infinite">
 									<div class="nbr col-1">
 										<span></span><span></span>
@@ -196,15 +201,15 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
-							<h5 class="h3 my-3">التمرين 5</h5>
-							<p class="lead">مثل العدد على المعداد ثم اضغط على زر التحقق</p>
-							<div class="py-3">
+							<h5 class="h3 my-3 text-uppercase">exercice 5</h5>
+							<p class="lead">Représente le nombre sur le boulier</p>
+							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold animated flash infinite">
 									<div class="nbr col-1">
 										<span></span><span></span><span></span>
@@ -212,8 +217,8 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تحقق<i class="fas fa-check mr-2"></i></button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark rounded-0 my-2" style="box-shadow: none">تغيير العدد<i class="fas fa-undo mr-2"></i></button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
 							</div>
 							<p></p>
 					  </div>
@@ -236,7 +241,7 @@
 			}
 			activate(0,5);
 			activate(1,1);
-      $("#hand").on("change keyup", function(){
+			$("#hand").on("change keyup", function(){
         r = "0";
 				l = "0";
         $(this).next().text("");
@@ -258,9 +263,9 @@
 				val = $(this).val();
 				i = val.length - 1;
 				if (i < 0 || i > 5) {
-					$(this).next().text("المرجو ادخال عدد من 0 الى 999999");
+					$(this).next().text("de 0 à 999999");
 				} else if (/^\+?(0|[1-9]\d*)$/.test(val) == false) {
-					$(this).next().text("المرجو ادخال اﻷعداد الصحيحة فقط");
+					$(this).next().text("Les nombre décimaux ne sont pas prises en charge");
 				} else {
 					for (x in val) {
 						$(this).prev().find("img:eq("+x+")").attr("src","../../images/abacus/"+val[i]+".png");
