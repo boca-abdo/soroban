@@ -51,12 +51,6 @@
               </div>
             </div>
             <hr>
-            <!-- <div class="text-center">
-              <img src="../../images/hands/hand_0.png" alt="hand">
-              <img src="../../images/hands/hand_00.png" alt="hand">
-              <input id="hand" class="col-sm-4 form-control rounded-0 text-center background-transparent mx-auto border-dark mt-3" type="number" min="0" max="99" placeholder="Tapez un nombre ici" style="box-shadow: none">
-              <span class="text-danger"></span>
-            </div> -->
 						<div class="text-center" dir="rtl">
               <h5 class="h5 text-center font-weight-bold mt-3">représentation des dizaines</h5>
               <img src="../../images/hands/hand_0.png" alt="hand">
