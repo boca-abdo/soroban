@@ -10,7 +10,7 @@
 						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">1 + 4</span><br>l'ami de 5 pour 4 est 1<br>l'ami de 5 pour 1 est 4
 					</div>
 				</div>
-				<h3 class="h3 my-3 d-none d-sm-block">Les cas de l'ami de 5</h3>
+				<h3 class="h3 my-3 d-none d-sm-block">Les cas de l'ami de 5 en addition</h3>
 				<div class="table-responsive d-none d-sm-block">
 				  <table class="table table-striped table-sm">
 						<thead>
