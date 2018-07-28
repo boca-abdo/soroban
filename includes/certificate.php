@@ -22,16 +22,14 @@
       $cert_code = $log_row['cert_code'];
       $level = $log_row['level'];
       $dt = $log_row['cert_date'];
+      $name = strtoupper($log_row['fame']." ".$log_row['lname']);
       if ($log_row['cert_date'] == null) {
         $dt = date("Y-m-d");
       }
+      $lang = "ar";
     }
-    if (isset($_GET['name']) && isset($_GET['lang'])) {
-      $name = strtoupper($_GET['name']);
+    if (isset($_GET['lang'])) {
       $lang = $_GET['lang'];
-    } else {
-      header("location: ../index.php");
-      exit();
     }
     require_once('../tcpdf/tcpdf.php');
     class MYPDF extends TCPDF {

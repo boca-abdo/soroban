@@ -5,14 +5,14 @@
           <h2 class="h2">يمكنك تغيير الاسم ولغة الشهادة أسفله</h2>
           <input id="full-name" class="col-md-4 form-control text-center background-transparent border-dark text-uppercase rounded-0 mx-auto my-5" type="text" name="" value="<?php echo $log_row['fname']." ".$log_row['lname']; ?>" style="box-shadow:none">
           <div class="row justify-content-center my-5">
-            <div class="col-sm-3">
+            <div class="col-sm-3 mb-3">
               <a href="#" class="btn btn-block btn-outline-dark rounded-0 active" style="box-shadow:none">العربية</a>
             </div>
-            <div class="col-sm-3">
-              <a href="../../fr/lessons/certificate.php" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">الفرنسية</a>
+            <div class="col-sm-3 mb-3">
+              <a href="../../fr/certificate.php" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">الفرنسية</a>
             </div>
-            <div class="col-sm-3">
-              <a href="../../en/lessons/certificate.php" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">الانجليزية</a>
+            <div class="col-sm-3 mb-3">
+              <a href="../../en/certificate.php" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">الانجليزية</a>
             </div>
           </div>
           <button id="download" class="btn btn-lg btn-outline-dark rounded-0" type="button" name="button" style="box-shadow:none">تحميل الشهادة<i class="fas fa-download mr-2"></i></button>
