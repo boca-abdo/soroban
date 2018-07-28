@@ -3,22 +3,22 @@
 				<hr>
 				<p class="lead">نعتمد في هذه الطريقة على الجمع المتكرر<span class="font-weight-bold">لا حاجة لحفظ جدول الضرب بهذه الطريقة.</span></p>
 				<p class="lead font-weight-bold text-danger"><span class="font-weight-bold">من المهم جدا اتقان المبادلات قبل البدء في تقنية الضرب بالجمع المتكرر </p>
-				<ul>
-          <li><h2 class="text-right">الضرب في 2</h2>
+				<ul class="list-unstyled">
+          <li><h2 class="h2">الضرب في 2</h2>
             <p class="lead">لضرب عدد في 2 نقوم بتمثيله ثم نضيف إليه نفسه</p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 						<img src="../../images/mul1_2.gif" alt="mul1_2" class="img-fluid center-block border border-dark mt-3">
           </li>
 					<hr>
-					<li><h2 class="text-right">الضرب في 4</h2>
+					<li><h2 class="h2">الضرب في 4</h2>
             <p class="lead">لضرب عدد في 4 نقوم بتمثيله ثم نضيف اليه نفسه، ثم نضيف للناتج نفسه مرة أخرى</p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 						<img src="../../images/mul1_4.gif" alt="mul1_4" class="img-fluid center-block border border-dark mt-3">
           </li>
 					<hr>
-					<li><h2 class="text-right">الضرب في 8</h2>
+					<li><h2 class="h2">الضرب في 8</h2>
             <p class="lead">لضرب عدد في 4 نقوم بتمثيله ثم نضيف اليه نفسه، ثم نضيف للناتج نفسه مرة أخرى، ثم نضيف للناتج نفسه مرة ثالثة</p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
@@ -27,42 +27,42 @@
 					<p class="lead font-weight-bold mt-3">خلال الحالات الثلاث السابقة يكون التعامل كليا مع المعداد، حيث لا نحتاج تذكر العدد أو كتابته. نقوم فقط بتمثيل العدد ثم نشتغل على كل عمود بإضافة العدد الممثل عليه لنفسه مرة (في 2) أو مرتين (في 4) أو ثلاث (في 8). </p>
 					<p class="lead font-weight-bold text-danger">يستحسن دائما البدء من اليسار خلال عملية الجمع المتكرر خصوصا في حالة استعمال المبادلة بعشرة </p>
 					<hr>
-					<li><h2 class="text-right">الضرب في 5</h2>
+					<li><h2 class="h2">الضرب في 5</h2>
             <p class="lead">لضرب عدد في 5 نتبع طريقة الضرب في 4 ثم نضيف للناتج العدد اﻷصلي </p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 						<img src="../../images/mul1_5.gif" alt="mul1_5" class="img-fluid center-block border border-dark mt-3">
           </li>
 					<hr>
-					<li><h2 class="text-right">الضرب في 3</h2>
+					<li><h2 class="h2">الضرب في 3</h2>
             <p class="lead">لضرب عدد في 3 نضيف اليه نفسه ثم نضيف للناتج العدد اﻷصلي </p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 						<img src="../../images/mul1_3.gif" alt="mul1_3" class="img-fluid center-block border border-dark mt-3">
           </li>
 					<hr>
-					<li><h2 class="text-right">الضرب في 6</h2>
+					<li><h2 class="h2">الضرب في 6</h2>
             <p class="lead">لضرب عدد في 6 نضيف اليه نفسه ثم نضيف للناتج العدد اﻷصلي ، ثم نضيف للناتج نفسه  </p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 						<img src="../../images/mul1_6.gif" alt="mul1_6" class="img-fluid center-block border border-dark mt-3">
           </li>
 					<hr>
-					<li><h2 class="text-right">الضرب في 7</h2>
+					<li><h2 class="h2">الضرب في 7</h2>
             <p class="lead">لضرب عدد في 7 نتبع طريقة الضرب في 6 ثم نضيف للناتج العدد اﻷصلي  </p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 						<img src="../../images/mul1_7.gif" alt="mul1_7" class="img-fluid center-block border border-dark mt-3">
           </li>
 					<hr>
-					<li><h2 class="text-right">الضرب في مضاعفات 10،100،...</h2>
+					<li><h2 class="h2">الضرب في 10،100،...</h2>
             <p class="lead">لضرب عدد في مضاعفات  10، 100، 1000 … نترك اﻷعمدة الأولى فارغة بحسب عدد اﻷصفار، نترك عمود واحد في حالة الضرب في 10، وعمودين في حالة الضرب في 100 وهكذا. ثم نقوم بضرب العدد في الرقم اﻷخير بعد اﻷصفار بطريقة الجمع المتكرر التي تعلمناها في الأمثلة أعلاه. </p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 						<img src="../../images/mul1_10.gif" alt="mul1_10" class="img-fluid center-block border border-dark mt-3">
           </li>
 					<hr>
-					<li><h2 class="text-right">الضرب في 9</h2>
+					<li><h2 class="h2">الضرب في 9</h2>
             <p class="lead">قد تلاحظون أننا بدأنا بالضرب في 10 قبل الضرب في 9، هذا صحيح لأن قاعدة الضرب في 9 تعتمد على الطرح وليس على الجمع، أي أنه اذا اردنا ضرب عدد في 9 نقوم بضربه في 10 ثم نطرح من الناتج العدد اﻷصلي. </p>
 						<p class="text-danger font-weight-bold">لاحظ المثال</p>
 						<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
