@@ -1,23 +1,23 @@
   <?php include 'assets/header.php' ?>
-        <h1 class="h1">تدرب على المبادلات</h1>
+        <h1 class="h1 text-uppercase">Entraînement 2</h1>
         <hr>
         <div class="row justify-content-center mt-5">
           <div class="col sm-6 col-lg-3">
-            <label for="">نوع التمرين</label>
+            <label for="">type d'exercice</label>
             <select class="custom-select custom-select-sm w-100 pt-0 background-transparent rounded-0 border border-dark" name="">
-							<option value="simple_add" selected="selected">الجمع البسيط</option>
-							<option value="simple_sub">الطرح البسيط</option>
-							<option value="mob5_add">المبادلة بخمسة في الجمع</option>
-							<option value="mob5_sub">المبادلة بخمسة في الطرح</option>
-							<option value="mob10_add">المبادلة بعشرة في الجمع</option>
-							<option value="mob10_sub">المبادلة بعشرة في الطرح</option>
-							<option value="mob105_add">المبادلة بخمسة وعشرة في الجمع</option>
-              <option value="mob105_sub">المبادلة بخمسة وعشرة في الطرح</option>
-              <option value="all">تمارين عشوائية</option>
+							<option value="simple_add" selected="selected">addition simple</option>
+							<option value="simple_sub">soustraction simple</option>
+							<option value="mob5_add">les amis de 5 - addition -</option>
+							<option value="mob5_sub">les amis de 5 - soustraction -</option>
+							<option value="mob10_add">les amis de 10 - addition -</option>
+							<option value="mob10_sub">les amis de 10 - soustraction -</option>
+							<option value="mob105_add">les amis de 5 et 10 - addition -</option>
+              <option value="mob105_sub">les amis de 5 et 10 - soustraction -</option>
+              <option value="all">exercice aléatoires</option>
             </select>
           </div>
           <div class="col-sm-6 col-lg-3">
-            <label for="">عدد اﻷرقام</label>
+            <label for="">chiffres</label>
             <select class="custom-select custom-select-sm w-100 pt-0 background-transparent rounded-0 border border-dark" name="">
               <option selected="selected">3</option>
               <option>4</option>
@@ -39,15 +39,15 @@
 						</div>
           </div>
           <div class="w-100"></div>
-          <div class="col-lg-6 pt-5 px-0">
+          <div class="col-lg-6 pt-5 px-0" dir="rtl">
             <div id="abacus" class="my-3 mr-sm-5" style="height: 143px;overflow: hidden"></div>
           </div>
           <div class="w-100"></div>
           <div class="col-sm-6 col-md-3 col-lg-2 mt-3">
-            <button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">تحقق<i class="fas fa-check mr-2"></i></button>
+            <button type="button" class="btn btn-block btn-outline-dark text-uppercase rounded-0" style="box-shadow:none">vérifier<i class="fas fa-check ml-2"></i></button>
           </div>
           <div class="col-sm-6 col-md-3 col-lg-2 mt-3">
-            <button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">تغيير العدد<i class="fas fa-redo mr-2"></i></button>
+            <button type="button" class="btn btn-block btn-outline-dark text-uppercase rounded-0" style="box-shadow:none">changer<i class="fas fa-redo ml-2"></i></button>
           </div>
           <div class="w-100 pt-3"></div>
         </div>
