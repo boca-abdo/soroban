@@ -136,7 +136,7 @@
 				b_points = [];
 				e_points = [];
 				$.ajax({
-					url: "../includes/get_points_data.php",
+					url: "../include/get_points_data.php",
 					type: "POST",
 					data: {
 						v: v,
@@ -219,7 +219,7 @@
 						break;
 				}
 				$.ajax({
-					url: "../includes/get_active_days.php",
+					url: "../include/get_active_days.php",
 					type: "POST",
 					data: {
 						v: v,

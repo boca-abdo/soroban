@@ -153,7 +153,7 @@ function moveBeads() {
 }
 function checkLevel(l,st) {
   $.ajax({
-    url: "../../includes/checkLevel.php",
+    url: "../../include/checkLevel.php",
     type: "GET",
     dataType: "text",
     error: function(stt, xhr,err) {
@@ -182,7 +182,7 @@ function checkLevel(l,st) {
 }
 function saveLevel() {
   $.ajax({
-    url: "../../includes/saveLevel.php",
+    url: "../../include/saveLevel.php",
     type: "POST",
     data: {},
     error: function(stt, xhr,err) {

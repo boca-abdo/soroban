@@ -52,7 +52,7 @@
 					$("#status").text("المرجو ادخال بريد الكتروني صحيح");
 				} else {
 					$.ajax({
-						url: "../includes/recover.php",
+						url: "../include/recover.php",
 						type: "POST",
 						data: {
 							e: e,

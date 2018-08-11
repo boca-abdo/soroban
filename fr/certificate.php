@@ -36,7 +36,7 @@
         if (name == "") {
           alert("Veuillez tapez votre nom dans la case");
         } else {
-          window.open("../../includes/certificate.php?lang=fr", "_blank");
+          window.open("../../include/certificate.php?lang=fr", "_blank");
         }
       });
 		});

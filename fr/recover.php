@@ -14,14 +14,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </head>
 <body class="bg-warning text-dark">
-	<?php // include '../assets/spinner.php' ?>
+	<?php include '../assets/spinner.php' ?>
   <div class="container" style="height: 100vh">
     <div class="row justify-content-center h-100">
       <div class="col-lg-8 align-self-top text-center pt-3">
         <a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
           <?php
-						require_once '../includes/db.php';
-						require_once '../includes/security.php';
+						require_once '../include/db.php';
+						require_once '../include/security.php';
 	          date_default_timezone_set("Etc/GMT");
 	          $today = date("Y-m-d H:i:s");
             if (isset($_GET['e']) && isset($_GET['hash'])) {
@@ -84,7 +84,7 @@
 					$("#status").text("Mots de passe non identiques");
 				} else {
 					$.ajax({
-						url: "../includes/update_pass.php",
+						url: "../include/update_pass.php",
 						type: "POST",
 						data: {
 							e: "<?php echo $_GET['e']?>",

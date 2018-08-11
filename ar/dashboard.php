@@ -151,7 +151,7 @@
 			function getData(lst,tbl,tbody) {
 				tbody.html("");
 				$.ajax({
-					url: "../includes/getlist.php",
+					url: "../include/getlist.php",
 					type: "POST",
 					data: {
 						lst: lst,

@@ -1,5 +1,5 @@
 <?php
-	include '../includes/user_check.php';
+	include '../include/user_check.php';
 	if ($log_id != "" && $log_e != "" && $log_p != "") {
 		$log_stmt = $srbn_con->prepare("SELECT * FROM `users` WHERE `id`=? AND `email`=? AND `password`=?");
 		$log_stmt->bindParam(1, $log_id, PDO::PARAM_INT);
@@ -57,9 +57,8 @@
   <div class="container" style="height: 100vh">
     <div class="row justify-content-center h-100">
       <div class="col-lg-8 align-self-top text-center pt-3">
-
         <a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
-        <div class="card bg-dark rounded-0 text-warning card-shadow mt-3">
+				<div class="card bg-dark rounded-0 text-warning card-shadow mt-3">
           <div class="card-header border-warning">
             <i class="fas fa-user-circle fa-4x"></i>
           </div>
@@ -237,7 +236,7 @@
 		    auth2.attachClickHandler(element, {},
 	        function(googleUser) {
 						$.ajax({
-							url: "../includes/gglogin.php",
+							url: "../include/gglogin.php",
 							type: "POST",
 							data: {
 								id: googleUser.getBasicProfile().getId(),
@@ -265,7 +264,7 @@
 			function fbAPI() {
 				FB.api('/me?fields=id,email,first_name,last_name,picture', function (response) {
 					$.ajax({
-						url: "../includes/fblogin.php",
+						url: "../include/fblogin.php",
 						type: "POST",
 						data: response,
 						success: function(res) {
@@ -329,7 +328,7 @@
 					alertShow("المرجو ادخال الرمز السري",$alert);
 				} else {
 					$.ajax({
-						url: "../includes/sign.php",
+						url: "../include/sign.php",
 						type: "POST",
 						data: {
 							e: $s_e.val(),
@@ -349,7 +348,7 @@
 							}
 						},
 						error: function(stt,xhr,err) {
-							console.log(err);
+							console.log(xhr);
 						}
 					});
 				}
@@ -383,7 +382,7 @@
 					alertShow("الرمزان غير متطابقان",$alert);
 				} else {
 					$.ajax({
-						url: "../includes/register.php",
+						url: "../include/register.php",
 						type: "POST",
 						data: {
               e: $r_e.val(),
@@ -407,7 +406,7 @@
 							}
 						},
 						error: function(stt,xhr,err) {
-							console.log(err);
+							console.log(xhr);
 						}
 					});
 				}

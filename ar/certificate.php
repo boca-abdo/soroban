@@ -31,7 +31,7 @@
         if (name == "") {
           alert("المرجو كتابة اسمك كاملا في الخانة");
         } else {
-          window.open("../../includes/certificate.php?name="+name+"&lang=ar", "_blank");
+          window.open("../../include/certificate.php?name="+name+"&lang=ar", "_blank");
         }
       });
 		});

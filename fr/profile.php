@@ -132,7 +132,7 @@
 					formdata = new FormData();
 					formdata.append("file", file);
 					$.ajax({
-						url: "../includes/file_upload.php",
+						url: "../include/file_upload.php",
 		        type: "POST",
 		        dataType: 'text',
 		        cache: false,
@@ -175,7 +175,7 @@
 					alertShow("Date de naissance incorrecte");
 				} else {
 					$.ajax({
-						url: "../includes/profile.php",
+						url: "../include/profile.php",
 						type: "POST",
 						data: {
 							fn: $("#fname").val(),
@@ -212,7 +212,7 @@
 					alertShow("Mots de passes non identiques");
 				} else {
 					$.ajax({
-						url: "../includes/password.php",
+						url: "../include/password.php",
 						type: "POST",
 						data: {
 							old: $("#old").val(),

@@ -1,5 +1,5 @@
 <?php
-	include '../includes/user_check.php';
+	include '../include/user_check.php';
 	if ($log_id != "" && $log_e != "" && $log_p != "") {
 		$log_stmt = $srbn_con->prepare("SELECT * FROM `users` WHERE `id`=? AND `email`=? AND `password`=?");
 		$log_stmt->bindParam(1, $log_id, PDO::PARAM_INT);
@@ -236,7 +236,7 @@
 		    auth2.attachClickHandler(element, {},
 	        function(googleUser) {
 						$.ajax({
-							url: "../includes/gglogin.php",
+							url: "../include/gglogin.php",
 							type: "POST",
 							data: {
 								id: googleUser.getBasicProfile().getId(),
@@ -264,7 +264,7 @@
 			function fbAPI() {
 				FB.api('/me?fields=id,email,first_name,last_name,picture', function (response) {
 					$.ajax({
-						url: "../includes/fblogin.php",
+						url: "../include/fblogin.php",
 						type: "POST",
 						data: response,
 						success: function(res) {
@@ -328,7 +328,7 @@
 					alertShow("Champ obligatoire",$alert);
 				} else {
 					$.ajax({
-						url: "../includes/sign.php",
+						url: "../include/sign.php",
 						type: "POST",
 						data: {
 							e: $s_e.val(),
@@ -376,7 +376,7 @@
 					alertShow("Mots de passe non identiques",$alert);
 				} else {
 					$.ajax({
-						url: "../includes/register.php",
+						url: "../include/register.php",
 						type: "POST",
 						data: {
               e: $r_e.val(),

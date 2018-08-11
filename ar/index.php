@@ -1,5 +1,5 @@
 <?php
-	include '../includes/visiters.php';
+	include '../include/visiters.php';
 	try {
 		$today = date("Y-m-d");
 		$first_day = date("Y-m-d", strtotime("01-".date("m")."-2018"));
@@ -364,7 +364,7 @@
 					$("#nwsltr_status").text("المرجو تعبئة جميع الخانات");
 				} else {
 					$.ajax({
-						url: "../includes/newsletter.php",
+						url: "../include/newsletter.php",
 						type: "POST",
 						data: {
 							name: name,

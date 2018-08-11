@@ -55,6 +55,9 @@
   $_SESSION['srbn_id'] = $last_id;
   $_SESSION['email'] = $e;
   $_SESSION['password'] = $p;
+  setcookie("srbn_id", $last_id, strtotime( '+30 days' ), "/", "", "", TRUE);
+  setcookie("email", $e, strtotime( '+30 days' ), "/", "", "", TRUE);
+  setcookie("password", $p, strtotime( '+30 days' ), "/", "", "", TRUE);
   echo "success";
   $srbn_con = null;
 ?>

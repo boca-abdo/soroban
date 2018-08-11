@@ -101,7 +101,7 @@
 				}
 				$("#"+cls+"_tab").find("ul.list-group").append("<li class='list-group-item border-warning bg-dark rounded-0 d-flex justify-content-between align-items-center'>total<span>"+points+"</span></li>");
 				$.ajax({
-					url: "../includes/update_points.php",
+					url: "../include/update_points.php",
 					type: "POST",
 					data: {
 						cl: cls,
