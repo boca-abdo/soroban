@@ -10,7 +10,6 @@ header('Content-type: text/html; charset=utf-8');
 
   try {
     include 'include/db.php';
-    
 
   } catch (Exception $e) {
     echo $e-getMessage();
