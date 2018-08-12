@@ -126,7 +126,7 @@
 				$("#tv").find("input").focus();
 				sr_num++;
 				if (sr_num >= cl.length) {
-					console.log(sr_num+"--------"+cl.length);
+					// console.log(sr_num+"--------"+cl.length);
 					$("#tv").find("input").on("keypress", function(event){
 						keyCode = (event.keyCode ? event.keyCode : event.which);
 						if (keyCode == 13) {

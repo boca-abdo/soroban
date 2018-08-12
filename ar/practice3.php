@@ -9,23 +9,25 @@
         <div class="row justify-content-center">
           <div class="col-sm-3">
             <label for="dig">عدد اﻷرقام</label>
-            <select id="dig" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
+            <input id="dig" class="form-control text-center rounded-0 background-transparent border-dark" type="number" min="1" max="15" value="1" style="box-shadow: none">
+            <!-- <select id="dig" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
               <option value="10">1</option>
               <option value="100">2</option>
               <option value="1000">3</option>
               <option value="10000">4</option>
               <option value="100000000">8</option>
-            </select>
+            </select> -->
           </div>
           <div class="col-sm-3">
             <label for="num">عدد اﻷعداد</label>
-            <select id="num" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
+            <input id="num" class="form-control text-center rounded-0 background-transparent border-dark" type="number" min="2" max="50" value="4" style="box-shadow: none">
+            <!-- <select id="num" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
               <option>4</option>
               <option>5</option>
               <option>8</option>
               <option>10</option>
               <option>20</option>
-            </select>
+            </select> -->
           </div>
           <div class="col-sm-3">
             <label for="">عدد الثواني</label>
@@ -53,19 +55,14 @@
         i = 0;
         res = 0;
         intvl = setInterval(function(){
-          gen = Math.floor(rndm(0.1) * dig);
+          gen = Math.floor(rndm(0.1) * Math.pow(10,dig));
           $("#beep").get(0).play();
           clr = "dark";
           if (i % 2 == 0) {
             clr = "primary";
           }
-          if (gen % 2 == 0 && res >= gen) {
-            res -= gen;
-            $("#bd").html("<div class='text-"+clr+"' id='gen'>"+gen+"<i class='fas fa-minus mr-2' style='font-size: 1.5rem'></i></div>");
-          } else {
-            $("#bd").html("<div class='text-"+clr+"' id='gen'>"+gen+"<i class='fas fa-plus mr-2' style='font-size: 1.5rem'></i></div>");
-            res += gen
-          }
+          $("#bd").html("<div class='text-"+clr+"' id='gen'>"+gen+"</div>");
+          res += gen;
           i++;
           if (i == num) {
             clearInterval(intvl);
@@ -74,14 +71,29 @@
               $("#bd").find("input").focus().prev().on("click", "button", function(event){
                 answer = $("#bd").find("input").val();
   							if (res == answer) {
-                  $("#bd").html("<i class='far fa-7x fa-smile animated zoomIn d-block'></i>");
+                  $("#bd").html("<div class='text-success animated zoomIn' id='gen'>"+res+"</div>");
                 } else {
-                  $("#bd").html("<i class='far fa-7x fa-frown animated zoomIn d-block'></i>");
+                  $("#bd").html("<div class='text-danger animated zoomIn' id='gen'>"+res+"</div>");
                 }
                 setTimeout(function(){
                   $("#start").removeClass("d-none").addClass("d-block");
                   $("#bd").html("");
                 },2000);
+              });
+              $("#bd").find("input").on("keyup", function(event){
+                var keyCode = (event.keyCode ? event.keyCode : event.which);
+                if (keyCode == 13) {
+                  answer = $("#bd").find("input").val();
+    							if (res == answer) {
+                    $("#bd").html("<div class='text-success animated zoomIn' id='gen'>"+res+"</div>");
+                  } else {
+                    $("#bd").html("<div class='text-danger animated zoomIn' id='gen'>"+res+"</div>");
+                  }
+                  setTimeout(function(){
+                    $("#start").removeClass("d-none").addClass("d-block");
+                    $("#bd").html("");
+                  },2000);
+                }
               });
             },spd * 1000);
           }
