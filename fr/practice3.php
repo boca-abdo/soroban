@@ -5,29 +5,16 @@
         <source src="../../beep.wav" type="audio/mpeg">
       </audio>
         <h1 class="h1 text-uppercase">Entraînement de vitesse</h1>
+        <h4 class="h4">FLASHCALC/flashanzan</h4>
 				<hr>
         <div class="row justify-content-center">
           <div class="col-sm-3">
             <label for="dig">Chiffres</label>
             <input id="dig" class="form-control text-center rounded-0 background-transparent border-dark" type="number" value="1" style="box-shadow: none">
-            <!-- <select id="dig" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
-              <option value="10">1</option>
-              <option value="100">2</option>
-              <option value="1000">3</option>
-              <option value="10000">4</option>
-              <option value="100000000">8</option>
-            </select> -->
           </div>
           <div class="col-sm-3">
             <label for="num">Nombres</label>
             <input id="num" class="form-control text-center rounded-0 background-transparent border-dark" type="number" value="4" style="box-shadow: none">
-            <!-- <select id="num" class="custom-select w-100 rounded-0 background-transparent border-dark pt-0" name="">
-              <option>4</option>
-              <option>5</option>
-              <option>8</option>
-              <option>10</option>
-              <option>20</option>
-            </select> -->
           </div>
           <div class="col-sm-3">
             <label for="">Secondes</label>
