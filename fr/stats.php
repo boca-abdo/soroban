@@ -117,7 +117,7 @@
             	text: ttl
         		},
 						scales: {
-			        yAxes: [{
+			        xAxes: [{
 			          ticks: {
 		            	min: 0,
 									max: 100,
