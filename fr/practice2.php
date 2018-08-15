@@ -59,6 +59,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $("#spinner").addClass("d-none");
+			$("a[href='practice2.php'],#dropdownMenu1").addClass("active");
       var num;
       $tab = $(".container");
       rule = $("select:first").val();

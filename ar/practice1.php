@@ -46,6 +46,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $("#spinner").addClass("d-none");
+			$("a[href='practice1.php'],#dropdownMenu1").addClass("active");
       var val,ex_type,func;
       $tab = $(".container");
       $input = $("input");

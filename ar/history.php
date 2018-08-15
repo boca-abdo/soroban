@@ -46,6 +46,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 	  	$("#spinner").addClass("d-none");
+			$("a[href='history.php'],#dropdownMenu1").addClass("active");
 		});
 	</script>
 </body>

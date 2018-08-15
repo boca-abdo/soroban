@@ -78,12 +78,12 @@
 		        <div class="dropdown-divider m-0"></div>
 		        <a class="dropdown-item" href="practice3.php">Entraînement vitesse</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item bg-danger" href="certificate.php">certificat</a>
+		        <a class="dropdown-item" href="certificate.php">certificat</a>
 		      </div>
 		    </div>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-danger rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="challenge.php" style="box-shadow:none"><i class="fas fa-stopwatch mr-md-2"></i><span class="d-none d-md-inline">Challenge</span></a>
+				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="challenge.php" style="box-shadow:none"><i class="fas fa-stopwatch mr-md-2"></i><span class="d-none d-md-inline">Challenge</span></a>
 			</li>
 		</ul>
 		<div class="dropdown open">

@@ -26,6 +26,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $("#spinner").addClass("d-none");
+			$("a[href='certificate.php'],#dropdownMenu1").addClass("active");
       $("#download").on("click", function(){
         var name = $("#full-name").val();
         if (name == "") {

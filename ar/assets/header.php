@@ -84,15 +84,14 @@
 		        <div class="dropdown-divider m-0"></div>
 		        <a class="dropdown-item" href="practice3.php">تدريب السرعة</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item bg-danger" href="certificate.php">تحميل الشهادة</a>
+		        <a class="dropdown-item" href="certificate.php">تحميل الشهادة</a>
 		      </div>
 		    </div>
 			</li>
 			<li class="nav-item">
-				<a class="btn btn-danger rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="challenge.php" style="box-shadow:none"><span class="d-none d-md-inline">التحدي</span><i class="fas fa-stopwatch mr-md-2"></i></a>
+				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="challenge.php" style="box-shadow:none"><span class="d-none d-md-inline">التحدي</span><i class="fas fa-stopwatch mr-md-2"></i></a>
 			</li>
 		</ul>
-
     <a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 float-left" href="index.php" style="box-shadow:none"><i class="fas fa-home"></i></a>
   </div>
 	<div class="row no-gutters h-100 justify-content-center p-0 pt-5">

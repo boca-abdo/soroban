@@ -30,6 +30,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
 			$("#spinner").addClass("d-none");
+			$("a[href='stats.php']").addClass("active");
 			var i,lbls,b_lbls,e_lbls,b_points,e_points,
 			view = "year",
 			year = <?php echo $year ?>,

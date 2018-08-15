@@ -147,6 +147,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $("#spinner").addClass("d-none");
+			$("a[href='division.php'],#dropdownMenu1").addClass("active");
 			var r,l,v,val,level;
 			$('#exercices').on('click', 'a', function () {
 				$("h2.animated").removeClass('animated');

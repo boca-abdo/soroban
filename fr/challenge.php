@@ -76,6 +76,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
 			$("#spinner").addClass("d-none");
+			$("a[href='challenge.php']").addClass("active");
 			var i,keyCode,cl,cls,res,gen,gen2,sr_intvl,cd_intvl,prog_intvl,wd,rand,points,result,point,fa,
 			sr_num = 0,
 			tbl_res = [],

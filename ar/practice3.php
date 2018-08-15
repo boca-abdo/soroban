@@ -30,6 +30,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $("#spinner").addClass("d-none");
+			$("a[href='practice3.php'],#dropdownMenu1").addClass("active");
       var num,spd,dig,clr,gen,rand,i,res,answer,intvl,keyCode;
       function rndm(max) {
         rand = Math.random();

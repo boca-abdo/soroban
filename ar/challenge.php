@@ -55,7 +55,7 @@
 			</div>
 		</div>
 		<?php include 'assets/footer.php' ?>
-		<div id="Modal" class="modal fade">
+		<div id="Modal" class="modal fade pt-5">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content bg-dark text-warning text-center">
 					<div class="modal-header p-0">
@@ -76,6 +76,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
 			$("#spinner").addClass("d-none");
+			$("a[href='challenge.php']").addClass("active");
 			var i,keyCode,cl,cls,res,gen,gen2,sr_intvl,cd_intvl,prog_intvl,wd,rand,points,result,point,fa,
 			sr_num = 0,
 			tbl_res = [],

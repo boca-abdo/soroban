@@ -143,6 +143,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
 			$("#spinner").addClass("d-none");
+			$("a[href='dashboard.php']").addClass("active");
 			var days,hours,minutes,seconds,days_disp,hours_disp,minutes_disp,seconds_disp,
 			username = "<?php echo $log_row['fname'].' '.$log_row['lname'] ?>",
 			points = [];

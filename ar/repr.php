@@ -226,6 +226,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $("#spinner").addClass("d-none");
+			$("a[href='repr.php'],#dropdownMenu1").addClass("active");
 			var r,l,v,val,level;
 			function activate(mg,bd) {
 				$("#move-beads").find("img:eq("+mg+")").attr("src","../../images/abacus/active"+bd+".png");
