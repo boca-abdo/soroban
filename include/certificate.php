@@ -22,7 +22,7 @@
       $cert_code = $log_row['cert_code'];
       $level = $log_row['level'];
       $dt = $log_row['cert_date'];
-      $name = strtoupper($log_row['fame']." ".$log_row['lname']);
+      $name = strtoupper($log_row['fname']." ".$log_row['lname']);
       if ($log_row['cert_date'] == null) {
         $dt = date("Y-m-d");
       }
@@ -144,7 +144,7 @@
     $pdf->writeHTMLCell(60, 0, '', '', $txt, '', 0, 0, true, 'C', true,0);
     $pdf->setCellPaddings(0, 0, 0, 0);
     $pdf->writeHTMLCell(100, 0, '', '', $html, '', 0, 0, true, 'C', true,0);
-    $pdf->output('name.pdf', 'D');
+    $pdf->output('cert_'.$cert_code.'.pdf', 'D');
   } catch (\Exception $e) {
     echo $e->getMessage();
   }

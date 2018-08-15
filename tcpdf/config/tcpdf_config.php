@@ -99,7 +99,7 @@ define ('PDF_PAGE_ORIENTATION', 'P');
 /**
  * Document creator.
  */
-define ('PDF_CREATOR', 'TINMEL');
+define ('PDF_CREATOR', 'SOROBAN');
 
 /**
  * Document author.
@@ -110,12 +110,12 @@ define ('PDF_AUTHOR', 'TCPDF');
  * Header title.
  */
 // define ('PDF_HEADER_TITLE', 'TCPDF Example');
-define ('PDF_HEADER_TITLE', 'TINMEL FILES');
+define ('PDF_HEADER_TITLE', 'SOROBAN FILES');
 
 /**
  * Header description string.
  */
-define ('PDF_HEADER_STRING', "By tinmel");
+define ('PDF_HEADER_STRING', "By afhim");
 // define ('PDF_HEADER_STRING', "by Nicola Asuni - Tecnick.com\nwww.tcpdf.org");
 
 /**
