@@ -11,7 +11,7 @@
 	}
 ?>
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
 	<title>SOROBAN ONLINE</title>
 	<meta charset="utf-8">
@@ -47,38 +47,38 @@
 		<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="index.php" style="box-shadow:none"><i class="fas fa-home"></i></a>
 		<ul class="nav p-0">
 			<li class="nav-item">
-				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="dashboard.php" style="box-shadow:none"><i class="fas fa-list-ol mr-md-2"></i><span class="d-none d-md-inline">classement</span></a>
+				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="dashboard.php" style="box-shadow:none"><i class="fas fa-list-ol mr-md-2"></i><span class="d-none d-md-inline">ranking</span></a>
 			</li>
 			<li class="nav-item">
 				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="stats.php" style="box-shadow:none"><i class="fas fa-chart-pie mr-md-2"></i><span class="d-none d-md-inline">stats</span></a>
 			</li>
 			<li class="nav-item">
 				<div class="dropdown open">
-		      <button class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:none"><i class="fas fa-graduation-cap mr-md-2"></i><span class="d-none d-md-inline text-uppercase">cours</span></button>
+		      <button class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:none"><i class="fas fa-graduation-cap mr-md-2"></i><span class="d-none d-md-inline text-uppercase">lessons</span></button>
 		      <div class="dropdown-menu bg-dark rounded-0 text-center p-0" aria-labelledby="dropdownMenu1" style="left: -120px;z-index: 9999">
-		        <a class="dropdown-item" href="history.php">SOROBAN, c'est quoi?</a>
-		        <a class="dropdown-item" href="repr.php">Représentation</a>
+		        <a class="dropdown-item" href="history.php">SOROBAN?</a>
+		        <a class="dropdown-item" href="repr.php">Representation</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="practice1.php">Entraînement</a>
+		        <a class="dropdown-item" href="practice1.php">Practice 1</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="simple_add.php">addition simple</a>
-		        <a class="dropdown-item" href="simple_sub.php">soustraction simple</a>
-		        <a class="dropdown-item" href="mob5_add.php">Les amis de 5 - addition -</a>
-		        <a class="dropdown-item" href="mob5_sub.php">Les amis de 5 - soustraction -</a>
-		        <a class="dropdown-item" href="mob10_add.php">Les amis de 10 - addition -</a>
-		        <a class="dropdown-item" href="mob10_sub.php">Les amis de 10 - soustraction -</a>
-		        <a class="dropdown-item" href="mob105_add.php">Les amis de 5 et 10 - addition -</a>
-		        <a class="dropdown-item" href="mob105_sub.php">Les amis de 5 et 10 - soustraction -</a>
+		        <a class="dropdown-item" href="simple_add.php">simple addition</a>
+		        <a class="dropdown-item" href="simple_sub.php">simple subtraction</a>
+		        <a class="dropdown-item" href="mob5_add.php">complement of 5 - addition -</a>
+		        <a class="dropdown-item" href="mob5_sub.php">complement of 5 - subtraction -</a>
+		        <a class="dropdown-item" href="mob10_add.php">complement of 10 - addition -</a>
+		        <a class="dropdown-item" href="mob10_sub.php">complement of 10 - subtraction -</a>
+		        <a class="dropdown-item" href="mob105_add.php">complement of 5 and 10 - addition -</a>
+		        <a class="dropdown-item" href="mob105_sub.php">complement of 5 and 10 - subtraction -</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="practice2.php">Entraînement</a>
+		        <a class="dropdown-item" href="practice2.php">Practice 2</a>
 		        <div class="dropdown-divider m-0"></div>
 		        <a class="dropdown-item" href="mul1.php">multiplication 1</a>
 		        <a class="dropdown-item" href="mul2.php">multiplication 2</a>
 		        <a class="dropdown-item" href="division.php">division</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="practice3.php">Entraînement vitesse</a>
+		        <a class="dropdown-item" href="practice3.php">Practice 3</a>
 		        <div class="dropdown-divider m-0"></div>
-		        <a class="dropdown-item" href="certificate.php">certificat</a>
+		        <a class="dropdown-item" href="certificate.php">certificate</a>
 		      </div>
 		    </div>
 			</li>
@@ -89,8 +89,8 @@
 		<div class="dropdown open">
 			<button class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:none"><img src="<?php echo $path; ?>" alt="avatar" width="25" height="25" class="rounded-circle"></button>
 			<div class="dropdown-menu bg-dark rounded-0 text-left p-0" aria-labelledby="dropdownMenu2" style="left: -120px;z-index: 9999">
-				<a class="dropdown-item" href="profile.php"><i class="fas fa-user mr-2"></i>profil</a>
-				<a class="dropdown-item" href="../include/logout.php?q=fr"><i class="fas fa-power-off mr-2"></i>deconnexion</a>
+				<a class="dropdown-item" href="profile.php"><i class="fas fa-user mr-2"></i>profile</a>
+				<a class="dropdown-item" href="../include/logout.php?q=en"><i class="fas fa-power-off mr-2"></i>logout</a>
 			</div>
 		</div>
   </div>
