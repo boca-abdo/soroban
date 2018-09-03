@@ -182,36 +182,36 @@
 				switch (ex) {
 					case 0:
 						func = getNumber1;
-						lvl = 35;
+						lvl = 25;
 						rule = "mob105_add",
 						createAbacus(2);
 						break;
 					case 1:
 						func = getNumber1;
-						lvl = 36;
+						lvl = 26;
 						rule = "mob105_add",
 						createAbacus(3);
 						break;
 					case 2:
 						func = getNumber1;
-						lvl = 37;
+						lvl = 27;
 						rule = "mob105_add",
 						createAbacus(4);
 						break;
 					case 3:
 						func = getNumber1;
-						lvl = 38;
+						lvl = 28;
 						rule = "mob105_add",
 						createAbacus(5);
 						break;
 					case 4:
 						func = getNumber1;
-						lvl = 39;
+						lvl = 29;
 						rule = "mob105_add",
 						createAbacus(6);
 						break;
 				}
-				checkLevel(lvl,35);
+				checkLevel(lvl,25);
 				rset();
 			});
 			$(".tab-pane").on("click", "button:last", function(){

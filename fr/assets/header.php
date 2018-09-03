@@ -64,10 +64,10 @@
 		        <a class="dropdown-item" href="simple_add.php">addition simple</a>
 		        <a class="dropdown-item" href="simple_sub.php">soustraction simple</a>
 		        <a class="dropdown-item" href="mob5_add.php">Les amis de 5 - addition -</a>
-		        <a class="dropdown-item" href="mob5_sub.php">Les amis de 5 - soustraction -</a>
 		        <a class="dropdown-item" href="mob10_add.php">Les amis de 10 - addition -</a>
-		        <a class="dropdown-item" href="mob10_sub.php">Les amis de 10 - soustraction -</a>
 		        <a class="dropdown-item" href="mob105_add.php">Les amis de 5 et 10 - addition -</a>
+		        <a class="dropdown-item" href="mob5_sub.php">Les amis de 5 - soustraction -</a>
+		        <a class="dropdown-item" href="mob10_sub.php">Les amis de 10 - soustraction -</a>
 		        <a class="dropdown-item" href="mob105_sub.php">Les amis de 5 et 10 - soustraction -</a>
 		        <div class="dropdown-divider m-0"></div>
 		        <a class="dropdown-item" href="practice2.php">Entraînement</a>

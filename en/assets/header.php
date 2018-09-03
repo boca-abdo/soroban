@@ -64,10 +64,10 @@
 		        <a class="dropdown-item" href="simple_add.php">simple addition</a>
 		        <a class="dropdown-item" href="simple_sub.php">simple subtraction</a>
 		        <a class="dropdown-item" href="mob5_add.php">complement of 5 - addition -</a>
-		        <a class="dropdown-item" href="mob5_sub.php">complement of 5 - subtraction -</a>
 		        <a class="dropdown-item" href="mob10_add.php">complement of 10 - addition -</a>
-		        <a class="dropdown-item" href="mob10_sub.php">complement of 10 - subtraction -</a>
 		        <a class="dropdown-item" href="mob105_add.php">complement of 5 and 10 - addition -</a>
+		        <a class="dropdown-item" href="mob5_sub.php">complement of 5 - subtraction -</a>
+		        <a class="dropdown-item" href="mob10_sub.php">complement of 10 - subtraction -</a>
 		        <a class="dropdown-item" href="mob105_sub.php">complement of 5 and 10 - subtraction -</a>
 		        <div class="dropdown-divider m-0"></div>
 		        <a class="dropdown-item" href="practice2.php">Practice 2</a>

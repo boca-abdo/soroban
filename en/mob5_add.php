@@ -1,55 +1,55 @@
   <?php include 'assets/header.php' ?>
-        <h1 class="h1 text-uppercase">les amis de 5 - addition -</h1>
+        <h1 class="h1 text-uppercase">Complement of 5 - addition -</h1>
 				<hr>
-				<p class="lead">La règle des amis de 5 dit: lorsque les perles inférieures ne suffisent pas pour faire une addition simple on active la perle supérieure (le chiffre 5) puis on désactive une où plusieurs perles inférieures.</p>
+				<p class="lead">When the lower beads are not enough to make a simple addition, enable the upper bead (the number 5) and then disable one or more lower beads.</p>
 				<div class="row justify-content-center">
 					<div class="col-auto bg-dark text-warning py-3 m-2">
-						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">2 + 3</span><br>l'ami de 5 pour 3 est 2<br>l'ami de 5 pour 2 est 3
+						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">2 + 3</span><br>The complement of 5 for 3 is 2<br>The complement of 5 for 2 is 3
 					</div>
 					<div class="col-auto bg-dark text-warning py-3 m-2">
-						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">1 + 4</span><br>l'ami de 5 pour 4 est 1<br>l'ami de 5 pour 1 est 4
+						<span class="h1 font-weight-bold">5</span><br>=<br><span class="h1 font-weight-bold">1 + 4</span><br>The complement of 5 for 4 is 1<br>The complement of 5 for 1 is 4
 					</div>
 				</div>
-				<h3 class="h3 my-3 d-none d-sm-block">Les cas de l'ami de 5 en addition</h3>
+				<h3 class="h3 my-3 d-none d-sm-block">The complement of 5 cases</h3>
 				<div class="table-responsive d-none d-sm-block">
 				  <table class="table table-striped table-sm">
 						<thead>
 							<tr class="border border-dark">
-								<th class="border-top-0 border-bottom-0">cas</th>
-								<th class="border-top-0 border-bottom-0">règle</th>
-								<th class="border-top-0 border-bottom-0">raisonnement</th>
+								<th class="border-top-0 border-bottom-0">case</th>
+								<th class="border-top-0 border-bottom-0">rule</th>
+								<th class="border-top-0 border-bottom-0">reasoning</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr class="border border-dark">
 								<td class="border-top-0">+1</td>
-								<td class="border-top-0">On active la perle supérieure puis on désactive 4 perles inférieures</td>
+								<td class="border-top-0">We enable the upper bead then disable 4 lower beads</td>
 								<td class="border-top-0" dir="ltr">+1 = +5 - 4</td>
 							</tr>
 							<tr class="border border-dark">
 								<td class="border-top-0">+2</td>
-								<td class="border-top-0">On active la perle supérieure puis on désactive 3 perles inférieures</td>
+								<td class="border-top-0">We enable the upper bead then disable 3 lower beads</td>
 								<td class="border-top-0" dir="ltr">+2 = +5 - 3</td>
 							</tr>
 							<tr class="border border-dark">
 								<td class="border-top-0">+3</td>
-								<td class="border-top-0">On active la perle supérieure puis on désactive 2 perles inférieures</td>
+								<td class="border-top-0">We enable the upper bead then disable 2 lower beads</td>
 								<td class="border-top-0" dir="ltr">+3 = +5 - 2</td>
 							</tr>
 							<tr class="border border-dark">
 								<td class="border-top-0">+4</td>
-								<td class="border-top-0">On active la perle supérieure puis on désactive 1 perle inférieure</td>
+								<td class="border-top-0">We enable the upper bead then disable 1 lower bead</td>
 								<td class="border-top-0" dir="ltr">+4 = +5 - 1</td>
 							</tr>
 						</tbody>
 				  </table>
 				</div>
-				<p class="text-danger font-weight-bold">Exemples</p>
+				<p class="text-danger font-weight-bold">Examples</p>
 				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
         <img src="../../images/mob5_add.gif" alt="mob5 add" class="img-fluid center-block border border-dark mt-3">
 				<hr>
-        <h2 class="h2 text-center text-uppercase animated flash infinite">Obtener votre certificat</h2>
-				<h5 class="h5 my-3">Complétez les exercices de chaque unité pour obtenir votre certificat.</h5>
+        <h2 class="h2 text-center text-uppercase animated flash infinite">Get certified</h2>
+				<h5 class="h5 my-3">Finish the exercices of each unit to get certified.</h5>
 				<p class="lead animated flash infinite text-danger font-weight-bold"></p>
 				<div class="row border border-dark mx-3">
           <ul class="nav nav-fill nav-tabs border-bottom-0 text-uppercase w-100 p-0" id="exercices" role="tablist">
@@ -72,7 +72,7 @@
 					<div class="tab-content w-100 text-center" id="exercices_content">
 						<div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 1</h5>
-							<p class="lead">Représente le premier nombre puis ajoute le second</p>
+							<p class="lead">Represent the first number then add the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -84,14 +84,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 						</div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 2</h5>
-							<p class="lead">Représente le premier nombre puis ajoute le second</p>
+							<p class="lead">Represent the first number then add the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -103,14 +103,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 3</h5>
-							<p class="lead">Représente le premier nombre puis ajoute le second</p>
+							<p class="lead">Represent the first number then add the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -122,14 +122,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 4</h5>
-							<p class="lead">Représente le premier nombre puis ajoute le second</p>
+							<p class="lead">Represent the first number then add the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -141,14 +141,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 5</h5>
-							<p class="lead">Représente le premier nombre puis ajoute le second</p>
+							<p class="lead">Represent the first number then add the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -160,8 +160,8 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>

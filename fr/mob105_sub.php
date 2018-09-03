@@ -1,5 +1,5 @@
   <?php include 'assets/header.php' ?>
-				<h1 class="h1">Les amis de 5 et 10 - addition -</h1>
+				<h1 class="h1">Les amis de 5 et 10 - soustraction -</h1>
 				<hr>
 				<p class="lead">La règle des amis de 5 et 10 dit: On active la perle supérieure et on désactive une où plusieures perles inférieures dans une colonne puis on désactive une perle dans la colonne suivante.</p>
 				<h3 class="h3 my-3 d-none d-sm-block">Les cas des amis de 5 et 10 en soustraction</h3>

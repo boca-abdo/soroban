@@ -1,47 +1,47 @@
   <?php include 'assets/header.php' ?>
-				<h1 class="h1">Les amis de 5 et 10 - addition -</h1>
+				<h1 class="h1">Complement of 5 & 10 - subtraction -</h1>
 				<hr>
-				<p class="lead">La règle des amis de 5 et 10 dit: On active la perle supérieure et on désactive une où plusieures perles inférieures dans une colonne puis on désactive une perle dans la colonne suivante.</p>
-				<h3 class="h3 my-3 d-none d-sm-block">Les cas des amis de 5 et 10 en soustraction</h3>
+				<p class="lead">We enable the upper bead, disable one or more beads in a column then disable a bead in the next column.</p>
+				<h3 class="h3 my-3 d-none d-sm-block">The complement of 5 & 10 cases</h3>
 				<div class="table-responsive d-none d-sm-block">
 				  <table class="table table-striped table-sm">
 						<thead>
 							<tr class="border border-dark">
-								<th class="border-top-0 border-bottom-0">cas</th>
-								<th class="border-top-0 border-bottom-0">règle</th>
-								<th class="border-top-0 border-bottom-0">raisonnement</th>
+								<th class="border-top-0 border-bottom-0">case</th>
+								<th class="border-top-0 border-bottom-0">rule</th>
+								<th class="border-top-0 border-bottom-0">reasoning</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr class="border border-dark">
 								<td class="border-top-0">-6</td>
-								<td class="border-top-0">On désactive 1 perle inférieure, on active une perle supérieure puis on désactive une perle dans la colonne suivante.</td>
+								<td class="border-top-0">We disable 1 lower bead, enable the upper bead then disable a bead in the next column.</td>
 								<td class="border-top-0" dir="ltr">-6 = -10 + 5 - 1</td>
 							</tr>
 							<tr class="border border-dark">
 								<td class="border-top-0">-7</td>
-								<td class="border-top-0">On désactive 2 perles inférieures, on active une perle supérieure puis on désactive une perle dans la colonne suivante.</td>
+								<td class="border-top-0">We disable 2 lower beads, enable the upper bead then disable a bead in the next column.</td>
 								<td class="border-top-0" dir="ltr">-7 = -10 + 5 - 2</td>
 							</tr>
 							<tr class="border border-dark">
 								<td class="border-top-0">-8</td>
-								<td class="border-top-0">On désactive 3 perles inférieures, on active une perle supérieure puis on désactive une perle dans la colonne suivante.</td>
+								<td class="border-top-0">We disable 3 lower beads, enable the upper bead then disable a bead in the next column.</td>
 								<td class="border-top-0" dir="ltr">-8 = -10 + 5 - 3</td>
 							</tr>
 							<tr class="border border-dark">
 								<td class="border-top-0">-9</td>
-								<td class="border-top-0">On désactive 4 perles inférieures, on active une perle supérieure puis on désactive une perle dans la colonne suivante.</td>
+								<td class="border-top-0">We disable 4 lower beads, enable the upper bead then disable a bead in the next column.</td>
 								<td class="border-top-0" dir="ltr">-9 = -10 + 5 - 4</td>
 							</tr>
 						</tbody>
 				  </table>
 				</div>
-				<p class="text-danger font-weight-bold">Exemple</p>
+				<p class="text-danger font-weight-bold">Example</p>
 				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
         <img src="../../images/mob105_sub.gif" alt="mob105 sub" class="img-fluid center-block border border-dark mt-3">
 				<hr>
-        <h2 class="h2 text-center text-uppercase animated flash infinite">Obtener votre certificat</h2>
-				<h5 class="h5 my-3">Complétez les exercices de chaque unité pour obtenir votre certificat.</h5>
+        <h2 class="h2 text-center text-uppercase animated flash infinite">Get certified</h2>
+				<h5 class="h5 my-3">Finish the exercices of each unit to get certified.</h5>
 				<p class="lead animated flash infinite text-danger font-weight-bold"></p>
 				<div class="row border border-dark mx-3">
           <ul class="nav nav-fill nav-tabs border-bottom-0 text-uppercase w-100 p-0" id="exercices" role="tablist">
@@ -64,7 +64,7 @@
 					<div class="tab-content w-100 text-center" id="exercices_content">
 						<div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 1</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent the first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -76,14 +76,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 						</div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 2</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent the first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -95,14 +95,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 3</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent the first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -114,14 +114,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 4</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent the first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -133,14 +133,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 5</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent the first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -152,8 +152,8 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>

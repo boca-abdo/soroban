@@ -70,10 +70,10 @@
 		        <a class="dropdown-item" href="simple_add.php">الجمع البسيط</a>
 		        <a class="dropdown-item" href="simple_sub.php">الطرح البسيط</a>
 		        <a class="dropdown-item" href="mob5_add.php">المبادلة بخمسة في الجمع</a>
-		        <a class="dropdown-item" href="mob5_sub.php">المبادلة بخمسة في الطرح</a>
 		        <a class="dropdown-item" href="mob10_add.php">المبادلة بعشرة في الجمع</a>
-		        <a class="dropdown-item" href="mob10_sub.php">المبادلة بعشرة في الطرح</a>
 		        <a class="dropdown-item" href="mob105_add.php">المبادلة بخمسة وعشرة في الجمع</a>
+		        <a class="dropdown-item" href="mob5_sub.php">المبادلة بخمسة في الطرح</a>
+		        <a class="dropdown-item" href="mob10_sub.php">المبادلة بعشرة في الطرح</a>
 		        <a class="dropdown-item" href="mob105_sub.php">المبادلة بخمسة وعشرة في الطرح</a>
 		        <div class="dropdown-divider m-0"></div>
 		        <a class="dropdown-item" href="practice2.php">تدريب المبادلات</a>
