@@ -41,7 +41,7 @@
 					<div class="tab-content w-100 text-center" id="exercices_content">
 						<div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 1</h5>
-							<p class="lead">Use your abacus to calculate then check</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
@@ -61,7 +61,7 @@
 						</div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 2</h5>
-							<p class="lead">Use your abacus to calculate then check</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
@@ -81,7 +81,7 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 3</h5>
-							<p class="lead">Use your abacus to calculate then check</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
@@ -101,7 +101,7 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 4</h5>
-							<p class="lead">Use your abacus to calculate then check</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
@@ -121,7 +121,7 @@
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 5</h5>
-							<p class="lead">Use your abacus to calculate then check</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">

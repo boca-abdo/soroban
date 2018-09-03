@@ -1,7 +1,7 @@
 <?php include 'assets/header.php' ?>
 				<div class="card bg-dark text-warning rounded-0 mt-3">
           <div class="card-header">
-						<h4 class="card-title text-uppercase">Mon profil</h4>
+						<h4 class="card-title text-uppercase">My profile</h4>
           </div>
           <div class="card-block p-3">
 						<div class="mx-auto position-relative" style="width:150px;height:150px">
@@ -11,55 +11,55 @@
             <form class="form-row justify-content-center" action="" method="post" autocomplete="off" novalidate>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="fname">Nom</label>
+                  <label for="fname">First name</label>
                   <input id="fname" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['fname'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="lname">Prénom</label>
+                  <label for="lname">Last name</label>
                   <input id="lname" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['lname'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="adress">Adresse</label>
+                  <label for="adress">Address</label>
                   <input id="adress" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['adress'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="city">Ville</label>
+                  <label for="city">Location</label>
                   <input id="city" onkeydown="initialize()" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['city'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="tel">Téléphone</label>
+                  <label for="tel">Phone</label>
                   <input id="tel" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['tel'] ?>">
                 </fieldset>
               </div>
               <div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="teacher">Professeur</label>
+                  <label for="teacher">Teacher</label>
                   <input id="teacher" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="text" style="background:transparent" value="<?php echo $log_row['teacher'] ?>">
                 </fieldset>
               </div>
 							<div class="col-md-6">
                 <fieldset class="form-group">
-                  <label for="b_date">Date de naissance</label>
+                  <label for="b_date">Birthdate</label>
                   <input id="b_date" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" type="date" max="<?php echo date("Y-m-d") ?>" style="background:transparent" value="<?php echo $log_row['b_date'] ?>">
                 </fieldset>
               </div>
 							<div class="col-md-6">
-								<label>Mot de passe</label>
-								<button type="button" class="btn btn-block btn-outline-warning font-weight-bold rounded-0" data-toggle="modal" data-target="#Modal">Changer mot de passe</button>
+								<label>Password</label>
+								<button type="button" class="btn btn-block btn-outline-warning font-weight-bold rounded-0" data-toggle="modal" data-target="#Modal">Change password</button>
 							</div>
             </form>
           </div>
 					<div class="card-footer justify-content-center" style="overflow:hidden">
 						<span class="d-block text-danger"></span>
-						<button id="update" type="button" class="btn btn-outline-warning rounded-0 my-3 px-5">Procéder<i class="fas fa-sign-in-alt ml-2"></i></a>
+						<button id="update" type="button" class="btn btn-outline-warning rounded-0 my-3 px-5">Submit<i class="fas fa-sign-in-alt ml-2"></i></a>
           </div>
         </div>
 			</div>
@@ -69,7 +69,7 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-content bg-dark text-warning text-center">
 					<div class="modal-header p-0">
-						<h3 class="modal-title p-3 text-uppercase">Changement de mot de passe</h3>
+						<h3 class="modal-title p-3 text-uppercase">Change password</h3>
 						<button type="button" class="btn btn-sm btn-danger rounded-0" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true"><i class="fa fa-times"></i></span>
 						</button>
@@ -77,22 +77,22 @@
 					<div class="modal-body">
             <form class="" action="" method="post" autocomplete="off" novalidate>
               <fieldset class="form-group">
-                <label for="old">Mot de passe actuel</label>
+                <label for="old">Current password</label>
                 <input type="password" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" style="background:transparent" id="old">
               </fieldset>
               <fieldset class="form-group">
-                <label for="password">Nouveau mot de passe</label>
+                <label for="password">New password</label>
                 <input type="password" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" style="background:transparent" id="password">
               </fieldset>
 							<fieldset class="form-group">
-                <label for="c_password">Confirmer mot de passe</label>
+                <label for="c_password">Confirm password</label>
                 <input type="password" class="form-control rounded-0 border-warning text-center text-warning font-weight-bold" style="background:transparent" id="c_password">
               </fieldset>
             </form>
 					</div>
 					<div class="modal-footer justify-content-center">
 						<div class="w-100 text-danger"></div>
-						<button type="button" class="btn btn-block btn-outline-warning rounded-0" id="pass">Changer<i class="fas fa-sign-in-alt ml-2"></i></button>
+						<button type="button" class="btn btn-block btn-outline-warning rounded-0" id="pass">Change<i class="fas fa-sign-in-alt ml-2"></i></button>
 					</div>
 				</div>
 			</div>
@@ -113,21 +113,21 @@
 			var $btn = $("#update"),
 			testTel = new RegExp('^[0-9]+$');
 			function alertShow(msg) {
-				$btn.removeClass("btn-outline-info").addClass("btn-outline-danger").html("Corrigez<i class='fas fa-exclamation-triangle animated bounceIn infinite ml-2'></i>").prev().removeClass("animated fadeOutLeft").addClass("animated fadeInRight").text(msg);
+				$btn.removeClass("btn-outline-info").addClass("btn-outline-danger").html("Error<i class='fas fa-exclamation-triangle animated bounceIn infinite ml-2'></i>").prev().removeClass("animated fadeOutLeft").addClass("animated fadeInRight").text(msg);
 			}
 			function alertHide() {
-				$btn.removeClass("btn-outline-danger").addClass("btn-outline-warning").html("Procéder<i class='fas fa-sign-in-alt ml-2'></i>").prev().removeClass("animated fadeInRight").addClass("animated fadeOutLeft");
+				$btn.removeClass("btn-outline-danger").addClass("btn-outline-warning").html("Submit<i class='fas fa-sign-in-alt ml-2'></i>").prev().removeClass("animated fadeInRight").addClass("animated fadeOutLeft");
 			}
 			$(".myfile").on('change', function(){
 				$("#spinner").removeClass("d-none").addClass("d-flex");
 				$btn = $("#update");
 				alertHide();
-				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("Patientez<i class='fas fa-spinner fa-spin ml-2'></i>");
+				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("Please wait<i class='fas fa-spinner fa-spin ml-2'></i>");
 				var file = $(this).prop("files")[0]
 				if (file.type != "image/jpeg") {
-					alertShow("seules les images jpeg sont supportés");
+					alertShow("image format not allowed");
 				} else if (file.size > 5000000) {
-					alertShow("Pas plus de 5M");
+					alertShow("Max size 5M");
 				} else {
 					formdata = new FormData();
 					formdata.append("file", file);
@@ -144,14 +144,14 @@
 						},
 		        success: function(res){
 							if (res == "done") {
-								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("succès<i class='fas fa-check ml-2'></i>");
+								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("success<i class='fas fa-check ml-2'></i>");
 								setTimeout(function(){location.reload()},1000);
 							} else if (res == "size") {
-								alertShow("Pas plus de 5M");
+								alertShow("Max size 5M");
 							} else if (res == "type") {
-								alertShow("seules les images jpeg sont supportés");
+								alertShow("image format not allowed");
 							} else {
-								alertShow("Erreure inattendue, veuillez réessayer plus tard");
+								alertShow("Error, please try again later.");
 								// console.log(res);
 							}
 		        },
@@ -164,15 +164,15 @@
 			$("#update").on('click', function(){
 				$btn = $(this);
 				alertHide();
-				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("Patientez<i class='fas fa-spinner fa-spin ml-2'></i>");
+				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("Please wait<i class='fas fa-spinner fa-spin ml-2'></i>");
 				if ($("#fname").val() == "") {
-					alertShow("Taper votre nom");
+					alertShow("Type your first name");
 				} else if ($("#lname").val() == "") {
-					alertShow("Tapez votre prénom");
+					alertShow("Type your last name");
 				} else if (testTel.test($("#tel").val()) == false) {
-					alertShow("Utilisez les chiffres");
+					alertShow("Use only digits");
 				} else if ($("#b_date").val() == "") {
-					alertShow("Date de naissance incorrecte");
+					alertShow("Incorrect date format");
 				} else {
 					$.ajax({
 						url: "../include/profile.php",
@@ -191,7 +191,7 @@
 						},
 						success: function(res) {
 							if (res == "done") {
-								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("succès<i class='fas fa-check ml-2'></i>");
+								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("success<i class='fas fa-check ml-2'></i>");
 								setTimeout(function(){location.reload()},1000);
 							} else {
 								console.log(res);
@@ -203,13 +203,13 @@
 			$("#pass").on('click', function(){
 				$btn = $(this);
 				alertHide();
-				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("Patientez<i class='fas fa-spinner fa-spin ml-2'></i>");
+				$btn.removeClass("btn-outline-warning").addClass("btn-outline-info").html("Please wait<i class='fas fa-spinner fa-spin ml-2'></i>");
 				if ($("#old").val() == "" || $("#password").val() == "" || $("#c_password").val() == "") {
-					alertShow("Champs obligatoires");
+					alertShow("Fields required");
 				} else if ($("#password").val().length < 6) {
-					alertShow("Pas moins de 6 caractères");
+					alertShow("Not less than 6 caracters");
 				} else if ($("#password").val() != $("#c_password").val()) {
-					alertShow("Mots de passes non identiques");
+					alertShow("Password don't match");
 				} else {
 					$.ajax({
 						url: "../include/password.php",
@@ -223,11 +223,11 @@
 						},
 						success: function(res) {
 							if (res == "old") {
-								alertShow("Mot de passe incorrect");
+								alertShow("Incorrect password");
 							} else if (res == "short") {
-								alertShow("Pas moins de 6 caractères");
+								alertShow("Not less than 6 caracters");
 							} else if (res == "done") {
-								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("succès<i class='fas fa-check ml-2'></i>");
+								$btn.removeClass("btn-outline-info").addClass("btn-outline-success").html("success<i class='fas fa-check ml-2'></i>");
 								setTimeout(function(){location.reload()},1000)
 							} else {
 								console.log(res);

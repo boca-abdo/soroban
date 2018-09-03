@@ -1,4 +1,4 @@
-var i,r,rs,res,num,rand,intvl,cnt,mdl,flr,res_flr,res_mdl,n1,n2,pw,func,lvl,level,rule,$btn,$tab,$input,$check,$refill,$lines = [],
+var i,r,rs,res,num,rand,intvl,cnt,mdl,flr,res_flr,res_mdl,n1,n2,pw,func,lvl,level,rule,$btn,$tab,$input,$check,$refill,$lines = [],lang=$("html").attr("lang"),
 rules = {
   "simple_add": {
     1:[1,2,3,5,6,7,8],
@@ -166,16 +166,40 @@ function checkLevel(l,st) {
         toggleTab();
       } else if (Number(res) === l) {
         correct = 5;
-        $p.html("يمكنك المرور الى التمرين الموالي بعد "+correct+" اجابات صحيحة");
+        if (lang == "ar") {
+          $p.html("يمكنك المرور الى التمرين الموالي بعد "+correct+" اجابات صحيحة");
+        }
+        if (lang == "fr") {
+          $p.html("Prochain exercice après "+correct+" réponses correctes");
+        }
+        if (lang == "en") {
+          $p.html("Next exercice after "+correct+" correct answers");
+        }
         toggleTab();
       } else if (Number(res) < st) {
         $(".tab-pane.show").removeClass("show active");
         $("#exercices").find("a.active").removeClass("active");
-        $btn.closest(".row").prev().text("لا يمكنك انجاز هذا التمرين الا بعد اتمام تمارين الوحدة السابقة");
+        if (lang == "ar") {
+          $btn.closest(".row").prev().text("لا يمكنك انجاز هذا التمرين الا بعد اتمام تمارين الوحدة السابقة");
+        }
+        if (lang == "fr") {
+          $btn.closest(".row").prev().text("Veuillez passer les unités précédentes");
+        }
+        if (lang == "en") {
+          $btn.closest(".row").prev().text("Please, finish previous units");
+        }
       }	else {
         $(".tab-pane.show").removeClass("show active");
         $("#exercices").find("a.active").removeClass("active");
-        $btn.closest(".row").prev().text("لا يمكنك انجاز هذا التمرين الا بعد انجاز التمارين السابقة");
+        if (lang == "ar") {
+          $btn.closest(".row").prev().text("لا يمكنك انجاز هذا التمرين الا بعد انجاز التمارين السابقة");
+        }
+        if (lang == "fr") {
+          $btn.closest(".row").prev().text("Veuillez passer les exercices précédents");
+        }
+        if (lang == "en") {
+          $btn.closest(".row").prev().text("Please, finish previous exercices");
+        }
       }
     }
   });
@@ -244,12 +268,48 @@ function check() {
   }
   setTimeout(function(){
     if (correct > 0) {
-      $p.html("يمكنك المرور الى التمرين الموالي بعد "+correct+" اجابات صحيحة");
+      if (lang == "ar") {
+        if (correct === 1) {
+          $p.html("يمكنك المرور الى التمرين الموالي بعد "+correct+" اجابة صحيحة");
+        } else {
+          $p.html("يمكنك المرور الى التمرين الموالي بعد "+correct+" اجابات صحيحة");
+        }
+      }
+      if (lang == "fr") {
+        if (correct === 1) {
+          $p.html("Prochain exercice après "+correct+" réponse correcte");
+        } else {
+          $p.html("Prochain exercice après "+correct+" réponses correctes");
+        }
+      }
+      if (lang == "en") {
+        if (correct === 1) {
+          $p.html("Next exercice after "+correct+" correct answer");
+        } else {
+          $p.html("Next exercice after "+correct+" correct answers");
+        }
+      }
     } else if (correct == 0) {
-      $p.html("يمكنك المرور الى التمرين الموالي");
+      if (lang == "ar") {
+        $p.html("يمكنك المرور الى التمرين الموالي");
+      }
+      if (lang == "fr") {
+        $p.html("Vous pouvez passer à l'exercice suivant");
+      }
+      if (lang == "en") {
+        $p.html("Next exercice opened");
+      }
       saveLevel();
     } else {
-      $p.html("يمكنك المرور الى التمرين الموالي");
+      if (lang == "ar") {
+        $p.html("يمكنك المرور الى التمرين الموالي");
+      }
+      if (lang == "fr") {
+        $p.html("Vous pouvez passer à l'exercice suivant");
+      }
+      if (lang == "en") {
+        $p.html("Next exercice opened");
+      }
     }
     rset();
   },1000);

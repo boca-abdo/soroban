@@ -1,13 +1,13 @@
   <?php include 'assets/header.php' ?>
-        <h1 class="h1 text-uppercase">soustraction simple</h1>
+        <h1 class="h1 text-uppercase">simple subtraction</h1>
 				<hr>
-				<p class="lead">On utilise la même méthode d'addition: Représenter le premier nombre, puis soustraire le nombre de perles du second nombre</p>
-				<p class="text-danger font-weight-bold">Exemples</p>
+				<p class="lead">The same addition method is used: Represent the first number, then subtract the number of beads of the second number</p>
+				<p class="text-danger font-weight-bold">Examples</p>
 				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
         <img src="../../images/simple_sub.gif" alt="simple sub" class="img-fluid center-block border border-dark mt-3">
 				<hr>
-        <h2 class="h2 text-center text-uppercase animated flash infinite">Obtener votre certificat</h2>
-				<h5 class="h5 my-3">Complétez les exercices de chaque unité pour obtenir votre certificat.</h5>
+        <h2 class="h2 text-center text-uppercase animated flash infinite">Get certified</h2>
+				<h5 class="h5 my-3">Finish the exercices of each unit to get certified.</h5>
 				<p class="lead animated flash infinite text-danger font-weight-bold"></p>
 				<div class="row border border-dark mx-3">
           <ul class="nav nav-fill nav-tabs border-bottom-0 text-uppercase w-100 p-0" id="exercices" role="tablist">
@@ -30,7 +30,7 @@
 					<div class="tab-content w-100 text-center" id="exercices_content">
 						<div class="tab-pane fade" role="tabpanel">
 							<h5 class="h3 my-3 text-uppercase">exercice 1</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -42,14 +42,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 						</div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">exercice 2</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -61,14 +61,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">exercice 3</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -80,14 +80,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">exercice 4</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -99,14 +99,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">exercice 5</h5>
-							<p class="lead">Représente le premier nombre puis soustrait le second</p>
+							<p class="lead">Represent first number then subtract the second</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto animated flash infinite">
@@ -118,8 +118,8 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>

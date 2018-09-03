@@ -4,24 +4,24 @@
         <source src="../../beep.ogg" type="audio/mpeg">
         <source src="../../beep.wav" type="audio/mpeg">
       </audio>
-        <h1 class="h1 text-uppercase">Entraînement de vitesse</h1>
+        <h1 class="h1 text-uppercase">Speed practice</h1>
         <h4 class="h4">FLASHCALC/flashanzan</h4>
 				<hr>
         <div class="row justify-content-center">
           <div class="col-sm-3">
-            <label for="dig">Chiffres</label>
+            <label for="dig">Digits</label>
             <input id="dig" class="form-control text-center rounded-0 background-transparent border-dark" type="number" value="1" style="box-shadow: none">
           </div>
           <div class="col-sm-3">
-            <label for="num">Nombres</label>
+            <label for="num">Numbers</label>
             <input id="num" class="form-control text-center rounded-0 background-transparent border-dark" type="number" value="4" style="box-shadow: none">
           </div>
           <div class="col-sm-3">
-            <label for="">Secondes</label>
+            <label for="">Seconds</label>
             <input id="spd" class="form-control text-center rounded-0 background-transparent border-dark" type="number" min="0.3" max="20" step="0.1" value="1" style="box-shadow: none">
           </div>
           <div id="bd" class="w-100 text-center font-weight-bold pt-5 mt-5"></div>
-          <button id="start" type="button" class="btn btn-lg btn-outline-dark text-uppercase rounded-0 px-5">Commencer<i class="fas fa-stopwatch ml-2"></i></button>
+          <button id="start" type="button" class="btn btn-lg btn-outline-dark text-uppercase rounded-0 px-5">Start<i class="fas fa-stopwatch ml-2"></i></button>
         </div>
       </div>
 		</div>

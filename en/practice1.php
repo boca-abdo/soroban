@@ -1,16 +1,16 @@
   <?php include 'assets/header.php' ?>
-        <h1 class="h1">Entraînement 1</h1>
+        <h1 class="h1">Practice 1</h1>
         <hr>
         <div class="row justify-content-center mt-5">
           <div class="col sm-6 col-lg-2">
-            <label for="">Type d'exercice</label>
+            <label for="">Type of exercise</label>
             <select class="custom-select custom-select-sm w-100 pt-0 background-transparent rounded-0 border border-dark" name="">
-              <option value="read" selected="selected">Lire la représentation</option>
-              <option value="repr">Représenter un nombre</option>
+              <option value="read" selected="selected">Read a representation</option>
+              <option value="repr">Represent a number</option>
             </select>
           </div>
           <div class="col-sm-6 col-lg-2">
-            <label for="">Chiffres</label>
+            <label for="">Digits</label>
             <select class="custom-select custom-select-sm w-100 pt-0 background-transparent rounded-0 border border-dark" name="">
               <option selected="selected">3</option>
               <option>4</option>
@@ -23,7 +23,7 @@
           </div>
           <div class="w-100"></div>
           <div class="col-lg-4 pt-5">
-            <input class="form-control form-control-lg font-weight-bold rounded-0 background-transparent border border-dark border-top-0 border-right-0 border-left-0 text-center" type="number" placeholder="Votre réponse ici">
+            <input class="form-control form-control-lg font-weight-bold rounded-0 background-transparent border border-dark border-top-0 border-right-0 border-left-0 text-center" type="number" placeholder="Your answer here">
           </div>
           <div class="w-100"></div>
           <div class="col-lg-6 pt-5" dir="rtl">
@@ -31,10 +31,10 @@
           </div>
           <div class="w-100"></div>
           <div class="col-sm-6 col-md-3 col-lg-2 mt-3">
-            <button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">Vérifier<i class="fas fa-check ml-2"></i></button>
+            <button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">Check<i class="fas fa-check ml-2"></i></button>
           </div>
           <div class="col-sm-6 col-md-3 col-lg-2 mt-3">
-            <button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">Changer<i class="fas fa-redo ml-2"></i></button>
+            <button type="button" class="btn btn-block btn-outline-dark rounded-0" style="box-shadow:none">Change<i class="fas fa-redo ml-2"></i></button>
           </div>
           <div class="w-100 pt-3"></div>
         </div>

@@ -38,28 +38,28 @@
               if ($num1 < 1 || $num2 < 1 || $diff > 24) {
           ?>
 					<i class="far fa-frown animated zoomIn text-danger fa-5x mt-5"></i>
-					<h1 class="text-danger animated flash infinite mt-3">Page indisponible</h1>
+					<h1 class="text-danger animated flash infinite mt-3">Page unavailable</h1>
 					<?php
               } else {
           ?>
           <div class="card bg-dark rounded-0 text-warning card-shadow mt-3">
             <div class="card-header border-warning">
-              <h5 class="card-title">Changement du mot de passe</h5>
+              <h5 class="card-title">Change password</h5>
             </div>
             <div class="card-block p-3">
 							<fieldset class="form-group">
-								<label for="">Mot de passe</label>
+								<label for="">Password</label>
 	  						<input id="p" class="form-control text-center background-transparent border-warning rounded-0" type="password">
 							</fieldset>
 							<fieldset class="form-group">
-								<label for="">Confirmer mot de passe</label>
+								<label for="">Confirm password</label>
 	  						<input id="c_p" class="form-control text-center background-transparent border-warning rounded-0" type="password">
 							</fieldset>
-  						<button id="recover" class="btn btn-outline-warning rounded-0 my-3" type="button" name="button" style="box-shadow:none">Changer<i class="fas fa-redo ml-2"></i></button>
+  						<button id="recover" class="btn btn-outline-warning rounded-0 my-3" type="button" name="button" style="box-shadow:none">Change<i class="fas fa-redo ml-2"></i></button>
   						<div id="status"></div>
   					</div>
             <div class="card-footer border-warning text-sm-right">
-              <a href="auth.php" class="text-warning">connexion</a>
+              <a href="auth.php" class="text-warning">signin</a>
             </div>
           </div>
           <?php
@@ -79,9 +79,9 @@
 				var p = $("#p").val();
 				var c_p = $("#c_p").val();
 				if (p.length < 6) {
-					$("#status").text("Pas moins de 6 caractères");
+					$("#status").text("Not less than 6 caracters");
 				} else if (p != c_p) {
-					$("#status").text("Mots de passe non identiques");
+					$("#status").text("Password don't match");
 				} else {
 					$.ajax({
 						url: "../include/update_pass.php",
@@ -95,7 +95,7 @@
 						},
 						success: function(res) {
 							if (res == "done") {
-								$("#status").text("Votre mot de passe a été changé avec succes");
+								$("#status").text("Password changed successfully");
 								setTimeout(function(){
 									window.open("auth.php", "_self");
 								},1000);

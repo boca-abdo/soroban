@@ -1,14 +1,14 @@
   <?php include 'assets/header.php' ?>
         <h1 class="h1 text-uppercase">Multiplication 2</h1>
 				<hr>
-				<p class="lead">Cette méthode exige le maîtrise des tableaux de multiplication</p>
-				<p class="lead">On démonte chacun des deux nombres, puis on multiplie chaque partie du second nombre par les parties du premier.</p>
-				<p class="text-danger font-weight-bold">Exemple</p>
+				<p class="lead">This method requires mastery of multiplication tables</p>
+				<p class="lead">We dismount each of the two numbers, then we multiply each part of the second number by the parts of the first.</p>
+				<p class="text-danger font-weight-bold">Example</p>
 				<i class="fas fa-2x fa-hand-point-down d-block animated fadeInDown infinite"></i>
 				<img src="../../images/mul2.gif" alt="mul2" class="img-fluid center-block border border-dark mt-3">
 				<hr>
-        <h2 class="h2 text-center text-uppercase animated flash infinite">Obtener votre certificat</h2>
-				<h5 class="h5 my-3">Complétez les exercices de chaque unité pour obtenir votre certificat.</h5>
+        <h2 class="h2 text-center text-uppercase animated flash infinite">Get certified</h2>
+				<h5 class="h5 my-3">Finish the exercices of each unit to get certified.</h5>
 				<p class="lead animated flash infinite text-danger font-weight-bold"></p>
 				<div class="row border border-dark mx-3">
           <ul class="nav nav-fill nav-tabs border-bottom-0 text-uppercase w-100 p-0" id="exercices" role="tablist">
@@ -31,7 +31,7 @@
 					<div class="tab-content w-100 text-center" id="exercices_content">
 						<div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 1</h5>
-							<p class="lead">Fait les calculs sur le boulier puis vérifie</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
@@ -44,14 +44,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 						</div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 2</h5>
-							<p class="lead">Fait les calculs sur le boulier puis vérifie</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
@@ -64,14 +64,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 3</h5>
-							<p class="lead">Fait les calculs sur le boulier puis vérifie</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
@@ -84,14 +84,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 4</h5>
-							<p class="lead">Fait les calculs sur le boulier puis vérifie</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
@@ -104,14 +104,14 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
 					  <div class="tab-pane fade" role="tabpanel">
               <h5 class="h3 my-3 text-uppercase">Exercice 5</h5>
-							<p class="lead">Fait les calculs sur le boulier puis vérifie</p>
+							<p class="lead">Use abacus to calculate then check</p>
 							<div class="py-3" dir="rtl">
 								<div class="row no-gutters justify-content-center h1 font-weight-bold">
 									<div class="nbr1 col-auto">
@@ -124,8 +124,8 @@
 								</div>
 								<div id="abacus" class="my-3" style="height: 143px"></div>
 								<div id="status"></div>
-								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>vérifier</button>
-								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>changer</button>
+								<button type="button" class="col-8 col-sm-4 col-md-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-check ml-2"></i>check</button>
+								<button type="button" class="col-8 col-sm-4 col-lg-2 btn btn-outline-dark text-uppercase rounded-0 my-2" style="box-shadow: none"><i class="fas fa-undo ml-2"></i>change</button>
 							</div>
 							<p></p>
 					  </div>
