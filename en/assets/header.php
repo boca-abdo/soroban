@@ -49,9 +49,9 @@
 			<li class="nav-item">
 				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="dashboard.php" style="box-shadow:none"><i class="fas fa-list-ol mr-md-2"></i><span class="d-none d-md-inline">ranking</span></a>
 			</li>
-			<li class="nav-item">
+			<!-- <li class="nav-item">
 				<a class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0" href="stats.php" style="box-shadow:none"><i class="fas fa-chart-pie mr-md-2"></i><span class="d-none d-md-inline">stats</span></a>
-			</li>
+			</li> -->
 			<li class="nav-item">
 				<div class="dropdown open">
 		      <button class="btn btn-outline-warning rounded-0 border-right-0 border-left-0 border-top-0 border-bottom-0 dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="box-shadow:none"><i class="fas fa-graduation-cap mr-md-2"></i><span class="d-none d-md-inline text-uppercase">lessons</span></button>
