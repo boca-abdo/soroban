@@ -1,0 +1,59 @@
+{
+  "add" : {
+    "01" : {
+      "opr_ar": "جمع 10 أعداد وحدات في ثانيتين",
+      "opr_fr": "addition de 10 nombres de 1 chiffre en 2 secondes",
+      "opr_en": "addition: 10 numbers of 1 digit in 2 seconds",
+      "rank1": 1,
+      "rank2": 10,
+      "speed": 2000,
+      "prog": 100,
+      "points": 15,
+      "level" : 61
+    },
+    "02" : {
+      "opr_ar": "جمع 10 أعداد عشرات في 4 ثواني",
+      "opr_fr": "addition de 10 nombres de 2 chiffres en 4 secondes",
+      "opr_en": "addition: 10 numbers of 2 digits in 4 seconds",
+      "rank1": 10,
+      "rank2": 10,
+      "speed": 4000,
+      "prog": 100,
+      "points": 20,
+      "level" : 62
+    },
+    "03" : {
+      "opr_ar": "جمع 10 أعداد مئات في 6 ثواني",
+      "opr_fr": "addition de 10 nombres de 3 chiffres en 6 secondes",
+      "opr_en": "addition: 10 numbers of 3 digits in 6 seconds",
+      "rank1": 100,
+      "rank2": 10,
+      "speed": 6000,
+      "prog": 150,
+      "points": 30,
+      "level" : 63
+    },
+    "04" : {
+      "opr_ar": "جمع 4 أعداد ملايين في 10 ثواني",
+      "opr_fr": "addition de 4 nombres de 8 chiffres en 10 secondes",
+      "opr_en": "addition: 4 numbers of 8 digits in 10 seconds",
+      "rank1": 10000000,
+      "rank2": 4,
+      "speed": 10000,
+      "prog": 210,
+      "points": 25,
+      "level" : 64
+    },
+    "05" : {
+      "opr_ar": "جمع 3 أعداد وحدات في 0.09 ثانية",
+      "opr_fr": "addition de 3 nombres de 1 chiffre en 0.09 seconde",
+      "opr_en": "addition: 3 numbers of 1 digit in 0.09 second",
+      "rank1": 1,
+      "rank2": 3,
+      "speed": 90,
+      "prog": 100,
+      "points": 10,
+      "level" : 65
+    }
+  }
+}
