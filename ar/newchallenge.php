@@ -4,17 +4,17 @@
 			    <source src="../beep.ogg" type="audio/mpeg">
 			    <source src="../beep.wav" type="audio/mpeg">
 			  </audio>
-				<ul class="nav nav-fill nav-tabs border-bottom-0 w-50 mx-auto p-0 mt-3" id="main" role="tablist">
-				  <li class="nav-item pb-2">
+				<ul class="nav justify-content-center nav-tabs border-bottom-0 p-0 mt-3" id="main" role="tablist">
+				  <li class="nav-item col-6 col-sm-3 pb-2">
 				    <a class="btn btn-block btn-outline-dark rounded-0" id="add-tab" data-toggle="tab" href="#add" role="tab" aria-controls="add" aria-selected="true" style="box-shadow: none">الجمع</a>
 				  </li>
-				  <li class="nav-item pb-2">
+				  <li class="nav-item col-6 col-sm-3 pb-2">
 				    <a class="btn btn-block btn-outline-dark rounded-0" id="sub-tab" data-toggle="tab" href="#sub" role="tab" aria-controls="sub" aria-selected="false" style="box-shadow: none">الطرح</a>
 				  </li>
-				  <li class="nav-item pb-2">
+				  <li class="nav-item col-6 col-sm-3 pb-2">
 				    <a class="btn btn-block btn-outline-dark rounded-0" id="mul-tab" data-toggle="tab" href="#mul" role="tab" aria-controls="mul" aria-selected="false" style="box-shadow: none">الضرب</a>
 				  </li>
-				  <li class="nav-item pb-2">
+				  <li class="nav-item col-6 col-sm-3 pb-2">
 				    <a class="btn btn-block btn-outline-dark rounded-0" id="div-tab" data-toggle="tab" href="#div" role="tab" aria-controls="div" aria-selected="false" style="box-shadow: none">القسمة</a>
 				  </li>
 				</ul>
@@ -25,16 +25,32 @@
               $json_data = file_get_contents('../json/challenge.json');
               $data = json_decode($json_data, true);
               foreach ($data["add"] as $key => $value) {
-                if ($log_row['level'] == $value['level']) {
-                  $class = 'btn-primary';
-                } else if ($log_row['level'] > $value['level']) {
-                  $class = 'btn-success';
-                } else {
-                  $class = 'btn-dark disabled';
-                }
             ?>
-              <div class="col-lg-2">
-                <button type="button" class="btn rounded-circle <?php echo $class ?>" style="height: 10rem;width:10rem"><?php echo "السلسلة<br>".$value['level'] ?></button>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card bg-<?php echo ($log_row['level'] <= $value['level']) ? "danger" : "success" ?> text-light rounded-0 d-none mb-3" style="height:18rem;box-shadow: -5px 5px 15px #20343B">
+                  <div class="card-header text-right">
+                    <?php echo ($log_row['level'] <= $value['level']) ? "المستوى ".$key : "المستوى ".$key."<i class='far fa-lg fa-check-circle float-left'></i>" ?>
+                  </div>
+                  <div class="card-body py-0">
+										<ul class="list-group p-0">
+										  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-transparent border-light">
+										    عدد اﻷرقام
+										    <span class="badge badge-dark badge-pill"><?php echo strlen((string)$value['rank']) ?></span>
+										  </li>
+										  <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent border-light">
+										    عدد اﻷعداد
+										    <span class="badge badge-dark badge-pill"><?php echo $value['numbers'] ?></span>
+										  </li>
+										  <li class="list-group-item d-flex justify-content-between align-items-center rounded-0 bg-transparent border-light">
+										    عدد الثواني
+										    <span class="badge badge-dark badge-pill"><?php echo $value['speed']/1000 ?></span>
+										  </li>
+										</ul>
+                  </div>
+                  <div class="card-footer">
+                    <button type="button" class="px-5 rounded-0 btn btn-dark <?php echo ($log_row['level'] < $value['level']) ? "disabled" : "" ?>">ابدأ</button>
+                  </div>
+                </div>
               </div>
             <?php
               }
@@ -80,6 +96,9 @@
 			sr_num = 0,
 			tbl_res = [],
 			tbl_answer = [];
+      function playEntrance(el) {
+        el.addClass("animated fadeInRight");
+      }
 			function showResult() {
 				$("#bluestatic").removeClass("d-flex").addClass("d-none");
 				$("#"+cls+"_series").parent().removeClass("d-block").addClass("d-none");
@@ -248,11 +267,15 @@
 				showInfo();
 			});
 			$('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-				// $("#"+cls+"_tab").find("ul.list-group").html("");
-				// $("#"+cls).find(".card-footer").find("button").text("انطلق");
-				// cl = beg;
-				// cls = $(this).attr('href').substring(1,4);
-				// createSeries(cls,cl);
+        tab = $(this).attr('href');
+        i = 0;
+        anim = setInterval(function(){
+          $(tab).find("div.card:eq("+i+")").removeClass("d-none").addClass("animated fadeInRight");
+          i++;
+          if (i > $(tab).find("button").length) {
+            clearInterval(anim);
+          }
+        },250);
 			});
 		});
   </script>
