@@ -3,7 +3,7 @@
     "01" : {
       "rank": 1,
       "numbers": 5,
-      "speed": 6000,
+      "speed": 1000,
       "points": 1,
       "level" : 61
     },
