@@ -29,7 +29,7 @@
               <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card bg-dark text-warning rounded-0 d-none mb-3" style="box-shadow: -5px 5px 15px #20343B">
                   <div class="card-header text-right">
-                    <?php echo ($log_row['level'] <= $value['level']) ? "المستوى ".$key : "المستوى ".$key."<i class='far fa-lg fa-check-circle float-left'></i>" ?>
+                    <?php echo ($log_row['chal_level'] <= $value['level']) ? "المستوى ".$key : "المستوى ".$key."<i class='far fa-lg fa-check-circle float-left'></i>" ?>
                   </div>
                   <div class="card-body py-0">
 										<ul class="list-group p-0">
@@ -48,7 +48,7 @@
 										</ul>
                   </div>
                   <div class="card-footer">
-                    <button type="button" data-level="<?php echo $value['level'] ?>" data-points="<?php echo $value['points'] ?>" class="px-5 rounded-0 btn btn-outline-warning <?php echo ($log_row['level'] < $value['level']) ? "disabled" : "" ?>" style="box-shadow: none"><?php echo ($log_row['level'] < $value['level']) ? "غير متاح" : "أبدأ" ?></button>
+                    <button type="button" data-level="<?php echo $value['level'] ?>" data-points="<?php echo $value['points'] ?>" class="px-5 rounded-0 btn btn-outline-warning <?php echo ($log_row['chal_level'] < $value['level']) ? "disabled" : "" ?>" style="box-shadow: none"><?php echo ($log_row['chal_level'] < $value['level']) ? "غير متاح" : "أبدأ" ?></button>
                   </div>
                 </div>
               </div>
@@ -75,10 +75,7 @@
     $(document).ready(function() {
 			$("#spinner").addClass("d-none");
 			$("a[href='challenge.php']").addClass("active");
-			var i,keyCode,cl,cls,res,gen,gen2,sr_intvl,cd_intvl,prog_intvl,wd,rand,points,result,point,fa,
-			sr_num = 0,
-			tbl_res = [],
-			tbl_answer = [];
+			var i,j,dig,num,spd,lvl,points,correct,tab,anim,answer,keyCode,rand,res,intvl,gen,clr;
 			function nextLevel() {
 				$.ajax({
 					url: "../include/nextlevel.php",
@@ -119,7 +116,7 @@
             check();
           });
           $("#tv").find("input").on("keyup", function(event){
-            var keyCode = (event.keyCode ? event.keyCode : event.which);
+            keyCode = (event.keyCode ? event.keyCode : event.which);
             if (keyCode == 13) {
               check();
             }
@@ -160,11 +157,11 @@
       }
 			$('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
         tab = $(this).attr('href');
-        i = 0;
+        j = 0;
         anim = setInterval(function(){
-          $(tab).find("div.card:eq("+i+")").removeClass("d-none").addClass("animated fadeInRight");
-          i++;
-          if (i > $(tab).find("button").length) {
+          $(tab).find("div.card:eq("+j+")").removeClass("d-none").addClass("animated fadeInRight");
+          j++;
+          if (j > $(tab).find("button").length) {
             clearInterval(anim);
           }
         },250);
