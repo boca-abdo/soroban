@@ -48,7 +48,7 @@
 										</ul>
                   </div>
                   <div class="card-footer">
-                    <button type="button" class="px-5 rounded-0 btn btn-outline-warning <?php echo ($log_row['level'] < $value['level']) ? "disabled" : "" ?>" style="box-shadow: none"><?php echo ($log_row['level'] < $value['level']) ? "غير متاح" : "أبدأ" ?></button>
+                    <button type="button" data-level="<?php echo $value['level'] ?>" data-points="<?php echo $value['points'] ?>" class="px-5 rounded-0 btn btn-outline-warning <?php echo ($log_row['level'] < $value['level']) ? "disabled" : "" ?>" style="box-shadow: none"><?php echo ($log_row['level'] < $value['level']) ? "غير متاح" : "أبدأ" ?></button>
                   </div>
                 </div>
               </div>
@@ -83,7 +83,7 @@
 				$.ajax({
 					url: "../include/nextlevel.php",
 					type: "POST",
-					data: {},
+					data: {lvl: lvl,points: points},
 					error: function(stt,xhr,err) {
 						console.log(xhr);
 					},
@@ -173,6 +173,8 @@
 				dig = Number($(this).closest(".card").find(".badge:first").text());
 				num = Number($(this).closest(".card").find(".badge:eq(1)").text());
 				spd = Number($(this).closest(".card").find(".badge:last").text());
+				lvl = $(this).data('level');
+				points = $(this).data('points');
 				correct = 3;
 				showInfo();
 			});
