@@ -31,7 +31,7 @@
 	<script src="../js/jquery.countdown.min.js"></script>
 </head>
 <body class="bg-warning text-dark">
-	<div id="bluestatic" class="position-fixed d-none bg-primary text-light justify-content-center align-items-center" style="height:100vh;width:100vw;z-index:5001">
+	<div id="bluestatic" class="position-fixed d-none bg-warning text-dark justify-content-center align-items-center" style="height:100vh;width:100vw;z-index:5001">
 		<div class="container" style="overflow: auto">
 			<div class="row justify-content-center">
 				<div id="tv" class="w-100 text-center font-weight-bold">
