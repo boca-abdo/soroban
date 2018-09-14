@@ -81,20 +81,20 @@
 				} else {
 					setTimeout(function(){
 						showInfo();
-					},5000);
+					},4000);
 				}
       }
 			function showInput() {
 				$("#tv").html("<div class='input-group w-75 mx-auto'><div class='input-group-append'><button style='box-shadow:none' class='btn btn-lg btn-outline-dark rounded-0 bg-transparent border-left-0'><i class='fas fa-arrow-right'></i></button></div><input type='number' class='form-control text-center rounded-0 border-dark text-dark bg-transparent' style='box-shadow:none'></div>");
-          $("#tv").find("input").focus().prev().on("click", "button", function(event){
+        $("#tv").find("input").focus().prev().on("click", "button", function(event){
+          check();
+        });
+        $("#tv").find("input").on("keyup", function(event){
+          keyCode = (event.keyCode ? event.keyCode : event.which);
+          if (keyCode == 13) {
             check();
-          });
-          $("#tv").find("input").on("keyup", function(event){
-            keyCode = (event.keyCode ? event.keyCode : event.which);
-            if (keyCode == 13) {
-              check();
-            }
-          });
+          }
+        });
 			}
 			function getRandom(min) {
 				rand = Math.random();
@@ -117,7 +117,7 @@
           if (i % 2 == 0) {
             clr = "primary";
           }
-          $("#tv").html("<div class='text-"+clr+"' style='font-size: 7rem; text-shadow: -2px 2px 5px #cecece'>"+gen+"</div>");
+          $("#tv").html("<div class='gen text-"+clr+"'>"+gen+"</div>");
           res += gen;
           i++;
           if (i == num) {

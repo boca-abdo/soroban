@@ -44,10 +44,6 @@ body,html {
 }
 .gen {
 	font-size: 3rem;
-	text-shadow: -5px 5px 10px #000
-}
-.nfo {
-	text-shadow: -2px 2px 5px #000
 }
 
 @media screen and (min-width: 480px) {
@@ -62,9 +58,6 @@ body,html {
 	.gen {
 		font-size: 8rem;
 	}
-	.nfo {
-		font-size: 3rem
-	}
 }
 @media screen and (min-width: 992px) {
 	body,html {
@@ -74,8 +67,5 @@ body,html {
 @media screen and (min-width: 1200px) {
 	.gen {
 		font-size: 12rem;
-	}
-	.nfo {
-		font-size: 5rem
 	}
 }
