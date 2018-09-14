@@ -6,9 +6,9 @@
     echo "nosession";
     exit();
   } else {
-    if ($lvl == $log_row['level']) {
+    if ($lvl == $log_row['chal_level']) {
       $new_level = $lvl + 1;
-      $update = $srbn_con->query("UPDATE `users` SET `level`='$new_level' WHERE `id`='$log_id'");
+      $update = $srbn_con->query("UPDATE `users` SET `chal_level`='$new_level' WHERE `id`='$log_id'");
     }
     $new_points = $log_row['points'] + $points;
     $update = $srbn_con->query("UPDATE `users` SET `points`='$new_points' WHERE `id`='$log_id'");
