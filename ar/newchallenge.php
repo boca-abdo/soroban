@@ -11,7 +11,7 @@
           foreach ($data as $key => $value) {
         ?>
           <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card bg-dark text-warning rounded-0 d-none mb-3" style="box-shadow: -5px 5px 15px #20343B">
+            <div class="card text-warning rounded-0 d-none mb-3" style="box-shadow: -5px 5px 15px #20343B; background-color: rgba(32, 52, 59, <?php echo ($log_row['chal_level'] < $value['level']) ? '0.7' : '1' ?>)">
               <div class="card-header text-right">
                 <?php echo ($log_row['chal_level'] <= $value['level']) ? "المستوى ".$key : "المستوى ".$key."<i class='far fa-lg fa-check-circle float-left'></i>" ?>
               </div>
