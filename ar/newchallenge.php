@@ -75,7 +75,7 @@
     $(document).ready(function() {
 			$("#spinner").addClass("d-none");
 			$("a[href='challenge.php']").addClass("active");
-			var i,j,dig,num,spd,lvl,points,correct,tab,anim,answer,keyCode,rand,res,intvl,gen,clr;
+			var i,j,dig,num,spd,lvl,points,correct,tab,anim,answer,keyCode,rand,res,intvl,gen,clr,face;
 			function nextLevel() {
 				$.ajax({
 					url: "../include/nextlevel.php",
@@ -96,22 +96,23 @@
 			function check() {
         answer = $("#tv").find("input").val();
         if (res == answer) {
-          $("#tv").append("<div class='text-success animated zoomIn' style='font-size: 7rem'>"+res+"</div>");
+          face = "smile";
 					correct--;
         } else {
-	        $("#tv").append("<div class='text-danger animated zoomIn' style='font-size: 7rem'>"+res+"</div>");
+	        face = "frown";
 					correct = 3;
         }
+				$("#tv").append("<div class='table-responsive w-75 pt-3 mx-auto'><table class='table table-sm table-dark'><tr><td>اﻹجابة</td><td>الصحيح</td></tr><tr><td>"+answer+"</td><td>"+res+"</td></tr></table></div><i class='far fa-5x fa-"+face+" animated zoomIn'></i>");
 				if (correct === 0) {
 					nextLevel();
 				} else {
 					setTimeout(function(){
 						showInfo();
-					},1500);
+					},5000);
 				}
       }
 			function showInput() {
-				$("#tv").html("<div class='input-group w-75 mx-auto'><div class='input-group-append'><button style='box-shadow:none' class='btn btn-lg btn-outline-light rounded-0 bg-transparent border-left-0'><i class='fas fa-arrow-right'></i></button></div><input type='number' class='form-control text-center rounded-0 border-light text-light bg-transparent' style='box-shadow:none'></div>");
+				$("#tv").html("<div class='input-group w-75 mx-auto'><div class='input-group-append'><button style='box-shadow:none' class='btn btn-lg btn-outline-dark rounded-0 bg-transparent border-left-0'><i class='fas fa-arrow-right'></i></button></div><input type='number' class='form-control text-center rounded-0 border-dark text-dark bg-transparent' style='box-shadow:none'></div>");
           $("#tv").find("input").focus().prev().on("click", "button", function(event){
             check();
           });
@@ -139,11 +140,11 @@
         intvl = setInterval(function(){
           gen = Math.floor(getRandom(0.1) * Math.pow(10,dig));
           $("#beep").get(0).play();
-          clr = "light";
+          clr = "dark";
           if (i % 2 == 0) {
-            clr = "warning";
+            clr = "primary";
           }
-          $("#tv").html("<div class='text-"+clr+"' style='font-size: 7rem; text-shadow: -2px 2px 5px #000'>"+gen+"</div>");
+          $("#tv").html("<div class='text-"+clr+"' style='font-size: 7rem; text-shadow: -2px 2px 5px #cecece'>"+gen+"</div>");
           res += gen;
           i++;
           if (i == num) {
