@@ -144,7 +144,9 @@
 				lvl = $(this).data('level');
 				points = $(this).data('points');
 				correct = 3;
-				showInfo();
+				if ($(this).text() == "أبدأ") {
+					showInfo();
+				}
 			});
 		});
   </script>
