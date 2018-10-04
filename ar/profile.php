@@ -169,7 +169,7 @@
 					alertShow("المرجو ادخال الاسم العائلي");
 				} else if ($("#lname").val() == "") {
 					alertShow("المرجو ادخال الاسم الشخصي");
-				} else if (testTel.test($("#tel").val()) == false) {
+				} else if ($("#tel").val() != "" && testTel.test($("#tel").val()) == false) {
 					alertShow("المرجو استعمال الارقام فقط");
 				} else if ($("#b_date").val() == "") {
 					alertShow("المرجو ادخال تاريخ ازدياد صحيح");
