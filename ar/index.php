@@ -94,6 +94,19 @@
 		</nav>
 		<!-- here starts about block -->
 		<div class="container py-5 text-center" id="about">
+			<div class="w-100 text-center">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- soroban_pub -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9602705169757138"
+				     data-ad-slot="8304940901"
+				     data-ad-format="link"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
 			<i class="fas fa-info-circle fa-5x"></i>
 			<h3 class="h3 font-weight-bold my-3">عن البرنامج</h3>
 			<p class="lead text-justify font-weight-bold">
@@ -118,7 +131,7 @@
 				</div>
 				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
 					<h4 class="h4 font-weight-bold">مرن</h4>
-					<i class="fas fa-smile fa-2x my-2"></i>
+					<i class="far fa-smile fa-2x my-2"></i>
 					<p class="font-weight-bold">يساعد على الابداع ،المبادرة و التنافس الشريف.</p>
 				</div>
 				<div class="col-sm-6 col-md-4 border border-dark border-top-0 border-left-0 border-right-0 py-3">
@@ -190,6 +203,19 @@
 					</p>
 				</div>
 			</div>
+			<div class="w-100 text-center">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- soroban_pub -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9602705169757138"
+				     data-ad-slot="8304940901"
+				     data-ad-format="link"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
 		</div>
 		<!-- here starts facebook block -->
 		<div class="w-100 py-5 text-center" style="background-image: url('../images/home2.jpg'); background-size: cover; background-repeat: no-repeat;background-attachment: fixed;">
@@ -251,6 +277,19 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div class="w-100 text-center">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- soroban_pub -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9602705169757138"
+				     data-ad-slot="8304940901"
+				     data-ad-format="link"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
 			</div>
 		</div>
 		<!-- here starts youtube block -->
