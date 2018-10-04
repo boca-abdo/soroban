@@ -98,3 +98,16 @@
 		<div class="col-12 align-self-top">
       <div class="container text-center">
 				<a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
+				<div class="w-100 text-center">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- soroban_pub -->
+					<ins class="adsbygoogle"
+					     style="display:block"
+					     data-ad-client="ca-pub-9602705169757138"
+					     data-ad-slot="8304940901"
+					     data-ad-format="link"
+					     data-full-width-responsive="true"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>

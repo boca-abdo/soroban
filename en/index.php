@@ -94,6 +94,19 @@
 		</nav>
 		<!-- here starts about block -->
 		<div class="container py-5 text-center" id="about">
+			<div class="w-100 text-center">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- soroban_pub -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9602705169757138"
+				     data-ad-slot="8304940901"
+				     data-ad-format="link"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
 			<i class="fas fa-info-circle fa-5x"></i>
 			<h3 class="h3 font-weight-bold text-uppercase my-3">about</h3>
 			<p class="lead font-weight-bold text-justify text-indent">Soroban Program for the Mental calculation is a program of education and training for children, aimed at their mental abilities, and the development of their thoughts, their concentrations, their precisions and their observations ... The program depends on the modern technology in mathematics education. Using the Japanese "Soroban" abacus and numbers, the learner manages to manipulate the four operations (addition, subtraction, multiplication and division) in a way that is much fun.</p>
@@ -229,6 +242,19 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div class="w-100 text-center">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- soroban_pub -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9602705169757138"
+				     data-ad-slot="8304940901"
+				     data-ad-format="link"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
 			</div>
 		</div>
 		<!-- here starts youtube block -->

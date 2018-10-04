@@ -94,6 +94,19 @@
 		</nav>
 		<!-- here starts about block -->
 		<div class="container py-5 text-center" id="about">
+			<div class="w-100 text-center">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- soroban_pub -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9602705169757138"
+				     data-ad-slot="8304940901"
+				     data-ad-format="link"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
 			<i class="fas fa-info-circle fa-5x"></i>
 			<h3 class="h3 font-weight-bold text-uppercase my-3">a propos</h3>
 			<p class="lead font-weight-bold text-justify text-indent">Programme Soroban pour la calculer mental est un programme d'éducation et de formation pour les enfants, visant leurs capacités mentales, et le développement de leurs pensées, de leurs concentrations,de leurs précisions et de leurs observations...  Le programme dépend de la technologie moderne dans l'enseignement des mathématiques .A l'aide du boulier japonais "Soroban" et des nombres,l’apprenant arrive à manipuler les quatre opérations (addition, soustraction, multiplication et division) d'une manière où il y a beaucoup de plaisir et d'amusement. .</p>
@@ -229,6 +242,19 @@
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div class="w-100 text-center">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- soroban_pub -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9602705169757138"
+				     data-ad-slot="8304940901"
+				     data-ad-format="link"
+				     data-full-width-responsive="true"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
 			</div>
 		</div>
 		<!-- here starts youtube block -->
