@@ -3,7 +3,12 @@
 				<hr>
         <?php if ($log_row['level'] >= 60): ?>
           <h2 class="h2">يمكنك تغيير الاسم ولغة الشهادة أسفله</h2>
-          <input id="full-name" class="col-md-4 form-control text-center background-transparent border-dark text-uppercase rounded-0 mx-auto my-5" type="text" name="" value="<?php echo $log_row['fname']." ".$log_row['lname']; ?>" style="box-shadow:none">
+          <div class="input-group col-lg-6 mx-auto my-3">
+            <input id="full-name" class="form-control text-center border-dark text-uppercase rounded-0 mx-auto" type="text" name="" value="<?php echo $log_row['fname']." ".$log_row['lname']; ?>" style="box-shadow:none" readonly="readonly">
+            <div class="input-group-append">
+              <a href="profile.php" class="btn btn-outline-dark rounded-0" type="button"><i class="fas fa-edit"></i></a>
+            </div>
+          </div>
           <div class="row justify-content-center my-5">
             <div class="col-sm-3 mb-3">
               <a href="#" class="btn btn-block btn-outline-dark rounded-0 active" style="box-shadow:none">العربية</a>
