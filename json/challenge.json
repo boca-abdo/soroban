@@ -1,0 +1,345 @@
+{
+  "01" : {
+    "level" : 0,
+    "rank" : 1,
+    "numbers" : 5,
+    "speed" : 3000,
+    "points" : 1
+  },
+  "02" : {
+    "level" : 1,
+    "rank" : 1,
+    "numbers" : 5,
+    "speed" : 1500,
+    "points" : 2
+  },
+  "03" : {
+    "level" : 2,
+    "rank" : 1,
+    "numbers" : 5,
+    "speed" : 1000,
+    "points" : 3
+  },
+  "04" : {
+    "level" : 3,
+    "rank" : 1,
+    "numbers" : 10,
+    "speed" : 3000,
+    "points" : 3
+  },
+  "05" : {
+    "level" : 4,
+    "rank" : 1,
+    "numbers" : 10,
+    "speed" : 1500,
+    "points" : 4
+  },
+  "06" : {
+    "level" : 5,
+    "rank" : 1,
+    "numbers" : 10,
+    "speed" : 1000,
+    "points" : 5
+  },
+  "07" : {
+    "level" : 6,
+    "rank" : 1,
+    "numbers" : 5,
+    "speed" : 800,
+    "points" : 3
+  },
+  "08" : {
+    "level" : 7,
+    "rank" : 1,
+    "numbers" : 5,
+    "speed" : 700,
+    "points" : 4
+  },
+  "09" : {
+    "level" : 8,
+    "rank" : 1,
+    "numbers" : 5,
+    "speed" : 600,
+    "points" : 5
+  },
+  "10" : {
+    "level" : 9,
+    "rank" : 1,
+    "numbers" : 5,
+    "speed" : 500,
+    "points" : 6
+  },
+  "11" : {
+    "level" : 10,
+    "rank" : 1,
+    "numbers" : 10,
+    "speed" : 800,
+    "points" : 5
+  },
+  "12" : {
+    "level" : 11,
+    "rank" : 1,
+    "numbers" : 10,
+    "speed" : 700,
+    "points" : 6
+  },
+  "13" : {
+    "level" : 12,
+    "rank" : 1,
+    "numbers" : 10,
+    "speed" : 600,
+    "points" : 7
+  },
+  "14" : {
+    "level" : 13,
+    "rank" : 1,
+    "numbers" : 10,
+    "speed" : 500,
+    "points" : 8
+  },
+  "15" : {
+    "level" : 14,
+    "rank" : 10,
+    "numbers" : 4,
+    "speed" : 4000,
+    "points" : 6
+  },
+  "16" : {
+    "level" : 15,
+    "rank" : 10,
+    "numbers" : 4,
+    "speed" : 3500,
+    "points" : 7
+  },
+  "17" : {
+    "level" : 16,
+    "rank" : 10,
+    "numbers" : 4,
+    "speed" : 3000,
+    "points" : 8
+  },
+  "18" : {
+    "level" : 17,
+    "rank" : 10,
+    "numbers" : 4,
+    "speed" : 2500,
+    "points" : 9
+  },
+  "19" : {
+    "level" : 18,
+    "rank" : 10,
+    "numbers" : 4,
+    "speed" : 2000,
+    "points" : 10
+  },
+  "20" : {
+    "level" : 19,
+    "rank" : 10,
+    "numbers" : 4,
+    "speed" : 1500,
+    "points" : 11
+  },
+  "21" : {
+    "level" : 20,
+    "rank" : 10,
+    "numbers" : 4,
+    "speed" : 1000,
+    "points" : 12
+  },
+  "22" : {
+    "level" : 21,
+    "rank" : 10,
+    "numbers" : 6,
+    "speed" : 4000,
+    "points" : 8
+  },
+  "23" : {
+    "level" : 22,
+    "rank" : 10,
+    "numbers" : 6,
+    "speed" : 3500,
+    "points" : 9
+  },
+  "24" : {
+    "level" : 23,
+    "rank" : 10,
+    "numbers" : 6,
+    "speed" : 3000,
+    "points" : 10
+  },
+  "25" : {
+    "level" : 24,
+    "rank" : 10,
+    "numbers" : 6,
+    "speed" : 2500,
+    "points" : 11
+  },
+  "26" : {
+    "level" : 25,
+    "rank" : 10,
+    "numbers" : 6,
+    "speed" : 2000,
+    "points" : 12
+  },
+  "27" : {
+    "level" : 26,
+    "rank" : 10,
+    "numbers" : 6,
+    "speed" : 1500,
+    "points" : 13
+  },
+  "28" : {
+    "level" : 27,
+    "rank" : 10,
+    "numbers" : 6,
+    "speed" : 1000,
+    "points" : 14
+  },
+  "29" : {
+    "level" : 28,
+    "rank" : 10,
+    "numbers" : 8,
+    "speed" : 4000,
+    "points" : 10
+  },
+  "30" : {
+    "level" : 29,
+    "rank" : 10,
+    "numbers" : 8,
+    "speed" : 3500,
+    "points" : 11
+  },
+  "31" : {
+    "level" : 30,
+    "rank" : 10,
+    "numbers" : 8,
+    "speed" : 3000,
+    "points" : 12
+  },
+  "32" : {
+    "level" : 31,
+    "rank" : 10,
+    "numbers" : 8,
+    "speed" : 2500,
+    "points" : 13
+  },
+  "33" : {
+    "level" : 32,
+    "rank" : 10,
+    "numbers" : 8,
+    "speed" : 2000,
+    "points" : 14
+  },
+  "34" : {
+    "level" : 33,
+    "rank" : 10,
+    "numbers" : 8,
+    "speed" : 1500,
+    "points" : 15
+  },
+  "35" : {
+    "level" : 34,
+    "rank" : 10,
+    "numbers" : 8,
+    "speed" : 1000,
+    "points" : 16
+  },
+  "36" : {
+    "level" : 35,
+    "rank" : 10,
+    "numbers" : 10,
+    "speed" : 4000,
+    "points" : 12
+  },
+  "37" : {
+    "level" : 36,
+    "rank" : 10,
+    "numbers" : 10,
+    "speed" : 3500,
+    "points" : 13
+  },
+  "38" : {
+    "level" : 37,
+    "rank" : 10,
+    "numbers" : 10,
+    "speed" : 3000,
+    "points" : 14
+  },
+  "39" : {
+    "level" : 38,
+    "rank" : 10,
+    "numbers" : 10,
+    "speed" : 2500,
+    "points" : 15
+  },
+  "40" : {
+    "level" : 39,
+    "rank" : 10,
+    "numbers" : 10,
+    "speed" : 2000,
+    "points" : 16
+  },
+  "41" : {
+    "level" : 40,
+    "rank" : 10,
+    "numbers" : 10,
+    "speed" : 1500,
+    "points" : 17
+  },
+  "42" : {
+    "level" : 41,
+    "rank" : 10,
+    "numbers" : 10,
+    "speed" : 1000,
+    "points" : 18
+  },
+  "43" : {
+    "level" : 42,
+    "rank" : 100,
+    "numbers" : 3,
+    "speed" : 4000,
+    "points" : 15
+  },
+  "44" : {
+    "level" : 43,
+    "rank" : 100,
+    "numbers" : 3,
+    "speed" : 3500,
+    "points" : 16
+  },
+  "45" : {
+    "level" : 44,
+    "rank" : 100,
+    "numbers" : 3,
+    "speed" : 3000,
+    "points" : 17
+  },
+  "46" : {
+    "level" : 45,
+    "rank" : 100,
+    "numbers" : 3,
+    "speed" : 2500,
+    "points" : 18
+  },
+  "47" : {
+    "level" : 46,
+    "rank" : 100,
+    "numbers" : 3,
+    "speed" : 2000,
+    "points" : 19
+  },
+  "48" : {
+    "level" : 47,
+    "rank" : 100,
+    "numbers" : 3,
+    "speed" : 1500,
+    "points" : 20
+  },
+  "49" : {
+    "level" : 48,
+    "rank" : 100,
+    "numbers" : 3,
+    "speed" : 1000,
+    "points" : 20
+  }
+}
