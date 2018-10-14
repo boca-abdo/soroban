@@ -98,7 +98,7 @@
 		<div class="col-12 align-self-top">
       <div class="container text-center">
 				<a href="index.php"><img src="../images/logo.png" class="img-fluid" alt="Soroban logo"></a>
-				<div class="w-100 text-center">
+				<div class="w-100 text-center p-3">
 					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 					<!-- soroban_pub -->
 					<ins class="adsbygoogle"

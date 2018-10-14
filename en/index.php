@@ -94,7 +94,7 @@
 		</nav>
 		<!-- here starts about block -->
 		<div class="container py-5 text-center" id="about">
-			<div class="w-100 text-center">
+			<div class="w-100 text-center p-3">
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 				<!-- soroban_pub -->
 				<ins class="adsbygoogle"
