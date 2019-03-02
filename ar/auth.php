@@ -33,24 +33,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
 	<script src="https://www.google.com/recaptcha/api.js?hl=ar" async defer></script>
-	<script>
-	  window.fbAsyncInit = function() {
-	    FB.init({
-	      appId      : '209610666128223',
-	      cookie     : true,
-	      xfbml      : true,
-	      version    : 'v2.8'
-	    });
-	    FB.AppEvents.logPageView();
-	  };
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "https://connect.facebook.net/en_US/sdk.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
 </head>
 <body class="bg-warning text-dark">
 	<?php include '../assets/spinner.php' ?>
@@ -172,25 +154,6 @@
 		            </form>
 						  </div>
 						</div>
-						<div class="row justify-content-center align-items-center px-3">
-							<div class="col-3 col-sm-4 col-xl-5">
-								<hr class="bg-warning">
-							</div>
-							<div class="col-auto">
-								<span>أو عن طريق</span>
-							</div>
-							<div class="col-3 col-sm-4 col-xl-5">
-								<hr class="bg-warning">
-							</div>
-							<div class="w-100"></div>
-							<div class="col-sm-6 col-md-4 my-2">
-								<button type="button" class="btn btn-outline-warning btn-block rounded-0" id="fb">فيسبوك<i class="fab fa-facebook-square mr-2"></i></button>
-							</div>
-							<div class="col-sm-6 col-md-4 my-2">
-								<button type="button" class="btn btn-outline-warning btn-block rounded-0" id="ggl">غوغل<i class="fab fa-google mr-2"></i></button>
-							</div>
-							<div class="col-12 text-center" id="scl"></div>
-						</div>
           </div>
           <div class="card-footer border-warning text-sm-right">
             <a href="forget.php" class="text-warning">نسيت الرمز السري</a>
@@ -220,86 +183,7 @@
 			$r_ln = $("#r_ln"),
 			$r_p = $("#r_p"),
 			$r_p_c = $("#r_p_c"),
-			testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i,
-			googleUser = {};
-		  function startApp() {
-		    gapi.load('auth2', function(){
-		      auth2 = gapi.auth2.init({
-		        client_id: '839308074656-uuafprdn1rqrrlik0c1go8eqdohu1d67.apps.googleusercontent.com',
-		        cookiepolicy: 'single_host_origin',
-		        scope: 'profile'
-		      });
-		      attachSignin(document.getElementById('ggl'));
-		    });
-		  };
-		  function attachSignin(element) {
-		    auth2.attachClickHandler(element, {},
-	        function(googleUser) {
-						$.ajax({
-							url: "../include/gglogin.php",
-							type: "POST",
-							data: {
-								id: googleUser.getBasicProfile().getId(),
-								e: googleUser.getBasicProfile().getEmail(),
-								fn: googleUser.getBasicProfile().getGivenName(),
-								ln: googleUser.getBasicProfile().getFamilyName(),
-								pic: googleUser.getBasicProfile().getImageUrl()
-							},
-							success: function(res) {
-								if (res === "done") {
-									location.reload();
-								} else {
-									$("#scl").text("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.");
-									console.log(res);
-								}
-							},
-							error: function(stt,xhr,err) {
-								console.log(err);
-							}
-						});
-	        }, function(error) {
-	          console.log(JSON.stringify(error, undefined, 2));
-	        });
-		  }
-			function fbAPI() {
-				FB.api('/me?fields=id,email,first_name,last_name,picture', function (response) {
-					$.ajax({
-						url: "../include/fblogin.php",
-						type: "POST",
-						data: response,
-						success: function(res) {
-							if (res === "done") {
-								location.reload();
-							} else {
-								$("#scl").text("حدث خطأ غير متوقع، المرجو اعادة المحاولة لاحقا. اذا استمر المشكل المرجو الاتصال بادارة الموقع.");
-								console.log(res);
-							}
-						},
-						error: function(stt,xhr,err) {
-							console.log(err);
-						}
-					});
-				});
-			}
-			function testAPI() {
-				FB.login(function(response) {
-					if (response.status === 'connected') {
-						fbAPI()
-					}
-				}, {scope:'email,user_birthday,user_location,user_hometown'});
-			}
-			function statusChangeCallback(response) {
-				if (response.status === 'connected') {
-					fbAPI()
-				} else {
-					testAPI();
-				}
-			}
-			function checkLoginState(){
-				FB.getLoginStatus(function(response) {
-					statusChangeCallback(response);
-				});
-			}
+			testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
 			function alertShow(msg,al) {
 				al.removeClass("d-none");
 				$btn.removeClass("btn-info").addClass("btn-danger").html('هناك خطأ<i class="fas fa-exclamation-triangle fa-fw mr-2 animated zoomIn infinite"></i>');
@@ -413,14 +297,6 @@
 			});
 			$(".form-control").on("focus", function(){
 				setTimeout(function(){alertHide($(".alert"))},1000);
-			});
-			$("#fb").on('click', function(){
-				$("#scl").text("");
-				checkLoginState();
-			});
-			$("#ggl").on('click', function(){
-				$("#scl").text("");
-				startApp();
 			});
     });
   </script>
