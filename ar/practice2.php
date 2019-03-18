@@ -34,7 +34,7 @@
 								<span></span><span></span><span></span>
 							</div>
 							<div class="nbr2 col-auto">
-								<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span><span></span>
+								<i class="fas fa-plus mr-2 d-inline" style="font-size: 20px"></i><span></span><span></span>
 							</div>
 						</div>
           </div>
